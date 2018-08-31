@@ -1,0 +1,78 @@
+<template name="picker">
+  {{> header}}
+  {{#if isFinal}}
+    {{> final}}
+  {{else}}
+    {{> notFinal}}
+  {{/if}}
+  {{> footer}}
+  {{> skill}}
+  {{> numPad}}
+</template>
+
+<template name="final">
+  <table>
+    <thead>
+      <th></th>
+      <th class="function>">{{judge.function.first.short}}</th>
+      <th class="function>">{{judge.function.second.short}}</th>
+    </thead>
+    {{#each participants}}
+      <tr>
+        <td class="participantNumber">
+            {{number}}
+        </td>
+        <td class="score {{judge.function.first.type}}">
+          {{score judge.function.first.type this}}
+      </td>
+      <td class="score {{judge.function.second.type}}" >
+        {{score judge.function.second.type this}}
+    </td>
+      </tr>
+    {{/each}}
+  </table>
+</template>
+
+
+<template name="notFinal">
+  <div class="notFinal">
+
+    {{#each participants}}
+    <div class="selector {{state}} maybe_{{maybe}} selected_{{selected}}" id="{{_id}}" >
+      {{number}}
+    </div>
+    {{/each}}
+    {{#if toSelect}}
+    <div class="toSelect">
+      Select {{toSelect}} number(s)  
+    </div>
+    {{/if}}
+  </div>
+  </template>
+  
+
+
+<template name="numPad">
+  <div id="numPad" class="numPad hidden">
+    <table cellspacing="10">
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>4</td><td>5</td><td>6</td></tr>
+      <tr><td>7</td><td>8</td><td>9</td></tr>
+      <tr><td class="nob"></td><td>0</td><td class="nob"></td></tr>
+    </table>
+  </div>
+</template>
+
+<template name="skill">
+    <div id="skill" class="numPad hidden">
+      <table cellspacing="10">
+        <tr><td>1.00</td><td>1.05</td></tr>
+        <tr><td>1.10</td><td>1.15</td></tr>
+        <tr><td>1.20</td><td>1.25</td></tr>
+        <tr><td>1.30</td><td>1.35</td></tr>
+        <tr><td>1.40</td><td>1.45</td></tr>
+        <tr><td>1.50</td><td class="nob"></td></tr>
+
+      </table>
+    </div>
+  </template>

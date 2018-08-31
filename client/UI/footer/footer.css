@@ -1,0 +1,63 @@
+.btn {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 5vw;
+  color: white;
+  font-size: 2em;
+  min-width: 10vw;
+  min-height: 7vh; 
+  font-weight: 900;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+.red {
+  background-color: coral;
+}
+.blue {
+  background-color: blueviolet;
+}
+.green {
+  background-color: lightgreen;
+}
+.yellow {
+  background-color: yellowgreen;
+}
+.footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 20vh;
+}
+.hidden {
+  display: none;
+}
+
+#heatSelector {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  background-color: white;
+  padding: 0;
+}
+.heat {
+  text-align: center;
+  line-height: 20vh;
+  float: left;
+  min-width: 30vw;
+  min-height: 20vh;
+  margin: 5vw;
+  border: 2px solid black;
+  background-color: grey;
+  font-size: 3em;
+  font-weight: 900;
+}
+.centered {
+  width: 100%;
+  text-align: center;
+}
+
+.active_true {
+  background-color: green;
+}
