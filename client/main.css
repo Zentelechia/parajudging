@@ -17,3 +17,16 @@ body {
   padding: 10px;
   
 }
+#prePIN {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30vw;
+  height: 5vw;
+  margin-left: -15vw;
+  margin-bottom: -4.5vh;
+  font-size: 5vh !important;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+}

@@ -1,7 +1,6 @@
 Template.header.helpers({
   judge(){
-    return {lastname: 'Viktor podreznik'}
-    return Judges.findOne({PIN: Session.get('PIN')})
+    return Session.get('judge')
   },
   title(){
     return 'Combi -> Standard -> Final'

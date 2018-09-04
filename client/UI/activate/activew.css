@@ -1,0 +1,6 @@
+.active_true {
+  background-color: lightgreen
+}
+#activator td {
+  vertical-align: top;
+}

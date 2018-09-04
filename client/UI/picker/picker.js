@@ -109,8 +109,9 @@ Template.picker.helpers({
 })
 Template.final.helpers({
   judge(){
-    return {name: "Azzek", function: {first: {short: "DL",  type: "numpad"}, second: {short: "TS", type: "skill"}}} 
-    return Judges.findOne({PIN: Session.get("PIN")})
+    const judge = Session.get("judge") 
+    const functions = JudgesFunctions.findOne({letter: judge.letter})
+    return  {...judge, ...functions}
   },
   item(){
     pi = ProgramItems.findOne({ active: true })
@@ -146,7 +147,8 @@ Template.notFinal.helpers({
 })
 
 UI.registerHelper('score', function(scoreType, participant) {
-  return 3.5
+  
+  return scoreType=='skill'?"1.0":"5.0"
 });
 Template.notFinal.events({
   'click .selector'(e){

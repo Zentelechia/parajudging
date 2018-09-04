@@ -30,3 +30,10 @@ Router.route('/picker', {
     this.render('picker')
   }
 })
+
+Router.route('/activate', {
+  name: 'activate',
+  action: function() {
+    this.render('activate')
+  }
+})

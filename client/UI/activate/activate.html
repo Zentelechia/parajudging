@@ -1,0 +1,17 @@
+<template name="activate">
+  <table id="activator">
+    <tr>
+      <td>
+            {{#each elements}}
+            <div id="{{_id}}" class="active_{{active}}">{{Event}} {{Program}} {{Gender}} {{Class}} [{{Description}}] <button>Activate</button></div>
+            {{/each}}
+        </td>
+        <td>
+              {{#each items}}
+              <div id="{{_id}}" class="active_{{active}}">{{Dance}} {{Level}} {{#if heat}} Heat{{heat}} {{/if}} <button>Activate</button></div>
+              {{/each}}
+        
+          </td>
+        </tr>
+      </table>
+</template>
