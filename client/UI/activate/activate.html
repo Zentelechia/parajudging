@@ -1,17 +1,81 @@
 <template name="activate">
+  <h1 class="h1center">Chairman control panel</h1>
   <table id="activator">
     <tr>
       <td>
-            {{#each elements}}
-            <div id="{{_id}}" class="active_{{active}}">{{Event}} {{Program}} {{Gender}} {{Class}} [{{Description}}] <button>Activate</button></div>
-            {{/each}}
+        <div id="addElement">Add program element</div>
+        <ul class="sortable">
+          {{#each elements}}
+              {{#unless name}}
+              <li id="{{_id}}" class="active_{{active}} ui-state-default">
+                {{order}}) {{Event}} {{Program}} {{Gender}} {{Class}} [{{Description}}]
+              <button class="activateElement" >Activate</button>
+             </li>
+             {{else}}
+             <li id="{{_id}}" class="abstractElement active_{{active}} ui-state-default">
+              {{order}}) <input width="80%" value="{{name}}">
+             </li>
+             {{/unless}}
+          {{/each}}
+        </ul>
         </td>
         <td>
-              {{#each items}}
-              <div id="{{_id}}" class="active_{{active}}">{{Dance}} {{Level}} {{#if heat}} Heat{{heat}} {{/if}} <button>Activate</button></div>
-              {{/each}}
+          <ul>
+
+            {{#each item in items}}
+            <li id="{{item._id}}" class="active_{{item.active}} activated_{{item.activated}} ui-state-default">
+              {{item.Dance}} {{item.Level}} {{#if item.heat}} Heat {{item.heat}} {{/if}} 
+              <div>
+                <ul class="sortable">{{#each item.Entries}}<li class="inline {{winner item._id  this}}">{{this}}</li>{{/each}}</ul>
+              </div>
+              <button class="activateItem">Activate</button>
+            </li>
+            {{/each}}
+          </ul>
         
+          </td>
+          <td>
+            {{#if items}}
+                {{> judging}}
+            {{/if}}
           </td>
         </tr>
       </table>
+</template>
+
+<template name='judging'>
+  <table>
+    <thead>
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>D</th>
+      <th>E</th>
+      <th>F</th>
+      <th>G</th>
+      <th>H</th>
+      <th>I</th>
+      <th>J</th>
+      <th>Total</th>
+    </thead>
+    <tbody>
+      {{#each entries}}
+      <tr>
+        <td>{{this}}</td>
+        <td>{{voice this 'A'}}</td>
+        <td>{{voice this 'B'}}</td>
+        <td>{{voice this 'C'}}</td>
+        <td>{{voice this 'D'}}</td>
+        <td>{{voice this 'E'}}</td>
+        <td>{{voice this 'F'}}</td>
+        <td>{{voice this 'G'}}</td>
+        <td>{{voice this 'H'}}</td>
+        <td>{{voice this 'I'}}</td>
+        <td>{{voice this 'J'}}</td>
+        <td>{{total this}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
 </template>

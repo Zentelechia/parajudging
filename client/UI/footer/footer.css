@@ -1,10 +1,10 @@
 .btn {
   border: 2px solid black;
   padding: 10px;
-  margin: 5vw;
+  margin: 2vw;
   color: white;
   font-size: 2em;
-  min-width: 10vw;
+  min-width: 7vw;
   min-height: 7vh; 
   font-weight: 900;
   -webkit-text-stroke-width: 1px;
@@ -27,6 +27,7 @@
   bottom: 0px;
   left: 0px;
   height: 20vh;
+  width: 100vw;
 }
 .hidden {
   display: none;

@@ -1,6 +1,58 @@
 .active_true {
-  background-color: lightgreen
+  background-color: rgb(96, 255, 96) !important;
 }
 #activator td {
   vertical-align: top;
 }
+.activateItem, .activateElement {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: none;
+}
+.h1center {
+  width/: 100%;
+  text-align: center;
+}
+li.inline.winner {
+  background-color: green !important;
+  color: white !important;
+}
+.inline {
+   display: inline;
+   border: 1px solid black;
+   margin: 5px;
+   padding: 2px;
+   width: 20px;
+}
+.activated_true {
+  color: lightgray !important;
+}
+.sortable {
+  padding-left: 0;
+  margin-top: 5px;
+}
+li {
+  min-width: 200px;
+  min-height: 1em;
+  position: relative;
+  list-style:none;
+  cursor: move;
+  padding: 3px;
+}
+li:hover button {
+  display: inline-block;
+}
+.ui-state-highlight { height: 1.5em; line-height: 1.2em; }
+ li:hover {
+   background-color: lightgrey;
+ }
+ .abstractElement {
+   background-color: lightsteelblue !important;
+ }
+ .abstractElement input {
+   border: none;
+   outline: none;
+   background-color: lightsteelblue !important;
+
+ }

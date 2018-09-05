@@ -3,7 +3,10 @@ UI.registerHelper('eq',(a,b)=>{
 })
 Template.footer.helpers({
   heats(){
-    return Session.get('programItem')
+    api = ProgramItems.findOne({active: true})
+    if (api){
+      return ProgramItems.find({heat: {$lte: api.heat},program_element: api.program_element, Dance: api.Dance, level: api.level},{sort: {heat: 1}}).fetch()
+    }
   },
   activeHeat(){
     return Session.get('activeHeat')
@@ -17,22 +20,21 @@ Template.footer.events({
     Meteor.call('violation',{ item, judge })
   },
   'click .send'(){
-    item = Session.get('item')
-    judge = Session.get('judge')
-    participants = Session.get('selectParticipans')
-    selected = []
-    _.each(participants, p=>{if (p.selected) selected.push(p) })
-    Meteor.call('violation',Session.get('judge'))
+    Session.set("sended",true)
+    Meteor.call('send',Session.get('judge'))
 
   },
   'click .currentHeat'(){
-    Session.set('currentHeat',Session.get('activeHeat'))
+    api=ProgramItems.findOne({active: true})
+    if (api){
+      Session.set('heatToDisplay', api.heat)
+    }
   },
   'click .all'(){
     $('#heatSelector').show()
   },
   'click .heat'(e){
-    Session.set('heatToDisplay',e.currentTarget.id-1)
+    Session.set('heatToDisplay',+e.currentTarget.id)
     $('#heatSelector').hide()
 
   }

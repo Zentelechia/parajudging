@@ -1,11 +1,23 @@
 <template name="picker">
   {{> header}}
+  {{#unless sended}}
   {{#if isFinal}}
     {{> final}}
   {{else}}
+    {{#if GL}}
     {{> notFinal}}
+    {{else}}
+        {{> generalLook}}
+    {{/if}}
   {{/if}}
-  {{> footer}}
+  {{else}}
+  <div class="generalLook">
+    <h1>
+      Waiting for next program item 
+    </h1>
+  </div>
+    {{/unless}}
+    {{> footer}}
   {{> skill}}
   {{> numPad}}
 </template>
@@ -20,7 +32,7 @@
     {{#each participants}}
       <tr>
         <td class="participantNumber">
-            {{number}}
+            {{this}}
         </td>
         <td class="score {{judge.function.first.type}}">
           {{score judge.function.first.type this}}
@@ -38,15 +50,17 @@
   <div class="notFinal">
 
     {{#each participants}}
-    <div class="selector {{state}} maybe_{{maybe}} selected_{{selected}}" id="{{_id}}" >
-      {{number}}
+    <div class="selector {{state}} {{class this}}" id="{{this}}" >
+      {{this}}
     </div>
     {{/each}}
-    {{#if toSelect}}
     <div class="toSelect">
       Select {{toSelect}} number(s)  
+    <!-- {{#if toSelect}}
+      {{else}}
+      You can send results
+      {{/if}} -->
     </div>
-    {{/if}}
   </div>
   </template>
   
@@ -75,4 +89,13 @@
 
       </table>
     </div>
+  </template>
+
+  <template name="generalLook">
+<div class="generalLook">
+<h1>
+  General look. Just watch
+
+</h1>
+</div>
   </template>

@@ -1,5 +1,11 @@
 <template name="header">
-  <span class="switch">final</span>
   <span class="judge">{{judge.name}} ({{judge.letter}})</span>
-  <h1 class="header">{{title}}</h1>
+  {{#with title}}
+  {{#if heat}}
+  <span class="switch">
+    Heat {{heat}}
+  </span>
+  {{/if}}
+  <h1 class="header">{{Description}}<br>{{Event}} {{Program}} {{Gender}} {{Class}} {{Dance}} {{Level}}</h1>
+  {{/with}}
 </template>

@@ -71,3 +71,13 @@
 .button {
   background-color: blue !important;
 }
+.generalLook {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+}
+.generalLook h1 {
+  width: 100%;
+  text-align: center;
+}
