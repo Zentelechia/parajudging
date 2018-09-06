@@ -2,47 +2,64 @@
   {{> header}}
   {{#unless sended}}
   {{#if isFinal}}
-    {{> final}}
+  {{> final}}
   {{else}}
-    {{#if GL}}
-    {{> notFinal}}
-    {{else}}
-        {{> generalLook}}
-    {{/if}}
+  {{#if GL}}
+  {{> notFinal}}
+  {{else}}
+  {{> generalLook}}
+  {{/if}}
   {{/if}}
   {{else}}
   <div class="generalLook">
     <h1>
-      Waiting for next program item 
+      Waiting for next program item
     </h1>
   </div>
-    {{/unless}}
-    {{> footer}}
+  {{/unless}}
+  {{> footer}}
   {{> skill}}
   {{> numPad}}
 </template>
 
 <template name="final">
-  <table>
-    <thead>
-      <th></th>
-      <th class="function>">{{judge.function.first.short}}</th>
-      <th class="function>">{{judge.function.second.short}}</th>
+  <div class="finalContainer">
+
+    <table>
+      <thead>
+        <th class="function">Number</th>
+        {{#unless technic}}
+          <th class="function">{{judge.first.short}}</th>
+         <th class="function">{{judge.second.short}}</th>
+        {{else}}
+          <th class="function">TS</th>
+          <th class="function">CP</th>
+        {{/unless}}
     </thead>
     {{#each participants}}
-      <tr>
-        <td class="participantNumber">
-            {{this}}
-        </td>
-        <td class="score {{judge.function.first.type}}">
-          {{score judge.function.first.type this}}
+    <tr id="{{this}}">
+      <td class="participantNumber">
+        {{this}}
       </td>
-      <td class="score {{judge.function.second.type}}" >
-        {{score judge.function.second.type this}}
-    </td>
+      {{#unless technic}}
+        <td type="{{judge.first.short}}" class="score {{judge.first.type}}">
+          {{score judge.first.short this}}
+        </td>
+        <td type="{{judge.second.short}}" class="score {{judge.second.type}}">
+          {{score judge.second.short this}}
+        </td>
+      {{else}}
+        <td type="TS" class="score numpad">
+          {{score "TS" this}}
+        </td>
+        <td type="CP" class="score numpad">
+          {{score "CP" this}}
+        </td>
+      {{/unless}}
       </tr>
     {{/each}}
   </table>
+</div>
 </template>
 
 
@@ -50,52 +67,86 @@
   <div class="notFinal">
 
     {{#each participants}}
-    <div class="selector {{state}} {{class this}}" id="{{this}}" >
+    <div class="selector {{state}} {{class this}}" id="{{this}}">
       {{this}}
     </div>
     {{/each}}
     <div class="toSelect">
-      Select {{toSelect}} number(s)  
-    <!-- {{#if toSelect}}
+      Select {{toSelect}} number(s)
+      <!-- {{#if toSelect}}
       {{else}}
       You can send results
       {{/if}} -->
     </div>
   </div>
-  </template>
-  
+</template>
+
 
 
 <template name="numPad">
   <div id="numPad" class="numPad hidden">
     <table cellspacing="10">
-      <tr><td>1</td><td>2</td><td>3</td></tr>
-      <tr><td>4</td><td>5</td><td>6</td></tr>
-      <tr><td>7</td><td>8</td><td>9</td></tr>
-      <tr><td class="nob"></td><td>0</td><td class="nob"></td></tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td class="nob"></td>
+        <td>0</td>
+        <td class="nob"></td>
+      </tr>
     </table>
   </div>
 </template>
 
 <template name="skill">
-    <div id="skill" class="numPad hidden">
-      <table cellspacing="10">
-        <tr><td>1.00</td><td>1.05</td></tr>
-        <tr><td>1.10</td><td>1.15</td></tr>
-        <tr><td>1.20</td><td>1.25</td></tr>
-        <tr><td>1.30</td><td>1.35</td></tr>
-        <tr><td>1.40</td><td>1.45</td></tr>
-        <tr><td>1.50</td><td class="nob"></td></tr>
+  <div id="skill" class="numPad hidden">
+    <table cellspacing="10">
+      <tr>
+        <td>1.00</td>
+        <td>1.05</td>
+      </tr>
+      <tr>
+        <td>1.10</td>
+        <td>1.15</td>
+      </tr>
+      <tr>
+        <td>1.20</td>
+        <td>1.25</td>
+      </tr>
+      <tr>
+        <td>1.30</td>
+        <td>1.35</td>
+      </tr>
+      <tr>
+        <td>1.40</td>
+        <td>1.45</td>
+      </tr>
+      <tr>
+        <td>1.50</td>
+        <td class="nob"></td>
+      </tr>
 
-      </table>
-    </div>
-  </template>
+    </table>
+  </div>
+</template>
 
-  <template name="generalLook">
-<div class="generalLook">
-<h1>
-  General look. Just watch
+<template name="generalLook">
+  <div class="generalLook">
+    <h1>
+      General look. Just watch
 
-</h1>
-</div>
-  </template>
+    </h1>
+  </div>
+</template>

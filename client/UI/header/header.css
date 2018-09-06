@@ -1,7 +1,7 @@
 .judge {
   position: absolute;
   top: 0px;
-  right: 0px;
+  left: 0px;
   background-color: black;
   color: white;
   font-weight: 900;
@@ -16,7 +16,7 @@
 .switch {
   position: absolute;
   top: 0px;
-  left: 0px;
+  right: 0px;
   font-size: 2em;
   padding: 10px;
   background-color: black;

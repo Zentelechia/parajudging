@@ -1,18 +1,29 @@
 Meteor.methods({
   choose({
     judge,
-    number
+    Entry
   }) {
     api = ProgramItems.findOne({
       active: true
     })
+
+    Results.insert({
+      Entry,
+      judge,
+      vote: 1,
+      program_element: api.program_element,
+      Dance: api.Dance,
+      Level: api.Level,
+    })
+
+
     pi = ProgramItems.findOne({
       program_element: api.program_element,
       Dance: api.Dance,
-      level: api.level,
-      Entries: number
+      Level: api.Level,
+      Entries: Entry
     })
-    judging = judge + "" + number
+    judging = judge + "" + Entry
 
     if (_.contains(pi.maybe, judging)) {
       ProgramItems.update(pi._id, {
@@ -39,7 +50,7 @@ Meteor.methods({
     ppi = ProgramItems.find({
       program_element: api.program_element,
       Dance: api.Dance,
-      level: api.level,
+      Level: api.Level,
     }).fetch()
     selected = 0
     toSelect = 0
@@ -52,59 +63,78 @@ Meteor.methods({
       })
     })
 
-
-
-    pp = ProgramItems.find({
+     return toSelect - selected
+  },
+ score({judge, Entry, value,  type}){
+    console.log(arguments)
+    api = ProgramItems.findOne({
+      active: true
+    })
+    Results.remove({
+      type,
+      judge,
+      Entry,
       program_element: api.program_element,
       Dance: api.Dance,
-      level: api.level
+      Level: api.Level
+    })
+    id = Results.insert({
+      type, 
+      judge,
+      value,
+      Entry,
+      program_element: api.program_element,
+      Dance: api.Dance,
+      Level: api.Level,
+    })
+    console.log(id)
+ },
+  vote() {
+    judges = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
+    api = ProgramItems.findOne({
+      active: true
+    })
+    pi = ProgramItems.find({
+      program_element: api.program_element,
+      Dance: api.Dance,
+      Level: api.Level
     }).fetch()
-
     ProgramItems.update({
       program_element: api.program_element,
       Dance: api.Dance,
-      level: api.level
+      Level: api.Level
     }, {
       $unset: {
-        winners: null
+        selected: null,
+        maybe: null
       }
     }, {
       multi: true
     })
-
-    winners = {}
-    _.each(pp, p => {
-      _.each(p.selected, s => {
-        if (!winners[s.slice(1)]) {
-          winners[s.slice(1)] = 0
-        }
-        winners[s.slice(1)]++
-      })
-    })
-    ww = []
-    _.each(_.keys(winners), k => {
-      ww.push({
-        number: k,
-        score: winners[k]
-      })
-    })
-    ww = _.sortBy(ww, w => {
-      return -w.score
-    })
-    ww = ww.slice(0, toSelect)
-    ww = _.map(ww, w => {
-      return w.number
-    })
-    ProgramItems.update({
+    Results.remove({
       program_element: api.program_element,
       Dance: api.Dance,
-      level: api.level
-    }, {
-      $set: {
-        winners: ww
-      }
+      Level: api.Level
     })
-    console.log(ww)
-    return toSelect - selected
+    toSelect = api.On_next_round
+    entries = _.flatten(_.map(pi, p => {
+      return p.Entries
+    }))
+    console.log(toSelect)
+    console.log(entries)
+    _.each(judges, judge => {
+      var ent = _.clone(entries)
+      // console.log(ent)
+      for (var i = 0; i < toSelect; i++) {
+        index = ~~(Math.random() * (ent.length))
+        Entry = ent.splice(index, 1)[0]
+
+        Meteor.call("choose", {
+          judge,
+          Entry
+        })
+      }
+
+    })
   }
 })

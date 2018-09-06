@@ -26,7 +26,7 @@
             <li id="{{item._id}}" class="active_{{item.active}} activated_{{item.activated}} ui-state-default">
               {{item.Dance}} {{item.Level}} {{#if item.heat}} Heat {{item.heat}} {{/if}} 
               <div>
-                <ul class="sortable">{{#each item.Entries}}<li class="inline {{winner item._id  this}}">{{this}}</li>{{/each}}</ul>
+                <ul class="sortable">{{#each item.Entries}}<li class="inline">{{this}}</li>{{/each}}</ul>
               </div>
               <button class="activateItem">Activate</button>
             </li>
@@ -34,19 +34,27 @@
           </ul>
         
           </td>
+          {{#unless generalLook}}
           <td>
             {{#if items}}
                 {{> judging}}
             {{/if}}
           </td>
+          <td width="50px"></td>
+          <td>
+            {{#if items}}
+               {{> notFinalResults}}
+            {{/if}}
+          </td>
+          {{/unless}}
         </tr>
       </table>
 </template>
 
 <template name='judging'>
-  <table>
+  <table class="itemResults_">
     <thead>
-      <th></th>
+      <th>Athlete</th>
       <th>A</th>
       <th>B</th>
       <th>C</th>
@@ -79,3 +87,30 @@
     </tbody>
   </table>
 </template>
+
+<template name='notFinalResults'>
+    <table>
+      <thead>
+        <th>#</th>
+        <th>Athlete</th>
+       {{#each dances}}
+        <th>{{firstLetter this }}</th>
+       {{/each}}
+        <th>Total</th>
+      </thead>
+      <tbody>
+        {{#each entry in entries}}
+        <tr class="last_{{eq entry.i onNextRound}} notFinalResultsRow" id="{{entry.Entry}}">
+          <td>{{entry.i}}</td>
+          <td>{{entry.Entry}}</td>
+          {{#each dance in dances}}
+          <td>{{inDance entry dance}}</td>
+          {{/each}}
+          <td>{{entry.total}}</td>
+          <td><button>On next round</button></td>
+
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </template>

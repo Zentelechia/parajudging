@@ -5,7 +5,7 @@ Template.footer.helpers({
   heats(){
     api = ProgramItems.findOne({active: true})
     if (api){
-      return ProgramItems.find({heat: {$lte: api.heat},program_element: api.program_element, Dance: api.Dance, level: api.level},{sort: {heat: 1}}).fetch()
+      return ProgramItems.find({heat: {$lte: api.heat},program_element: api.program_element, Dance: api.Dance, Level: api.Level},{sort: {heat: 1}}).fetch()
     }
   },
   activeHeat(){

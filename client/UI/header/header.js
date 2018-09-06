@@ -11,7 +11,7 @@ Template.header.helpers({
   }
 })
 Template.header.events({
-'click .judge'(){
+'dblclick .judge'(){
   Session.set('judge',null)
   Router.go('/')
 },

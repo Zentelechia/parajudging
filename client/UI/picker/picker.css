@@ -3,7 +3,7 @@
   bottom: 10vh;
   right: 0px;
   height: 80vh;
-  width: 30vw;
+  width: 25vw;
   border: 2px solid black;
 }
 .numPad table {
@@ -11,11 +11,14 @@
   height: 100%;
  background-color: white;
 }
+.numPad table td {
+  border: 1px solid black;
+}
 .selectedScore {
   background-color: green !important;
 }
-.function {
-  font-size: 1em;
+th.function {
+  font-size: 2em !important;
   font-weight: 700;
 }
 .numPad td, .score {
@@ -30,6 +33,7 @@
 }
 .score {
   min-width: 20vw;
+  border: 2px solid black;
 }
 .nob {
   background: none !important;
@@ -80,4 +84,10 @@
 .generalLook h1 {
   width: 100%;
   text-align: center;
+}
+
+.finalContainer {
+  height: 72vh;
+  overflow-y: scroll;
+
 }

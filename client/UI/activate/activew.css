@@ -56,3 +56,21 @@ li:hover button {
    background-color: lightsteelblue !important;
 
  }
+ .itemResults {
+   border-collapse: collapse;
+ } 
+ .itemResults td {
+   border: 1px solid black;
+ }
+ .notFinalResultsRow:hover td {
+border-bottom:3px solid black !important;
+ }
+ .last_true {
+   border-bottom: 3px solid red !important;
+ }
+ table {
+   border-collapse: collapse;
+ }
+ td {
+   border-width: 3px
+ }

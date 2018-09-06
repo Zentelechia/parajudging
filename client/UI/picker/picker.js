@@ -1,154 +1,8 @@
-
-notFinal = [{
-    heat: 1,
-    participants: [
-
-      {
-        _id: "123",
-        number: 23,
-        maybe: true
-      },
-      {
-        _id: "1123",
-        number: 56,
-        maybe: true
-      },
-      {
-        _id: "11123",
-        number: 11
-      },
-      {
-        _id: "2123",
-        number: 24,
-        selected: true
-      },
-      {
-        _id: "3123",
-        number: 34
-      },
-      {
-        _id: "4123",
-        number: 99
-      },
-      {
-        _id: "5123",
-        number: 20
-      },
-      {
-        _id: "6123",
-        number: 40
-      }
-    ]
-  },
-  {
-    heat: 2,
-    participants: [
-
-      {
-        _id: "123",
-        number: 223,
-        maybe: true
-      },
-      {
-        _id: "1123",
-        number: 256,
-        maybe: true
-      },
-      {
-        _id: "11123",
-        number: 211
-      },
-      {
-        _id: "2123",
-        number: 224,
-        selected: true
-      },
-      {
-        _id: "3123",
-        number: 234
-      },
-      {
-        _id: "4123",
-        number: 299
-      },
-      {
-        _id: "5123",
-        number: 220
-      },
-      {
-        _id: "6123",
-        number: 240
-      }
-    ]
-  },
-  {
-    heat: 3,
-    participants: [
-
-      {
-        _id: "123",
-        number: 323,
-        maybe: true
-      },
-      {
-        _id: "1123",
-        number: 356,
-        maybe: true
-      },
-      {
-        _id: "11123",
-        number: 11
-      },
-      {
-        _id: "2123",
-        number: 324,
-        selected: true
-      },
-      {
-        _id: "3123",
-        number: 334
-      },
-      {
-        _id: "4123",
-        number: 399
-      },
-      {
-        _id: "5123",
-        number: 320
-      },
-      {
-        _id: "6123",
-        number: 340
-      }
-    ]
-  }
-]
-final = [{
-  heat: 1,
-  participants: [
-
-    {
-      _id: "123",
-      number: 23,
-      maybe: true
-    },
-    {
-      _id: "1123",
-      number: 56,
-      maybe: true
-    },
-    {
-      _id: "11123",
-      number: 11
-    }
-  ]
-}]
-
 Template.final.events({
   'click .score'(e) {
     $('.score').removeClass('selectedScore')
     $(e.currentTarget).addClass('selectedScore')
-
+    Session.set('numPads',null)
     if ($(e.currentTarget).hasClass('numpad')) {
       $("#skill").hide()
       $("#numPad").show()
@@ -160,13 +14,27 @@ Template.final.events({
   }
 })
 Template.final.onRendered(function () {
-  $(".currentHeat").hide()
-  $(".all").hide()
+  $(".currentHeat").show()
+  $(".all").show()
 })
 Template.skill.events({
   'click td'(e) {
     var $e = $(e.currentTarget)
-    $(".selectedScore").text($e.text())
+    
+    judge = Session.get("judge").letter
+    type = $(".selectedScore").attr('type')
+    Entry =  +$(".selectedScore").parent().attr('id')
+    value = +$e.text()
+    Meteor.call("score", {
+      judge,
+      type,
+      value,
+      Entry
+    })
+
+
+
+    // $(".selectedScore").text($e.text())
     $e.addClass('button')
     setTimeout(() => {
       $e.removeClass('button')
@@ -180,8 +48,22 @@ Template.numPad.events({
     score = Session.get("numPads")
     if (!score) {
       Session.set("numPads", $e.text())
+      setTimeout(() => {
+        Session.set("numPads", null)
+      }, 1000)
+
     } else {
-      $(".selectedScore").text(score + "." + $e.text())
+      judge = Session.get("judge").letter
+      type = $(".selectedScore").attr('type')
+      value = +(score + "." + $e.text())
+      Entry =  +$(".selectedScore").parent().attr('id')
+      Meteor.call("score", {
+        judge,
+        type,
+        value,
+        Entry
+      })
+      // $(".selectedScore").text(value)
       Session.set("numPads", null)
 
     }
@@ -193,33 +75,26 @@ Template.numPad.events({
   }
 })
 Template.picker.onRendered(() => {
+  Tracker.autorun(function () {
+    pi = ProgramItems.findOne({
+      active: true
+    })
+    if (pi && pi._id != Session.get("previousItem")) {
+      Session.set("previousItem", pi._id)
+      Session.set('toSelect', pi.On_next_round)
+      Session.set("sended", false)
+      Session.set("heatToDisplay", pi.heat || 1)
+      Session.set("totalSelect", pi.On_next_round)
+      Session.set("activeHeat", pi.heat)
+      }
+    })
+ })
 
-  Tracker.autorun(function(){
-    pi = ProgramItems.findOne({active: true})
-    if (pi && pi._id!=Session.get("previousItem")){
-      Session.set("previousItem",pi._id)
-      Session.set('toSelect',pi.On_next_round)
-      Session.set("sended",false)
-      Session.set("heatToDisplay", pi.heat||1)
-    }
-  })
-
-  
-  pi = ProgramItems.findOne({
-    active: true
-  })
-  if (pi) {
-
-    Session.set("totalSelect", pi.On_next_round)
-    Session.set("heatToDisplay", pi.heat)
-    Session.set("activeHeat", pi.heat)
-  }
-})
 Template.picker.helpers({
-  toSelect(){
-    return 
+  toSelect() {
+    return
   },
-  sended(){
+  sended() {
     return Session.get('sended')
   },
   GL() {
@@ -241,14 +116,25 @@ Template.picker.helpers({
   }
 })
 Template.final.helpers({
+  technic(){
+    pi = ProgramItems.findOne({
+      active: true
+    })
+    if (pi) {
+      return pi.Level
+    }
+  },
+
   judge() {
     const judge = Session.get("judge")
     const functions = JudgesFunctions.findOne({
       letter: judge.letter
     })
-    return { ...judge,
+    fullJudge = { ...judge,
       ...functions
     }
+    Session.set("fullJudge", fullJudge)
+    return fullJudge
   },
   participants() {
     pi = ProgramItems.findOne({
@@ -256,12 +142,15 @@ Template.final.helpers({
     })
     if (pi) {
       heat = Session.get("heatToDisplay") || pi.heat
-      return ProgramItems.findOne({
+      pii =ProgramItems.findOne({
         program_element: pi.program_element,
         Dance: pi.Dance,
         Level: pi.Level,
         heat
-      }).Entries;
+      })
+      if (pii){
+        return pii.Entries
+      }
     }
   }
 })
@@ -301,9 +190,26 @@ Template.notFinal.helpers({
   }
 })
 
-UI.registerHelper('score', function (scoreType, participant) {
+UI.registerHelper('score', function (type, Entry) {
+  judge = Session.get('judge').letter
+  api = ProgramItems.findOne({ 
+    active: true  
 
-  return scoreType == 'skill' ? "1.0" : "5.0"
+  })
+  Entry=+Entry
+  // console.log(arguments)
+  score = Results.findOne({
+    type,
+    judge,
+    Entry,
+    program_element: api.program_element,
+    Dance: api.Dance,
+    Level: api.Level
+  })
+    return (score && score.value ) || "-.-"
+
+
+  // scoreType == 'skill' ? "1.0" : "5.0"
 });
 Template.notFinal.events({
   'click .selector'(e) {
@@ -312,10 +218,10 @@ Template.notFinal.events({
 
 
       const judge = Session.get("judge").letter
-      const number = e.currentTarget.id
+      const Entry = e.currentTarget.id
       Meteor.call("choose", {
         judge,
-        number
+        Entry
       }, function (e, r) {
         if (!e) {
           Session.set("toSelect", r)
@@ -338,7 +244,7 @@ UI.registerHelper('class', (number) => {
   if (ProgramItems.findOne({
       program_element: pi.program_element,
       Dance: pi.Dance,
-      level: pi.level,
+      Level: pi.Level,
       maybe: judge
     })) {
     return 'maybe_true'
@@ -346,7 +252,7 @@ UI.registerHelper('class', (number) => {
   if (ProgramItems.findOne({
       program_element: pi.program_element,
       Dance: pi.Dance,
-      level: pi.level,
+      Level: pi.Level,
       selected: judge
     })) {
     return 'selected_true'

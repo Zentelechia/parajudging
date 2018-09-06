@@ -4,11 +4,12 @@ const programItemsURL=`${zohoApp}ProgramsItems/gSRsVvBbXU4UE9kRErP0aMwNvVSF0zm7J
 const programElementsURL=`${zohoApp}Program/zgrDy3W8nhrXSAKAAaskyNwwrtDUb5CUu1p4wYZvSxrdkaVy7O5NmGjNtPZvmGb4uPgBD6e5eJ5TxGF0uYk9armFvPVrrrC2aVXr`
 // const judgesFunctionsURL=`${zohoApp}Judges_functions_Report/P6XyjjYZqUF2RrYr7syqFCCEvznzM4P6RbwDx2vTdOK9KQEteAZtSrQuMgxQzH5PdTsjZ4qV3YYyCDO11FD84kHx9649UGNnYjHY`
 var flag=true
-    flag = false 
+    flag = false
 
 
 
 
+// Results.remove({})
 String.prototype.replaceAll = function(search, replace){
   return this.split(search).join(replace);
 }
