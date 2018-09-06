@@ -20,10 +20,18 @@ Template.judgingFinal.helpers({
   }
 })
 Template.judgingFinal.events({
-  'change input'(e){
-      value =$(e.currentTarget).val()
-      Entry=$(e.currentTarget).parent().attr('id')
-      Meteor.call('penalty', {Entry, value})
+  'click #total'() {
+    $('.total').each(function (i, e) {
+      $(e).text((+$(e).siblings('.TSR').text() + $(e).siblings('.CPR').text()) * $(e).siblings('.DLR').text())
+    })
+  },
+  'change input'(e) {
+    value = $(e.currentTarget).val()
+    Entry = $(e.currentTarget).parent().attr('id')
+    Meteor.call('penalty', {
+      Entry,
+      value
+    })
   }
 })
 UI.registerHelper('finalScore', function (judge, type, Entry) {
@@ -79,13 +87,15 @@ UI.registerHelper('finalScoreRes', function (type, Entry) {
       type,
       Entry
     }).fetch()
-    if (rr.length>3) {
+    if (rr.length > 3) {
 
       results = _.map(rr, r => {
         return r.value
       })
-      results = _.sortBy(results,r=>{return r})
-      results = results.slice(1,results.length-1)
+      results = _.sortBy(results, r => {
+        return r
+      })
+      results = results.slice(1, results.length - 1)
       sum = 0
       _.each(results, r => {
         sum += r

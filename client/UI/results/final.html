@@ -48,15 +48,15 @@
             <td>{{finalScore 'E' 'TS' this}}</td>
             <td>{{finalScore 'G' 'TS' this}}</td>
             <td>{{finalScore 'J' 'TS' this}}</td>
-            <td>{{finalScoreRes 'TS' this}}</td>
+            <td class='TSR'>{{finalScoreRes 'TS' this}}</td>
 
             <td>{{finalScore 'A' 'CP' this}}</td>
             <td>{{finalScore 'C' 'CP' this}}</td>
-            <td>{{finalScore 'D' 'CP' this}}</td>
+            <td >{{finalScore 'D' 'CP' this}}</td>
             <td>{{finalScore 'E' 'CP' this}}</td>
             <td>{{finalScore 'F' 'CP' this}}</td>
             <td>{{finalScore 'H' 'CP' this}}</td>
-            <td>{{finalScoreRes 'CP' this}}</td>
+            <td class='CPR'>{{finalScoreRes 'CP' this}}</td>
 
             <td>{{finalScore 'B' 'DL' this}}</td>
             <td>{{finalScore 'D' 'DL' this}}</td>
@@ -64,12 +64,14 @@
             <td>{{finalScore 'G' 'DL' this}}</td>
             <td>{{finalScore 'H' 'DL' this}}</td>
             <td>{{finalScore 'J' 'DL' this}}</td>
-            <td>{{finalScoreRes 'DL' this}}</td>
+            <td class='DLR'>{{finalScoreRes 'DL' this}}</td>
 
             <td><input class="penalty" value={{penalty this}}></td>
-            <td>{{finalScoreTot this}}</td>
+            <td class="total">{{finalScoreTot this}}</td>
+      
         </tr>
         {{/each}}
       </tbody>
     </table>
+    <button id="total">Calc total</button>
   </template>
