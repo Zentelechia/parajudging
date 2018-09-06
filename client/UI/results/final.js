@@ -22,8 +22,11 @@ Template.judgingFinal.helpers({
 Template.judgingFinal.events({
   'click #total'() {
     $('.total').each(function (i, e) {
-      $(e).text((+$(e).siblings('.TSR').text() + $(e).siblings('.CPR').text()) * $(e).siblings('.DLR').text())
-    })
+      TSR=+$(e).siblings('.TSR').text()
+      CPR=+$(e).siblings('.CPR').text()
+      DLR=+$(e).siblings('.DLR').text()
+        $(e).text(((TSR+CPR)*DLR).toFixed(3) )
+      })
   },
   'change input'(e) {
     value = $(e.currentTarget).val()
