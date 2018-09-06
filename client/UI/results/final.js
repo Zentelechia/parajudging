@@ -19,7 +19,7 @@ Template.judgingFinal.helpers({
     }
   }
 })
-UI.registerHelper('finalScore', function(judge, Entry) {
+UI.registerHelper('finalScore', function(judge, type, Entry) {
   pi = ProgramItems.findOne({
     active: true
   })
@@ -29,6 +29,7 @@ UI.registerHelper('finalScore', function(judge, Entry) {
       program_element: pi.program_element,
       Dance: pi.Dance,
       Level: pi.Level,
+      type,
       judge,
       Entry
     })
@@ -39,7 +40,7 @@ UI.registerHelper('finalScore', function(judge, Entry) {
   
 })
 
-UI.registerHelper('finalScoreRes', function(argument) {
+UI.registerHelper('finalScoreRes', function(type, Entry) {
   
 })
 
