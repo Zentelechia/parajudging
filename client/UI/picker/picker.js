@@ -2,7 +2,7 @@ Template.final.events({
   'click .score'(e) {
     $('.score').removeClass('selectedScore')
     $(e.currentTarget).addClass('selectedScore')
-    Session.set('numPads',null)
+    Session.set('numPads', null)
     if ($(e.currentTarget).hasClass('numpad')) {
       $("#skill").hide()
       $("#numPad").show()
@@ -20,10 +20,10 @@ Template.final.onRendered(function () {
 Template.skill.events({
   'click td'(e) {
     var $e = $(e.currentTarget)
-    
+
     judge = Session.get("judge").letter
     type = $(".selectedScore").attr('type')
-    Entry =  +$(".selectedScore").parent().attr('id')
+    Entry = +$(".selectedScore").parent().attr('id')
     value = +$e.text()
     Meteor.call("score", {
       judge,
@@ -56,7 +56,7 @@ Template.numPad.events({
       judge = Session.get("judge").letter
       type = $(".selectedScore").attr('type')
       value = +(score + "." + $e.text())
-      Entry =  +$(".selectedScore").parent().attr('id')
+      Entry = +$(".selectedScore").parent().attr('id')
       Meteor.call("score", {
         judge,
         type,
@@ -86,14 +86,11 @@ Template.picker.onRendered(() => {
       Session.set("heatToDisplay", pi.heat || 1)
       Session.set("totalSelect", pi.On_next_round)
       Session.set("activeHeat", pi.heat)
-      }
-    })
- })
+    }
+  })
+})
 
 Template.picker.helpers({
-  toSelect() {
-    return
-  },
   sended() {
     return Session.get('sended')
   },
@@ -116,7 +113,7 @@ Template.picker.helpers({
   }
 })
 Template.final.helpers({
-  technic(){
+  technic() {
     pi = ProgramItems.findOne({
       active: true
     })
@@ -142,13 +139,13 @@ Template.final.helpers({
     })
     if (pi) {
       heat = Session.get("heatToDisplay") || pi.heat
-      pii =ProgramItems.findOne({
+      pii = ProgramItems.findOne({
         program_element: pi.program_element,
         Dance: pi.Dance,
         Level: pi.Level,
         heat
       })
-      if (pii){
+      if (pii) {
         return pii.Entries
       }
     }
@@ -164,15 +161,30 @@ Template.notFinal.onRendered(() => {
 })
 Template.notFinal.helpers({
   toSelect() {
-    ts = Session.get('toSelect')
-    if (ts === 0) {
-      $(".send").show()
-    } else {
-      $(".send").hide()
+    pi = ProgramItems.findOne({
+      active: true
+    })
+    judge = Session.get('judge')
+    if (pi && judge) {
+      judge = judge.letter
+      selected = Results.find({
+        program_element: pi.program_element,
+        Dance: pi.Dance,
+        Level: pi.Level,
+        value: 'selected',
+        judge
+      }).count()
+      toSelect = pi.On_next_round - selected
+      Session.set('toSelect', toSelect)
+      if (!toSelect) {
+        $('.send').show()
+      }
+      else {
+        $('.send').hide()
 
+      }
+      return toSelect
     }
-
-    return Session.get('toSelect')
   },
   participants() {
     pi = ProgramItems.findOne({
@@ -192,11 +204,11 @@ Template.notFinal.helpers({
 
 UI.registerHelper('score', function (type, Entry) {
   judge = Session.get('judge').letter
-  api = ProgramItems.findOne({ 
-    active: true  
+  api = ProgramItems.findOne({
+    active: true
 
   })
-  Entry=+Entry
+  Entry = +Entry
   // console.log(arguments)
   score = Results.findOne({
     type,
@@ -206,7 +218,7 @@ UI.registerHelper('score', function (type, Entry) {
     Dance: api.Dance,
     Level: api.Level
   })
-    return (score && score.value ) || "-.-"
+  return (score && score.value) || "-.-"
 
 
   // scoreType == 'skill' ? "1.0" : "5.0"
@@ -214,48 +226,48 @@ UI.registerHelper('score', function (type, Entry) {
 Template.notFinal.events({
   'click .selector'(e) {
     toSelect = Session.get("toSelect")
-    if (toSelect > 0 || $(e.currentTarget).hasClass('selected_true')) {
+    if (toSelect > 0 || $(e.currentTarget).hasClass('selected')) {
 
 
       const judge = Session.get("judge").letter
-      const Entry = e.currentTarget.id
-      Meteor.call("choose", {
+      const Entry = +e.currentTarget.id
+      value = 'selected'
+      if ($(e.currentTarget).hasClass('selected')) {
+        value = 'maybe'
+      }
+      if ($(e.currentTarget).hasClass('maybe')) {
+        value = ''
+      }
+      Meteor.call('choose', {
         judge,
-        Entry
-      }, function (e, r) {
-        if (!e) {
-          Session.set("toSelect", r)
-
-        } else {
-          console.log(e)
-        }
+        Entry,
+        value
       })
     }
   }
 
 })
 
-UI.registerHelper('class', (number) => {
+UI.registerHelper('class', (Entry) => {
   j = Session.get('judge')
   pi = ProgramItems.findOne({
     active: true
   })
-  judge = j.letter + "" + number
-  if (ProgramItems.findOne({
-      program_element: pi.program_element,
-      Dance: pi.Dance,
-      Level: pi.Level,
-      maybe: judge
-    })) {
-    return 'maybe_true'
-  }
-  if (ProgramItems.findOne({
-      program_element: pi.program_element,
-      Dance: pi.Dance,
-      Level: pi.Level,
-      selected: judge
-    })) {
-    return 'selected_true'
+  judge = j.letter
+  Entry = +Entry
+  console.log(judge, Entry)
+  console.log(pi)
+  result = Results.findOne({
+    program_element: pi.program_element,
+    Dance: pi.Dance,
+    Level: pi.Level,
+    judge,
+    Entry
+  })
+  console.log(result)
+
+  if (result) {
+    return result.value
   }
 })
 Template.generalLook.onRendered(() => {

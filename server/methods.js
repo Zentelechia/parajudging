@@ -1,70 +1,29 @@
 Meteor.methods({
   choose({
     judge,
-    Entry
+    Entry,
+    value
   }) {
+    console.log(arguments)
     api = ProgramItems.findOne({
       active: true
     })
-
+    Results.remove({
+      Entry,
+      judge,
+      program_element: api.program_element,
+      Dance: api.Dance,
+      Level: api.Level,
+    })
     Results.insert({
       Entry,
       judge,
-      vote: 1,
+      value,
       program_element: api.program_element,
       Dance: api.Dance,
-      Level: api.Level,
+      Level: api.Level
     })
-
-
-    pi = ProgramItems.findOne({
-      program_element: api.program_element,
-      Dance: api.Dance,
-      Level: api.Level,
-      Entries: Entry
-    })
-    judging = judge + "" + Entry
-
-    if (_.contains(pi.maybe, judging)) {
-      ProgramItems.update(pi._id, {
-        $pull: {
-          maybe: judging
-        }
-      })
-    } else if (_.contains(pi.selected, judging)) {
-      ProgramItems.update(pi._id, {
-        $push: {
-          maybe: judging
-        },
-        $pull: {
-          selected: judging
-        }
-      })
-    } else {
-      ProgramItems.update(pi._id, {
-        $push: {
-          selected: judging
-        }
-      })
-    }
-    ppi = ProgramItems.find({
-      program_element: api.program_element,
-      Dance: api.Dance,
-      Level: api.Level,
-    }).fetch()
-    selected = 0
-    toSelect = 0
-    _.each(ppi, pi => {
-      toSelect = pi.On_next_round
-      _.each(pi.selected, s => {
-        if (s && s.indexOf(judge) == 0) {
-          selected++
-        }
-      })
-    })
-
-     return toSelect - selected
-  },
+ },
  score({judge, Entry, value,  type}){
     console.log(arguments)
     api = ProgramItems.findOne({
@@ -99,18 +58,7 @@ Meteor.methods({
       Dance: api.Dance,
       Level: api.Level
     }).fetch()
-    ProgramItems.update({
-      program_element: api.program_element,
-      Dance: api.Dance,
-      Level: api.Level
-    }, {
-      $unset: {
-        selected: null,
-        maybe: null
-      }
-    }, {
-      multi: true
-    })
+    
     Results.remove({
       program_element: api.program_element,
       Dance: api.Dance,
@@ -127,11 +75,12 @@ Meteor.methods({
       // console.log(ent)
       for (var i = 0; i < toSelect; i++) {
         index = ~~(Math.random() * (ent.length))
-        Entry = ent.splice(index, 1)[0]
+        Entry = +ent.splice(index, 1)[0]
 
         Meteor.call("choose", {
           judge,
-          Entry
+          Entry,
+          value: 'selected'
         })
       }
 

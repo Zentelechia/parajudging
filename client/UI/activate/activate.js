@@ -319,22 +319,23 @@ Template.notFinalResults.helpers({
       }).map((r) => {
         return r.Dance
       }))
-      _.each(pe.Entries, e => {
+      _.each(pe.Entries, Entry => {
+        Entry = +Entry
         entry = {
-          Entry: e
+          Entry
         }
-        _.each(dances, d => {
-          entry[d] = Results.find({
+        _.each(dances, Dance => {
+          entry[Dance] = Results.find({
             program_element: pi.program_element,
-            Entry: e,
-            Dance: d,
-            vote: 1
+            Entry,
+            Dance,
+            value: 'selected'
           }).count()
         })
         entry.total = Results.find({
           program_element: pi.program_element,
-          Entry: e,
-          vote: 1
+          Entry,
+          value: 'selected'
         }).count()
         results.push(entry)
       })
@@ -358,10 +359,12 @@ UI.registerHelper('voice', (Entry, judge) => {
     active: true
   })
   if (pi) {
+    Entry = +Entry
     pp = Results.findOne({
       program_element: pi.program_element,
       Dance: pi.Dance,
       Level: pi.Level,
+      value: 'selected',
       judge,
       Entry
     })
@@ -373,11 +376,14 @@ UI.registerHelper('total', (Entry) => {
     active: true
   })
   if (pi) {
+    Entry = +Entry
     return Results.find({
       program_element: pi.program_element,
       Dance: pi.Dance,
       Level: pi.Level,
+      value: 'selected',
       Entry
+
     }).count()
   }
 

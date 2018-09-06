@@ -66,10 +66,10 @@ th.function {
   right: 5vw;
   font-size: 4em;
 }
-.maybe_true {
+.maybe {
   background-color: yellow !important;
 }
-.selected_true {
+.selected {
   background-color: green !important;
 }
 .button {
