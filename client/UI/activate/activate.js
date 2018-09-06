@@ -33,13 +33,17 @@ Template.activate.helpers({
       if (pi.Description.indexOf("General") == 1) {
         // Session.set('GL', true)
         return true
-      } else {
-        // Session.set('GL', false)
-        return false
-      }
+      } 
     }
   },
-
+  final(){
+    pi = ProgramElements.findOne({
+      active: true
+    })
+    if (pi) {
+      return pi.Marks
+    }
+  },
   elements() {
     return ProgramElements.find({}, {
       sort: {

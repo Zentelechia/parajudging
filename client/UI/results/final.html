@@ -1,0 +1,62 @@
+<template name='judgingFinal'>
+    <table class="bordered">
+      <thead>
+        <tr>
+          <th rowspan=2>Athlete</th>
+          <th colspan=5>TS</th>
+          <th rowspan=2>Res</th>
+          <th colspan=5>CP</th>
+          <th rowspan=2>Res</th>
+          <th colspan=4>DL</th>
+          <th rowspan=2>Res</th>
+          <th rowspan=2>Penalty</th>
+          <th rowspan=2>Total</th>
+
+        </tr>
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>E</th>
+            <th>G</th>
+            <th>A</th>
+            <th>C</th>
+            <th>D</th>
+            <th>E</th>
+            <th>F</th>
+            <th>B</th>
+            <th>D</th>
+            <th>F</th>
+            <th>G</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        {{#each entries}}
+        <tr>
+            <td>{{this}}</td>
+            <td>{{finalScore 'A' this}}</td>
+            <td>{{finalScore 'B' this}}</td>
+            <td>{{finalScore 'C' this}}</td>
+            <td>{{finalScore 'E' this}}</td>
+            <td>{{finalScore 'G' this}}</td>
+            <td>{{finalScoreRes 'TS' this}}</td>
+            <td>{{finalScore 'A' this}}</td>
+            <td>{{finalScore 'C' this}}</td>
+            <td>{{finalScore 'D' this}}</td>
+            <td>{{finalScore 'E' this}}</td>
+            <td>{{finalScore 'F' this}}</td>
+            <td>{{finalScoreRes 'CP' this}}</td>
+            <td>{{finalScore 'B' this}}</td>
+            <td>{{finalScore 'D' this}}</td>
+            <td>{{finalScore 'F' this}}</td>
+            <td>{{finalScore 'G' this}}</td>
+            <td>{{finalScoreRes 'DL' this}}</td>
+
+            <td><input class="penalty"></td>
+            <td>{{finalScoreTot this}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </template>

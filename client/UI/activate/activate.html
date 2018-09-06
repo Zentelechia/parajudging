@@ -6,49 +6,57 @@
         <div id="addElement">Add program element</div>
         <ul class="sortable">
           {{#each elements}}
-              {{#unless name}}
-              <li id="{{_id}}" class="active_{{active}} ui-state-default">
-                {{order}}) {{Event}} {{Program}} {{Gender}} {{Class}} [{{Description}}]
-              <button class="activateElement" >Activate</button>
-             </li>
-             {{else}}
-             <li id="{{_id}}" class="abstractElement active_{{active}} ui-state-default">
-              {{order}}) <input width="80%" value="{{name}}">
-             </li>
-             {{/unless}}
+          {{#unless name}}
+          <li id="{{_id}}" class="active_{{active}} ui-state-default">
+            {{order}}) {{Event}} {{Program}} {{Gender}} {{Class}} [{{Description}}]
+            <button class="activateElement">Activate</button>
+          </li>
+          {{else}}
+          <li id="{{_id}}" class="abstractElement active_{{active}} ui-state-default">
+            {{order}}) <input width="80%" value="{{name}}">
+          </li>
+          {{/unless}}
           {{/each}}
         </ul>
-        </td>
-        <td>
-          <ul>
+      </td>
+      <td>
+        <ul>
 
-            {{#each item in items}}
-            <li id="{{item._id}}" class="active_{{item.active}} activated_{{item.activated}} ui-state-default">
-              {{item.Dance}} {{item.Level}} {{#if item.heat}} Heat {{item.heat}} {{/if}} 
-              <div>
-                <ul class="sortable">{{#each item.Entries}}<li class="inline">{{this}}</li>{{/each}}</ul>
-              </div>
-              <button class="activateItem">Activate</button>
-            </li>
-            {{/each}}
-          </ul>
-        
-          </td>
-          {{#unless generalLook}}
-          <td>
-            {{#if items}}
-                {{> judging}}
-            {{/if}}
-          </td>
-          <td width="50px"></td>
-          <td>
-            {{#if items}}
-               {{> notFinalResults}}
-            {{/if}}
-          </td>
-          {{/unless}}
-        </tr>
-      </table>
+          {{#each item in items}}
+          <li id="{{item._id}}" class="active_{{item.active}} activated_{{item.activated}} ui-state-default">
+            {{item.Dance}} {{item.Level}} {{#if item.heat}} Heat {{item.heat}} {{/if}}
+            <div>
+              <ul class="sortable">{{#each item.Entries}}<li class="inline">{{this}}</li>{{/each}}</ul>
+            </div>
+            <button class="activateItem">Activate</button>
+          </li>
+          {{/each}}
+        </ul>
+
+      </td>
+      {{#unless generalLook}}
+      <td>
+        {{#if items}}
+        {{#if final}}
+        {{> judgingFinal}}
+        {{else}}
+        {{> judging}}
+        {{/if}}
+        {{/if}}
+      </td>
+      <td width="50px"></td>
+      <td>
+        {{#if items}}
+        {{#if final}}
+        <!-- {{> judgingFinal}} -->
+        {{else}}
+        {{> judging}}
+        {{/if}}
+        {{/if}}
+      </td>
+      {{/unless}}
+    </tr>
+  </table>
 </template>
 
 <template name='judging'>
@@ -89,28 +97,28 @@
 </template>
 
 <template name='notFinalResults'>
-    <table>
-      <thead>
-        <th>#</th>
-        <th>Athlete</th>
-       {{#each dances}}
-        <th>{{firstLetter this }}</th>
-       {{/each}}
-        <th>Total</th>
-      </thead>
-      <tbody>
-        {{#each entry in entries}}
-        <tr class="last_{{eq entry.i onNextRound}} notFinalResultsRow" id="{{entry.Entry}}">
-          <td>{{entry.i}}</td>
-          <td>{{entry.Entry}}</td>
-          {{#each dance in dances}}
-          <td>{{inDance entry dance}}</td>
-          {{/each}}
-          <td>{{entry.total}}</td>
-          <td><button>On next round</button></td>
-
-        </tr>
+  <table>
+    <thead>
+      <th>#</th>
+      <th>Athlete</th>
+      {{#each dances}}
+      <th>{{firstLetter this }}</th>
+      {{/each}}
+      <th>Total</th>
+    </thead>
+    <tbody>
+      {{#each entry in entries}}
+      <tr class="last_{{eq entry.i onNextRound}} notFinalResultsRow" id="{{entry.Entry}}">
+        <td>{{entry.i}}</td>
+        <td>{{entry.Entry}}</td>
+        {{#each dance in dances}}
+        <td>{{inDance entry dance}}</td>
         {{/each}}
-      </tbody>
-    </table>
-  </template>
+        <td>{{entry.total}}</td>
+        <td><button>On next round</button></td>
+
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</template>
