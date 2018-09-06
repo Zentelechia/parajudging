@@ -91,7 +91,7 @@ UI.registerHelper('finalScoreRes', function (type, Entry) {
         sum += r
       })
       sum = sum / results.length
-      return sum
+      return sum.toFixed(3)
     }
   }
 
