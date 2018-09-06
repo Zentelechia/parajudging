@@ -1,8 +1,20 @@
+Tracker.autorun(()=>{
+  Meteor.subscribe('dataByPin', Session.get('pin'))
+})
 Template.login.events({
-  'keyup #PIN'(){
-    j=Judges.findOne({ PIN: +$("#PIN").val() })
-    if (j){
-      Session.set("judge",j)
+  'keyup #PIN'() {
+    pin = $("#PIN").val()
+    if (pin.length > 4) {
+      Session.set("pin", +pin)
+    }
+  }
+})
+Template.login.helpers({
+  judge() {
+    j = Judges.findOne()
+    if (j) {
+      Session.set('judge', j)
+      console.log(j)
       Router.go('/picker')
     }
   }

@@ -10,9 +10,6 @@ Router.route('/', {
 Router.route('/picker', {
   name: 'picker',
   action: function() {
-    if (!Session.get('judge')){
-      Router.go("/")
-    }
     this.render('picker')
   }
 })
@@ -20,7 +17,6 @@ Router.route('/picker', {
 Router.route('/activate', {
   name: 'activate',
   action: function() {
-
     this.render('activate')
   }
 })

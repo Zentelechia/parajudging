@@ -48,6 +48,26 @@ Meteor.methods({
     })
     console.log(id)
  },
+ penalty({Entry, penalty}){
+  api = ProgramItems.findOne({
+    active: true
+  })
+  Results.remove({
+    type: 'penalty',
+    Entry,
+    program_element: api.program_element,
+    Dance: api.Dance,
+    Level: api.Level
+  })
+  Results.insert({
+    type: 'penalty',
+    penalty,
+    Entry,
+    program_element: api.program_element,
+    Dance: api.Dance,
+    Level: api.Level,
+  })
+},
   vote() {
     judges = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
     api = ProgramItems.findOne({

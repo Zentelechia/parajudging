@@ -4,6 +4,7 @@ var randomize = function (array) {
   })
 }
 Template.activate.onRendered(() => {
+  Meteor.subscribe('all')
   pe = ProgramElements.findOne({
     active: true
   })

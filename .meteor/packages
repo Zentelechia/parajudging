@@ -28,5 +28,4 @@ ostrio:files
 useraccounts:materialize
 email
 momentjs:moment
-autopublish
 insecure

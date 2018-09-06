@@ -1,6 +1,6 @@
 Template.header.helpers({
   judge(){
-    return Session.get('judge')
+    return Judges.findOne()
   },
   title(){
     pi = ProgramItems.findOne({ active: true })
@@ -12,7 +12,8 @@ Template.header.helpers({
 })
 Template.header.events({
 'dblclick .judge'(){
-  Session.set('judge',null)
+  Meteor.subscribe('dataByPin',null)
+  Session.set('pin',null)
   Router.go('/')
 },
 'click .switch'(){
@@ -24,8 +25,6 @@ Template.header.events({
   else { 
     Session.set('final',true)
     Session.set("programItem",final)
-
-
   }
 }
 })

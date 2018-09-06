@@ -1,4 +1,3 @@
-Heats = new Mongo.Collection('Heats')
 ProgramItems = new Mongo.Collection('ProgramItems')
 ProgramElements = new Mongo.Collection('ProgramElements')
 Judges = new Mongo.Collection('Judges')
