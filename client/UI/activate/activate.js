@@ -12,8 +12,10 @@ Template.activate.onRendered(() => {
     Session.set('programElement', pe.ID)
   }
   $('.sortable').sortable({
+    connectWith: '.sortable',
     placeholder: 'ui-state-highlight',
     stop: function (event, ui) {
+      console.log(ui)
       $('.sortable li').each((i, e) => {
         ProgramElements.update($(e).attr('id'), {
           $set: {
@@ -22,8 +24,7 @@ Template.activate.onRendered(() => {
         })
       })
     }
-  });
-  $('.sortable').disableSelection();
+  }).disableSelection()
 })
 Template.activate.helpers({
   generalLook() {

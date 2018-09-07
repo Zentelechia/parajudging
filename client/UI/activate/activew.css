@@ -26,7 +26,7 @@ li.inline.winner {
    width: 20px;
 }
 .activated_true {
-  color: lightgray !important;
+  border-color: lightgray !important;
 }
 .sortable {
   padding-left: 0;
@@ -43,7 +43,10 @@ li {
 li:hover button {
   display: inline-block;
 }
-.ui-state-highlight { height: 1.5em; line-height: 1.2em; }
+.ui-state-highlight { 
+  height: 1.5em; line-height: 1.2em;
+  width: 20px;
+}
  li:hover {
    background-color: lightgrey;
  }

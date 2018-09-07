@@ -2,7 +2,7 @@
     <table class="bordered">
       <thead>
         <tr>
-          <th rowspan=2>Athlete</th>
+          <th rowspan=2>Num</th>
           <th colspan=6>TS</th>
           <th rowspan=2>Res</th>
           <th colspan=6>CP</th>
@@ -40,7 +40,7 @@
       </thead>
       <tbody>
         {{#each entries}}
-        <tr id="this">
+        <tr id="final{{this}}">
             <td>{{this}}</td>
             <td>{{finalScore 'A' 'TS' this}}</td>
             <td>{{finalScore 'B' 'TS' this}}</td>
@@ -75,3 +75,31 @@
     </table>
     <button id="total">Calc total</button>
   </template>
+
+
+  <template name='finalScores'>
+      <table>
+        <thead>
+          <th>#</th>
+          <th>Num</th>
+          {{#each dances}}
+          <th>{{firstLetter this }}</th>
+          {{/each}}
+          <th>Total</th>
+        </thead>
+        <tbody>
+          {{#each entry in entries}}
+          <tr class="last_{{eq entry.i onNextRound}} notFinalResultsRow" id="{{entry.Entry}}">
+            <td>{{entry.i}}</td>
+            <td>{{entry.Entry}}</td>
+            {{#each dance in dances}}
+            <td>{{inDance entry dance}}</td>
+            {{/each}}
+            <td>{{entry.total}}</td>
+            <td><button>On next round</button></td>
+    
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </template>

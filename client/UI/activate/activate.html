@@ -26,7 +26,7 @@
           <li id="{{item._id}}" class="active_{{item.active}} activated_{{item.activated}} ui-state-default">
             {{item.Dance}} {{item.Level}} {{#if item.heat}} Heat {{item.heat}} {{/if}}
             <div>
-              <ul class="sortable">{{#each item.Entries}}<li class="inline">{{this}}</li>{{/each}}</ul>
+              <ul class="sortable" id="{{item._id}}">{{#each item.Entries}}<li id="{{this}}" class="inline Entry">{{this}}</li>{{/each}}</ul>
             </div>
             <button class="activateItem">Activate</button>
           </li>
@@ -62,7 +62,7 @@
 <template name='judging'>
   <table class="itemResults_">
     <thead>
-      <th>Athlete</th>
+      <th>Num</th>
       <th>A</th>
       <th>B</th>
       <th>C</th>
@@ -100,7 +100,7 @@
   <table>
     <thead>
       <th>#</th>
-      <th>Athlete</th>
+      <th>Num</th>
       {{#each dances}}
       <th>{{firstLetter this }}</th>
       {{/each}}

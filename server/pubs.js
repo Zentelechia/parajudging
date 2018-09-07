@@ -2,19 +2,25 @@ Meteor.publish({
   dataByPin(PIN){
     j= Judges.findOne({ PIN })
     if (j){
-      pi = ProgramItems.findOne({
-        active: true
-      })
+      // pi = ProgramItems.find({
+      //   active: true
+      // }).fetch()
+      // pi = ProgramItems.find({
+      //   active: true
+      // }).fetch()
+      
+    //  / // console.log(pi)
+      // console.log(pi.program_element)
       return [
         Judges.find({_id: j._id}),
-        ProgramElements.find({ ID: pi.program_element }),
-        ProgramItems.find({ program_element: pi.program_element}),
-        Results.find({ program_element: pi.program_element, judge: j.letter }),
+        ProgramElements.find({}),
+        ProgramItems.find({}),
+        Results.find({ judge: j.letter }),
         JudgesFunctions.find()
       ]
     }
     else {
-      this.stop()
+      // this.stop()
     }
   },
   all(){

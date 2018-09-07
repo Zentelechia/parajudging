@@ -22,11 +22,11 @@ Template.judgingFinal.helpers({
 Template.judgingFinal.events({
   'click #total'() {
     $('.total').each(function (i, e) {
-      TSR=+$(e).siblings('.TSR').text()
-      CPR=+$(e).siblings('.CPR').text()
-      DLR=+$(e).siblings('.DLR').text()
-        $(e).text(((TSR+CPR)*DLR).toFixed(3) )
-      })
+      TSR = +$(e).siblings('.TSR').text()
+      CPR = +$(e).siblings('.CPR').text()
+      DLR = +$(e).siblings('.DLR').text()
+      $(e).text(((TSR + CPR) * DLR).toFixed(3))
+    })
   },
   'change input'(e) {
     value = $(e.currentTarget).val()
@@ -78,6 +78,12 @@ UI.registerHelper('penalty', function (Entry) {
 
 })
 UI.registerHelper('finalScoreRes', function (type, Entry) {
+  $('.total').each(function (i, e) {
+    TSR = +$(e).siblings('.TSR').text()
+    CPR = +$(e).siblings('.CPR').text()
+    DLR = +$(e).siblings('.DLR').text()
+    $(e).text(((TSR + CPR) * DLR).toFixed(3))
+  })
   pi = ProgramItems.findOne({
     active: true
   })
@@ -113,6 +119,33 @@ UI.registerHelper('finalScoreRes', function (type, Entry) {
 UI.registerHelper('finalScorePen', function (argument) {
 
 });
-UI.registerHelper('finalScoreTot', function (argument) {
-
+UI.registerHelper('finalScoreTot', function (Entry) {
+  pi = ProgramItems.findOne({
+    active: true
+  })
+  if (pi) {
+    Entry = +Entry
+    rr = Results.findOne({
+      program_element: pi.program_element,
+      Dance: pi.Dance,
+      Level: pi.Level,
+      type: 'total',
+      Entry
+    })
+    if (rr && rr.value) {
+      return rr.value
+    } else {
+      $e = $('#final' + Entry)
+      TSR = +($e.find('.TSR').text())
+      CPR = +($e.find('.CPR').text())
+      DLR = +($e.find('.DLR').text())
+      value = ((TSR + CPR) * DLR).toFixed(3)
+      Meteor.call('score', {
+        Entry,
+        value,
+        type: 'total'
+      })
+      return value
+    }
+  }
 });

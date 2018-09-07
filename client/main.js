@@ -1,5 +1,5 @@
 Tracker.autorun(()=>{
-  Meteor.subscribe('dataByPin', Session.get('pin'))
+  // Meteor.subscribe('dataByPin', Session.get('pin'))
 })
 Template.login.events({
   'keyup #PIN'() {
@@ -14,8 +14,18 @@ Template.login.helpers({
     j = Judges.findOne()
     if (j) {
       Session.set('judge', j)
-      console.log(j)
-      Router.go('/picker')
+      if (j.letter=='CH'){
+        Router.go('/activate')
+
+      }else {
+
+        Router.go('/picker')
+      }
     }
+  }
+})
+Template.subscribe.helpers({
+  sub(){
+    Meteor.subscribe('dataByPin', Session.get('pin'))
   }
 })
