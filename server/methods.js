@@ -24,6 +24,9 @@ Meteor.methods({
       Level: api.Level
     })
  },
+ clearScores(){
+   Results.remove({})
+ },
  score({judge, Entry, value,  type}){
     console.log(arguments)
     api = ProgramItems.findOne({

@@ -149,3 +149,51 @@ UI.registerHelper('finalScoreTot', function (Entry) {
     }
   }
 });
+
+Template.judgingFinalTechnic.helpers({
+
+'click #total'() {
+  $('.total').each(function (i, e) {
+    TSR = +$(e).siblings('.TSR').text()
+    CPR = +$(e).siblings('.CPR').text()
+    DLR = +$(e).siblings('.DLR').text()
+    $(e).text(((TSR + CPR) * DLR).toFixed(3))
+  })
+}
+})
+Template.judgingFinalTechnic.helpers({
+  entries() {
+    pi = ProgramItems.findOne({
+      active: true
+    })
+    if (pi) {
+      pp = ProgramItems.find({
+        program_element: pi.program_element,
+        Dance: pi.Dance,
+        Level: pi.Level
+      }).fetch()
+      flat = _.flatten(_.map(pp, p => {
+        return p.Entries
+      }))
+      return _.sortBy(flat, f => {
+        return +f
+      })
+
+    }
+  },
+  difficulty(){
+    pi = ProgramItems.findOne({
+      active: true
+    })
+    if (pi) {
+      if (pi.Level=='Normal'){
+        return 1.15
+      }
+      else {
+        return 1.35
+      }
+    }
+
+
+  }
+})
