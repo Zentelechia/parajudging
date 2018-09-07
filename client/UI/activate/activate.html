@@ -38,8 +38,13 @@
       <td>
         {{#if items}}
         {{#if final}}
-        {{> judgingFinal}}
+        {{#if technic}}
+        {{> judgingTechnic}}
         {{else}}
+        {{> judgingFinal}}
+        {{/if}}
+        {{else}}
+
         {{> judging}}
         {{/if}}
         {{/if}}
