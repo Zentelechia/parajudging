@@ -38,7 +38,7 @@ Template.activate.onRendered(() => {
       
       Template.activate.helpers({
         technic(){
-          pi = ProgramElements.findOne({
+          pi = ProgramItems.findOne({
             active: true
           })
           if (pi){
