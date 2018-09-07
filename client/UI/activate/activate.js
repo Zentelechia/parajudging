@@ -305,8 +305,8 @@ Template.activate.onRendered(() => {
           }
         }
       }
-    }) Template.notFinalResults.helpers({
-
+    }) 
+    Template.notFinalResults.helpers({
       onNextRound() {
         if (Session.get('programElement')) {
           pi = ProgramElements.findOne({
@@ -372,10 +372,12 @@ Template.activate.onRendered(() => {
           return results
         }
       }
-    }) UI.registerHelper('inDance', (results, dance) => {
+    }) 
+    UI.registerHelper('inDance', (results, dance) => {
       return results[dance]
 
-    }) UI.registerHelper('voice', (Entry, judge) => {
+    }) 
+    UI.registerHelper('voice', (Entry, judge) => {
       pi = ProgramItems.findOne({
         active: true
       })
@@ -391,7 +393,8 @@ Template.activate.onRendered(() => {
         })
         return pp ? '+' : ''
       }
-    }) UI.registerHelper('total', (Entry) => {
+    }) 
+    UI.registerHelper('total', (Entry) => {
       pi = ProgramItems.findOne({
         active: true
       })
@@ -407,6 +410,7 @@ Template.activate.onRendered(() => {
         }).count()
       }
 
-    }) UI.registerHelper('firstLetter', (str) => {
+    })
+     UI.registerHelper('firstLetter', (str) => {
       return str[0]
     })
