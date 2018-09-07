@@ -1,7 +1,7 @@
 .numPad {
   position: absolute;
   bottom: 10vh;
-  right: 0px;
+  right: 0vw;
   height: 80vh;
   width: 25vw;
   border: 2px solid black;
@@ -22,7 +22,7 @@ th.function {
   font-weight: 700;
 }
 .numPad td, .score {
-  font-size: 4em;
+  font-size: 3em;
   background-color: grey;
   font-weight: 900;
   text-align: center;
@@ -58,7 +58,7 @@ th.function {
 
 .notFinal {
   position: relative;
-  height: 60vh;
+  height: 65vh;
 }
 .toSelect {
   position: absolute;
@@ -87,7 +87,7 @@ th.function {
 }
 
 .finalContainer {
-  height: 72vh;
+  height: 70vh;
   overflow-y: scroll;
 
 }

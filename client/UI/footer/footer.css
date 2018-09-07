@@ -1,11 +1,12 @@
 .btn {
   border: 2px solid black;
-  padding: 10px;
-  margin: 2vw;
+  padding-left: 10px;
+padding-right: 10px;
+  margin: 1vw;
   color: white;
   font-size: 2em;
   min-width: 7vw;
-  min-height: 7vh; 
+  min-height: 4vh; 
   font-weight: 900;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
@@ -26,7 +27,7 @@
   position: absolute;
   bottom: 0px;
   left: 0px;
-  height: 20vh;
+  height: 13vh;
   width: 100vw;
 }
 .hidden {

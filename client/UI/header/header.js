@@ -11,7 +11,7 @@ Template.header.helpers({
   }
 })
 Template.header.events({
-'dblclick .judge'(){
+'click .judge'(){
   Meteor.subscribe('dataByPin',null)
   Session.set('pin',null)
   Router.go('/')
