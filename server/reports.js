@@ -1,4 +1,4 @@
-var XlsxTemplate = Npm.require('xlsx-template');
+var XlsxTemplate = require('xlsx-template');
 // import XlsxTemplate1 from 'xlsx-template';
 
 
