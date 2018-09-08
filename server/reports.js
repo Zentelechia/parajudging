@@ -1,5 +1,5 @@
 // var XlsxTemplate = require('xlsx-template');
-import XlsxTemplate from 'xlsx-template';
+var XlsxTemplate = require('xlsx-template');
 
 
 Router.route('/results/download/:_id', function () {

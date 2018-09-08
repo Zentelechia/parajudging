@@ -78,12 +78,6 @@ UI.registerHelper('penalty', function (Entry) {
 
 })
 UI.registerHelper('finalScoreRes', function (type, Entry) {
-  $('.total').each(function (i, e) {
-    TSR = +$(e).siblings('.TSR').text()
-    CPR = +$(e).siblings('.CPR').text()
-    DLR = +$(e).siblings('.DLR').text()
-    $(e).text(((TSR + CPR) * DLR).toFixed(3))
-  })
   pi = ProgramItems.findOne({
     active: true
   })
