@@ -32,7 +32,7 @@ Meteor.methods({
  score({judge, Entry, value,  type}){
     console.log(arguments)
     api = ProgramItems.findOne({
-      program_element
+      active: true
     })
     Results.remove({
       type,
