@@ -134,11 +134,14 @@ UI.registerHelper('finalScoreTot', function (Entry) {
       CPR = +($e.find('.CPR').text())
       DLR = +($e.find('.DLR').text())
       value = ((TSR + CPR) * DLR).toFixed(3)
-      Meteor.call('score', {
-        Entry,
-        value,
-        type: 'total'
-      })
+      if (value!='0.000'){
+        Meteor.call('score', {
+          program_element: pi.program_element,
+          Entry,
+          value,
+          type: 'total'
+        })
+      }
       return value
     }
   }
