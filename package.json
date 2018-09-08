@@ -12,7 +12,8 @@
     "bcrypt": "^3.0.0",
     "http": "0.0.0",
     "meteor-node-stubs": "^0.4.1",
-    "npm": "^6.4.1"
+    "npm": "^6.4.1",
+    "xlsx-template": "^0.4.0"
   },
   "devDependencies": {}
 }

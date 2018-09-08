@@ -50,7 +50,7 @@ Template.numPad.events({
       Session.set("numPads", $e.text())
       setTimeout(() => {
         Session.set("numPads", null)
-      }, 1000)
+      }, 5000)
 
     } else {
       judge = Session.get("judge").letter

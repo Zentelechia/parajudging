@@ -37,6 +37,14 @@ Template.activate.onRendered(() => {
       }) 
       
       Template.activate.helpers({
+        programElement(){
+          const pe = ProgramElements.findOne({
+            active: true
+          })
+          if (pe) {
+            return pe._id
+          }
+        },
         technic(){
           pi = ProgramItems.findOne({
             active: true
