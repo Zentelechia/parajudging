@@ -9,6 +9,7 @@ Meteor.methods({
       active: true
     })
     Results.remove({
+      Description: api.Description,
       Entry,
       judge,
       program_element: api.program_element,
@@ -16,6 +17,7 @@ Meteor.methods({
       Level: api.Level,
     })
     Results.insert({
+      Description: api.Description,
       Entry,
       judge,
       value,

@@ -160,7 +160,13 @@ Template.notFinal.onRendered(() => {
 
 })
 Template.notFinal.helpers({
-  toSelect() {
+  participants(){
+    pe = ProgramElements.findOne({active:true})
+    if (pe){
+        return pe.Participants.length    
+    }
+    },  
+    toSelect() {
     pi = ProgramItems.findOne({
       active: true
     })

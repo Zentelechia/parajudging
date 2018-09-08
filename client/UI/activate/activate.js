@@ -388,8 +388,10 @@ Template.activate.onRendered(() => {
           Dance: pi.Dance,
           Level: pi.Level,
           value: 'selected',
+	  Description: pi.Description,
           judge,
-          Entry
+          Entry,
+          value: 'selected'
         })
         return pp ? '+' : ''
       }
