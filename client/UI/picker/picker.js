@@ -221,7 +221,6 @@ UI.registerHelper('score', function (type, Entry) {
     type,
     judge,
     Entry,
-    program_element: api.program_element,
     Dance: api.Dance,
     Level: api.Level
   })
