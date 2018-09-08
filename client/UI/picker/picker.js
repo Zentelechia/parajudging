@@ -20,17 +20,12 @@ Template.final.onRendered(function () {
 Template.skill.events({
   'click td'(e) {
     var $e = $(e.currentTarget)
-    pi = ProgramItems.findOne({
-      active: true
-    })
+
     judge = Session.get("judge").letter
     type = $(".selectedScore").attr('type')
     Entry = +$(".selectedScore").parent().attr('id')
     value = +$e.text()
-//!!
-    const { program_element } = ProgramElements.findOne({active:true})
     Meteor.call("score", {
-      program_element,
       judge,
       type,
       value,
@@ -87,7 +82,6 @@ Template.picker.onRendered(() => {
     })
     if (pi && pi._id != Session.get("previousItem")) {
       Session.set("previousItem", pi._id)
-      Session.set("programElement",pi.program_element)
       Session.set('toSelect', pi.On_next_round)
       Session.set("sended", false)
       Session.set("heatToDisplay", pi.heat || 1)

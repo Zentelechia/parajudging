@@ -29,7 +29,7 @@ Meteor.methods({
  clearScores(){
    Results.remove({})
  },
- score({program_element, judge, Entry, value,  type}){
+ score({judge, Entry, value,  type}){
     console.log(arguments)
     api = ProgramItems.findOne({
       program_element
@@ -38,7 +38,7 @@ Meteor.methods({
       type,
       judge,
       Entry,
-      program_element,
+      program_element: api.program_element,
       Dance: api.Dance,
       Level: api.Level
     })
