@@ -172,5 +172,8 @@ _.each(data.program_elements,pe=>{
 // ju=j.split(';')
 // Judges.insert({name: ju[0].trim(), letter: ju[1].trim()})
 // }) 
+  },
+  clearEmptyTotals(){
+    Results.remove({value: '0.000'})
   }
 })

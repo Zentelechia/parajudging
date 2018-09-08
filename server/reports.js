@@ -1,5 +1,5 @@
-var XlsxTemplate = require('xlsx-template');
-// import XlsxTemplate1 from 'xlsx-template';
+// var XlsxTemplate = require('xlsx-template');
+import XlsxTemplate from 'xlsx-template';
 
 
 Router.route('/results/download/:_id', function () {
@@ -15,7 +15,7 @@ Router.route('/results/download/:_id', function () {
     fs.readFile(basepath + 'templates/results.xlsx', function (err, data) {
       
       // Create a template
-      var template = new XlsxTemplate(data);
+      var template = XlsxTemplate(data);
 
       const title = `${pe.Program} ${pe.Event} ${pe.Gender} ${pe.Class}`;
       const filename = `${pe.Program}_${pe.Event}_${pe.Gender}_${pe.Class}`;
