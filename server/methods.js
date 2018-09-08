@@ -175,5 +175,18 @@ _.each(data.program_elements,pe=>{
   },
   clearEmptyTotals(){
     Results.remove({value: '0.000'})
+  },
+  allResults(){
+    ee=ProgramElements.find().fetch()
+    names={}
+    _.each(ee,e=>{
+        names[e.ID]=`${e.Event} ${e.Program} ${e.Gender} ${e.Class}`
+    })
+    rr=Results.find({$not: {value: '0.000'}},{fields: {_id: 0, Championship: 0, Dance_order: 0, Entries: 0, Marks: 0, Stage: 0, active: 0, order: 0}}).fetch()
+    for (var i=0; i<rr.length; i++){
+      rr[i].name = names[rr[i].program_element]
+      delete rr[i].program_element
+    }
+    return rr
   }
 })
