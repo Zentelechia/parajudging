@@ -200,6 +200,7 @@ Template.notFinal.helpers({
     if (pi) {
       heat = Session.get("heatToDisplay") || pi.heat
       return ProgramItems.findOne({
+        Description: {$not: "  1st Round"},
         program_element: pi.program_element,
         Dance: pi.Dance,
         Level: pi.Level,
@@ -218,6 +219,8 @@ UI.registerHelper('score', function (type, Entry) {
   Entry = +Entry
   // console.log(arguments)
   score = Results.findOne({
+    program_element: api.program_element,
+    Description: null,
     type,
     judge,
     Entry,
