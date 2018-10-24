@@ -30,3 +30,7 @@ body {
   vertical-align: middle;
   padding: 10px;
 }
+
+.table  tr:hover {
+  background-color: #eeeeea;
+}

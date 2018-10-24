@@ -1,0 +1,37 @@
+Пересоздать заходы элемента
+Добавить участника в программный элемент
+Убрать участника из програмного элмента
+Изменить номер участника
+Сделать пометку 
+Создать задачу (в разрезе программы)
+С оченкой отправлять танец и программный элемент
+Распечатать результаты элемента
+Хранить оценки в разрезе Entries (по судьям, в формате результатов программного элемента)
+
+
++120 - combi latin
+91 Duo standard
+
+копировать ProgramItem и создать из него новый заход по id
+colone heat and set number
+heat=3; id="XZrsXKMeSvdpq4FYf"; pi=ProgramItems.findOne(id); pi.heat=heat; pi.Entries=[1,2]; ProgramItems.update(id,{$set: {Entries: [1,2]}}); delete pi._id; ProgramItems.insert(pi);
+
+
+
+9CkkfgJDDWhEuKorg
+
+
+distribute randomly numbers by heats. uses Entries of PE and PI.Entries.length
+
+randomize = function (array) {
+  return _.sortBy(array, e => {
+    return Math.random()
+  })
+}
+pe= ProgramElements.findOne("gdSxAEWnbtYzcyJHi"); Entries=pe.Entries;
+_.each(ProgramItems.find({program_element: pe.ID},{sort: {Dance_order: 1, heat: 1}}).fetch(),pi=>{ 
+if (pi.heat==1) {ee=randomize(Entries)}
+
+ProgramItems.update(pi._id, {$set: {Entries: _.sortBy(ee.splice(0, pi.Entries.length),e=>{return e})}})
+})
+

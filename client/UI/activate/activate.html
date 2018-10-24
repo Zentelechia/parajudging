@@ -4,12 +4,13 @@
     <tr>
       <td>
         <div id="addElement">Add program element</div>
-        <ul class="sortable">
+        <ul class="sortable collection">
           {{#each elements}}
           {{#unless name}}
-          <li id="{{_id}}" class="active_{{active}} ui-state-default">
-            {{order}}) {{Event}} {{Program}} {{Gender}} {{Class}} [{{Description}}]
-            <button class="activateElement">Activate</button>
+          <li id="{{_id}}" class="active_{{active}} ui-state-default collection-item">
+            <a href="/program/{{_id}}">
+              {{order}}) {{Event}} {{Program}} {{Gender}} {{Class}} [{{Description}}]
+            </a>
           </li>
           {{else}}
           <li id="{{_id}}" class="abstractElement active_{{active}} ui-state-default">
@@ -27,7 +28,6 @@
             <div>
               <ul class="sortable" id="{{item._id}}">{{#each item.Entries}}<li id="{{this}}" class="inline Entry">{{this}}</li>{{/each}}</ul>
             </div>
-            <button class="activateItem">Activate</button>
           </li>
           {{/each}}
         </ul>

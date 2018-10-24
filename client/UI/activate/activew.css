@@ -1,4 +1,4 @@
-.active_true {
+/* .active_true {
   background-color: rgb(96, 255, 96) !important;
 }
 #activator td {
@@ -47,9 +47,7 @@ li:hover button {
   height: 1.5em; line-height: 1.2em;
   width: 20px;
 }
- li:hover {
-   background-color: lightgrey;
- }
+
  .abstractElement {
    background-color: lightsteelblue !important;
  }
@@ -76,4 +74,4 @@ border-bottom:3px solid black !important;
  }
  td {
    border-width: 3px
- }
+ } */

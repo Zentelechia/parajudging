@@ -1,0 +1,435 @@
+<template name="program">
+  {{> modals}}
+  {{> floatingChat}}
+  <div class="content-container">
+    <div class="sidebar collapse" id="sidebar-collapse">
+      <div class="sidebar-content">
+        {{> programElementsList}}
+      </div>
+    </div>
+    <div class="sidebar-content">
+      {{> programItemsList}}
+    </div>
+    <div class="sidebar-content">
+        {{> judging}}
+      </div>
+  </div>
+</template>
+<template name="programElementsList">
+  <div class="chat-team-sidebar text-small">
+    <div class="chat-team-sidebar-top">
+    </div>
+    <div class="chat-team-sidebar-bottom">
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="members" role="tabpanel" aria-labelledby="members-tab"
+          data-filter-list="list-group">
+          <form class="px-3 mb-3">
+            <div class="input-group input-group-round">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="material-icons">filter_list</i>
+                </span>
+              </div>
+              <input type="search" class="form-control filter-list-input" placeholder="Filter members" aria-label="Filter Members"
+                aria-describedby="filter-members">
+            </div>
+          </form>
+          <div class="list-group list-group-flush">
+            {{#each programElements}}
+            {{> programElement data=this}}
+            {{/each}}
+          </div>
+        </div>
+        <div class="tab-pane fade" id="files" role="tabpanel" aria-labelledby="files-tab">
+          data-filter-list="dropzone-previews">
+          <form class="px-3 mb-3">
+            <div class="input-group input-group-round">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="material-icons">filter_list</i>
+                </span>
+              </div>
+              <input type="search" class="form-control filter-list-input" placeholder="Filter files" aria-label="Filter Files"
+                aria-describedby="filter-files">
+            </div>
+          </form>
+          <div class="d-none dz-template">
+            <li class="list-group-item dz-preview dz-file-preview">
+              <div class="media align-items-center dz-details">
+                <ul class="avatars">
+                  <li>
+                    <div class="avatar bg-primary dz-file-representation">
+                      <img class="avatar" data-dz-thumbnail />
+                      <i class="material-icons">attach_file</i>
+                    </div>
+                  </li>
+                  <li>
+                    <img alt="David Whittaker" src="/assets/img/avatar-male-4.jpg" class="avatar" data-title="David Whittaker"
+                      data-toggle="tooltip" />
+                  </li>
+                </ul>
+                <div class="media-body d-flex justify-content-between align-items-center">
+                  <div class="dz-file-details">
+                    <a href="#" class="dz-filename">
+                      <span data-dz-name></span>
+                    </a>
+                    <br>
+                    <span class="text-small dz-size" data-dz-size></span>
+                  </div>
+                  <img alt="Loader" src="/assets/img/loader.svg" class="dz-loading" />
+                  <div class="dropdown">
+                    <button class="btn-options" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="material-icons">more_vert</i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="#">Download</a>
+                      <a class="dropdown-item" href="#">Share</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item text-danger" href="#" data-dz-remove>Delete</a>
+                    </div>
+                  </div>
+                  <button class="btn btn-danger btn-sm dz-remove" data-dz-remove>
+                    Cancel
+                  </button>
+                </div>
+              </div>
+              <div class="progress dz-progress">
+                <div class="progress-bar dz-upload" data-dz-uploadprogress></div>
+              </div>
+            </li>
+          </div>
+          <form class="dropzone" action="http://mediumra.re/dropzone/upload.php">
+            <span class="dz-message">Drop files here or click here to upload</span>
+          </form>
+          <ul class="list-group list-group-activity dropzone-previews flex-column-reverse list-group-flush">
+
+            <li class="list-group-item">
+              <div class="media align-items-center">
+                <ul class="avatars">
+                  <li>
+                    <div class="avatar bg-primary">
+                      <i class="material-icons">insert_drive_file</i>
+                    </div>
+                  </li>
+                  <li>
+                    <img alt="Peggy Brown" src="/assets/img/avatar-female-2.jpg" class="avatar" data-title="Peggy Brown"
+                      data-toggle="tooltip" data-filter-by="data-title" />
+                  </li>
+                </ul>
+                <div class="media-body d-flex justify-content-between align-items-center">
+                  <div>
+                    <a href="#" data-filter-by="text">client-questionnaire</a>
+                    <br>
+                    <span class="text-small" data-filter-by="text">48kb Text Doc</span>
+                  </div>
+                  <div class="dropdown">
+                    <button class="btn-options" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="material-icons">more_vert</i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="#">Download</a>
+                      <a class="dropdown-item" href="#">Share</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item text-danger" href="#">Delete</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="floatingChat">
+  <button class="btn btn-primary btn-round btn-floating btn-lg" type="button" data-toggle="collapse" data-target="#floating-chat"
+    aria-expanded="false" aria-controls="sidebar-floating-chat">
+    <i class="material-icons">chat_bubble</i>
+    <i class="material-icons">close</i>
+  </button>
+  <div class="collapse sidebar-floating" id="floating-chat">
+    <div class="sidebar-content">
+      {{> chatModuleBody}}
+    </div>
+  </div>
+</template>
+<template name="chatMessage">
+  <div class="media chat-item">
+    <img alt="David" src="assets/img/avatar-male-4.jpg" class="avatar" />
+    <div class="media-body">
+      <div class="chat-item-title">
+        <span class="chat-item-author" data-filter-by="text">{{data.author}}</span>
+        <span data-filter-by="text">{{when data.timestamp}}</span>
+      </div>
+      <div class="chat-item-body" data-filter-by="text">
+        <p>{{data.text}}</p>
+
+      </div>
+      {{#if data.file}}
+      <div class="media media-attachment">
+        <div class="avatar bg-primary">
+          <i class="material-icons">insert_drive_file</i>
+        </div>
+        <div class="media-body">
+          <a href="{{data.url}}" data-filter-by="text">{{data.file}}</a>
+          <span data-filter-by="text">{{data.size}} {{fileType data.type}}</span>
+        </div>
+      </div>
+      {{/if}}
+    </div>
+  </div>
+</template>
+<template name="programElement">
+  <a class="list-group-item list-group-item-action" href="/program/{{data.ID}}">
+    <div class="media media-member mb-0">
+      <div class="media-body">
+        <h6 class="mb-0" data-filter-by="text">{{data.name}} {{data.Event}} {{data.Program}} {{data.Gender}}
+          {{data.Class}}
+          <div class="dropdown" style="width: 40px; float: left">
+              <button class="btn-options" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="material-icons">more_vert</i>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Add athlete</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Activate</a>
+              </div>
+            </div>
+
+        
+        </h6>
+        <span data-filter-by="text">{{data.Description}}</span>
+      </div>
+    </div>
+  </a>
+</template>
+<template name="chatModuleBody">
+  <div class="chat-module" data-filter-list="chat-module-body">
+    <div class="chat-module-top">
+      <form>
+        <div class="input-group input-group-round">
+          <div class="input-group-prepend">
+            <span class="input-group-text">
+              <i class="material-icons">search</i>
+            </span>
+          </div>
+          <input type="search" class="form-control filter-list-input" placeholder="Search notes" aria-label="Search notes"
+            aria-describedby="search-chat">
+        </div>
+      </form>
+      <div class="chat-module-body">
+        {{#each messages}}
+        {{> chatMessage data=this}}
+        {{/each}}
+      </div>
+    </div>
+    <div class="chat-module-bottom">
+      <form class="chat-form">
+        <textarea class="form-control" id="say" placeholder="Type message" rows="1"></textarea>
+        <div class="chat-form-buttons">
+          <button type="button" class="btn btn-link">
+            <i class="material-icons">tag_faces</i>
+          </button>
+          <div class="custom-file custom-file-naked">
+            <input type="file" class="custom-file-input" id="customFile">
+            <label class="custom-file-label" for="customFile">
+              <i class="material-icons">attach_file</i>
+            </label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</template>
+
+<template name="programItemsList">
+  <div class="chat-team-sidebar text-small">
+    <div class="chat-team-sidebar-top">
+    </div>
+    <div class="chat-team-sidebar-bottom">
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="members" role="tabpanel" aria-labelledby="members-tab"
+          data-filter-list="list-group">
+          <form class="px-3 mb-3">
+            <div class="input-group input-group-round">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="material-icons">filter_list</i>
+                </span>
+              </div>
+              <input type="search" class="form-control filter-list-input" placeholder="Filter members" aria-label="Filter Members"
+                aria-describedby="filter-members">
+            </div>
+          </form>
+          <div class="list-group list-group-flush">
+            {{#each item in items}}
+            {{> programItem data=item}}
+            {{/each}}
+          </div>
+        </div>
+        <div class="tab-pane fade" id="files" role="tabpanel" aria-labelledby="files-tab">
+          data-filter-list="dropzone-previews">
+          <form class="px-3 mb-3">
+            <div class="input-group input-group-round">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="material-icons">filter_list</i>
+                </span>
+              </div>
+              <input type="search" class="form-control filter-list-input" placeholder="Filter files" aria-label="Filter Files"
+                aria-describedby="filter-files">
+            </div>
+          </form>
+          <div class="d-none dz-template">
+            <li class="list-group-item dz-preview dz-file-preview">
+              <div class="media align-items-center dz-details">
+                <ul class="avatars">
+                  <li>
+                    <div class="avatar bg-primary dz-file-representation">
+                      <img class="avatar" data-dz-thumbnail />
+                      <i class="material-icons">attach_file</i>
+                    </div>
+                  </li>
+                  <li>
+                    <img alt="David Whittaker" src="/assets/img/avatar-male-4.jpg" class="avatar" data-title="David Whittaker"
+                      data-toggle="tooltip" />
+                  </li>
+                </ul>
+                <div class="media-body d-flex justify-content-between align-items-center">
+                  <div class="dz-file-details">
+                    <a href="#" class="dz-filename">
+                      <span data-dz-name></span>
+                    </a>
+                    <br>
+                    <span class="text-small dz-size" data-dz-size></span>
+                  </div>
+                  <img alt="Loader" src="/assets/img/loader.svg" class="dz-loading" />
+                  <div class="dropdown">
+                    <button class="btn-options" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="material-icons">more_vert</i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="#">Download</a>
+                      <a class="dropdown-item" href="#">Share</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item text-danger" href="#" data-dz-remove>Delete</a>
+                    </div>
+                  </div>
+                  <button class="btn btn-danger btn-sm dz-remove" data-dz-remove>
+                    Cancel
+                  </button>
+                </div>
+              </div>
+              <div class="progress dz-progress">
+                <div class="progress-bar dz-upload" data-dz-uploadprogress></div>
+              </div>
+            </li>
+          </div>
+          <form class="dropzone" action="http://mediumra.re/dropzone/upload.php">
+            <span class="dz-message">Drop files here or click here to upload</span>
+          </form>
+          <ul class="list-group list-group-activity dropzone-previews flex-column-reverse list-group-flush">
+
+            <li class="list-group-item">
+              <div class="media align-items-center">
+                <ul class="avatars">
+                  <li>
+                    <div class="avatar bg-primary">
+                      <i class="material-icons">insert_drive_file</i>
+                    </div>
+                  </li>
+                  <li>
+                    <img alt="Peggy Brown" src="/assets/img/avatar-female-2.jpg" class="avatar" data-title="Peggy Brown"
+                      data-toggle="tooltip" data-filter-by="data-title" />
+                  </li>
+                </ul>
+                <div class="media-body d-flex justify-content-between align-items-center">
+                  <div>
+                    <a href="#" data-filter-by="text">client-questionnaire</a>
+                    <br>
+                    <span class="text-small" data-filter-by="text">48kb Text Doc</span>
+                  </div>
+                  <div class="dropdown">
+                    <button class="btn-options" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="material-icons">more_vert</i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="#">Download</a>
+                      <a class="dropdown-item" href="#">Share</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item text-danger" href="#">Delete</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="programItem">
+
+  <a class="list-group-item list-group-item-action" href="/item/{{data._id}}">
+    <div class="media media-member mb-0">
+      <div class="media-body">
+        <h6 class="mb-0" data-filter-by="text"> {{data.Dance}} {{data.Level}} {{#if data.heat}} Heat {{data.heat}}
+          {{/if}}</h6>
+        <div  data-filter-by="text">
+          {{#each data.Entries}}
+          <div class="dropdown" style="width: 40px; float: left">
+              <button class="btn-options" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{this}}
+                <i class="material-icons">more_vert</i>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Change number</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Remove from program</a>
+              </div>
+            </div>
+
+          
+          
+          {{/each}}
+          </div>
+      </div>
+    </div>
+  </a>
+
+</template>
+
+<template name='modals'>
+  <form class="modal fade" id="task-add-modal" tabindex="-1" role="dialog" aria-labelledby="task-add-modal"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Change number</h5>
+                  <button type="button" class="close btn btn-round" data-dismiss="modal" aria-label="Close">
+                      <i class="material-icons">close</i>
+                  </button>
+              </div>
+              <div class="modal-body">
+                          <h6>Enter new number</h6>
+                          <div class="form-group row align-items-center">
+                              <label class="col-3">number</label>
+                              <input class="form-control col" type="text" placeholder="enter new number" id="entryNumber" name="entry-number" />
+                          </div>                     
+              </div>
+              <!--end of modal body-->
+              <div class="modal-footer">
+                  <button  class="btn btn-primary" id="createTask">
+                      Change
+                  </button>
+              </div>
+          </div>
+      </div>
+  </form>
+</template>

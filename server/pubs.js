@@ -23,7 +23,7 @@ Meteor.publish({
       // this.stop()
     }
   },
-  all(){
+  all(id){
      pe = ProgramElements.findOne({
       active: true
     })
@@ -31,9 +31,12 @@ Meteor.publish({
           Judges.find({}),
           ProgramElements.find({}),
           ProgramItems.find({}),
-          Results.find({}),
+          // Results.find({}),
           JudgesFunctions.find({}),
           HeatsTable.find({})
         ]
+  },
+  athlethes(){
+    return Athlethes.find()
   }
 })

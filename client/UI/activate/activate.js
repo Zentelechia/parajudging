@@ -73,16 +73,16 @@ Template.activate.onRendered(() => {
         }
       },
       elements() {
-        return ProgramElements.find({}, {
-          sort: {
-            order: 1,
-            Event: 1,
-            Program: 1,
-            Gender: 1,
-            Class: 1,
-            Description: -1
-          }
-        }).fetch()
+          return ProgramElements.find({}, {
+            sort: {
+              order: 1,
+              Event: 1,
+              Program: 1,
+              Gender: 1,
+              Class: 1,
+              Description: -1
+            }
+          }).fetch()
       },
       items() {
         program_element = Session.get('programElement')
