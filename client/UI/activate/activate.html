@@ -1,103 +1,49 @@
-<template name="activate">
-  <h1 class="h1center">Chairman control panel</h1>
-  <table id="activator">
-    <tr>
-      <td>
-        <div id="addElement">Add program element</div>
-        <ul class="sortable collection">
-          {{#each elements}}
-          {{#unless name}}
-          <li id="{{_id}}" class="active_{{active}} ui-state-default collection-item">
-            <a href="/program/{{_id}}">
-              {{order}}) {{Event}} {{Program}} {{Gender}} {{Class}} [{{Description}}]
-            </a>
-          </li>
-          {{else}}
-          <li id="{{_id}}" class="abstractElement active_{{active}} ui-state-default">
-            {{order}}) <input width="80%" value="{{name}}">
-          </li>
-          {{/unless}}
-          {{/each}}
-        </ul>
-      </td>
-      <td>
-        <ul>
-          {{#each item in items}}
-          <li id="{{item._id}}" class="active_{{item.active}} activated_{{item.activated}} ui-state-default">
-            {{item.Dance}} {{item.Level}} {{#if item.heat}} Heat {{item.heat}} {{/if}}
-            <div>
-              <ul class="sortable" id="{{item._id}}">{{#each item.Entries}}<li id="{{this}}" class="inline Entry">{{this}}</li>{{/each}}</ul>
-            </div>
-          </li>
-          {{/each}}
-        </ul>
-
-      </td>
-      {{#unless generalLook}}
-      <td>
-        {{#if items}}
-        {{#if final}}
-        {{#if technic}}
-        {{> judgingFinalTechnic}}
-        {{else}}
-        {{> judgingFinal}}
-        {{/if}}
-        {{else}}
-
-        {{> judging}}
-        {{/if}}
-        {{/if}}
-      </td>
-      <td width="50px"></td>
-      <td>
-        {{#if items}}
-        {{#if final}}
-        <!-- {{> judgingFinal}} -->
-        {{else}}
-        {{> notFinalResults}}
-        {{/if}}
-        {{/if}}
-      </td>
-      {{/unless}}
-    </tr>
-  </table>
+<template name="results">
+  <div class="col-4">
+    {{> judgingFinalTechnic}}
+    {{> judgingFinal}}
+    {{> judging}}
+    {{> notFinalResults}}
+  </div>
 </template>
 
 <template name='judging'>
-  <table class="itemResults_">
-    <thead>
-      <th>Num</th>
-      <th>A</th>
-      <th>B</th>
-      <th>C</th>
-      <th>D</th>
-      <th>E</th>
-      <th>F</th>
-      <th>G</th>
-      <th>H</th>
-      <th>I</th>
-      <th>J</th>
-      <th>Total</th>
-    </thead>
-    <tbody>
-      {{#each entries}}
-      <tr>
-        <td>{{this}}</td>
-        <td>{{voice this 'A'}}</td>
-        <td>{{voice this 'B'}}</td>
-        <td>{{voice this 'C'}}</td>
-        <td>{{voice this 'D'}}</td>
-        <td>{{voice this 'E'}}</td>
-        <td>{{voice this 'F'}}</td>
-        <td>{{voice this 'G'}}</td>
-        <td>{{voice this 'H'}}</td>
-        <td>{{voice this 'I'}}</td>
-        <td>{{voice this 'J'}}</td>
-        <td>{{total this}}</td>
-      </tr>
-      {{/each}}
-    </tbody>
-  </table>
+  <div class="col">
+    <table class="itemResults_">
+      <thead>
+        <th>Num</th>
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+        <th>E</th>
+        <th>F</th>
+        <th>G</th>
+        <th>H</th>
+        <th>I</th>
+        <th>J</th>
+        <th>Total</th>
+      </thead>
+      <tbody>
+        {{#each entries}}
+        <tr>
+          <td>{{this}}</td>
+          <td>{{voice this 'A'}}</td>
+          <td>{{voice this 'B'}}</td>
+          <td>{{voice this 'C'}}</td>
+          <td>{{voice this 'D'}}</td>
+          <td>{{voice this 'E'}}</td>
+          <td>{{voice this 'F'}}</td>
+          <td>{{voice this 'G'}}</td>
+          <td>{{voice this 'H'}}</td>
+          <td>{{voice this 'I'}}</td>
+          <td>{{voice this 'J'}}</td>
+          <td>{{total this}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
 </template>
 
 <template name='notFinalResults'>

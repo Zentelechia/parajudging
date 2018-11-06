@@ -26,6 +26,7 @@ Template.login.helpers({
 })
 Template.subscribe.helpers({
   sub(){
+    Meteor.subscribe('elements');
     Meteor.subscribe('dataByPin', Session.get('pin'))
   }
 })

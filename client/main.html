@@ -5,11 +5,11 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A project management Bootstrap theme by Medium Rare">
-  <link href="favicon.ico" rel="icon" type="image/x-icon">  
-  
-  
-  
-  
+  <link href="favicon.ico" rel="icon" type="image/x-icon">
+
+
+
+
 </head>
 
 <body>
@@ -19,7 +19,7 @@
 <template name='login'>
   {{judge}}
   <span id="prePIN"> Please enter your PIN </span>
-  <input type="password" id="PIN" placeholder="Enter your PIN (6 digits)"> 
+  <input type="password" id="PIN" placeholder="Enter your PIN (6 digits)">
 </template>
 
 <template name='subscribe'>
@@ -33,11 +33,43 @@
     <div class="main-container">
       {{> breadcumb}}
       {{> yield}}
-      </div>
+    </div>
   </div>
 </template>
-<template name="full">
+<template name="navSide2">
+  <div class="layout layout-nav-side">
+    {{> nav}}
     <div class="main-container">
-      {{> yield}}
+
+      {{> breadcumb}}
+      <div class="row">
+        {{> yield}}
+        {{> yield region="second"}}
+      </div>
     </div>
+  </div>
+</template>
+
+<template name="navSide3">
+  <div class="layout layout-nav-side">
+    {{> nav}}
+    <div class="main-container">
+      {{> breadcumb}}
+      <div class="row">
+        {{> yield }}
+        {{> yield region="second"}}
+        {{> yield region="third"}}
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="full">
+  <div class="main-container">
+    {{> yield}}
+  </div>
+</template>
+
+<template name="loading">
+  Loading data...
 </template>

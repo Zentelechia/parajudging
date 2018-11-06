@@ -1,0 +1,28 @@
+<template name='modals'>
+  <form class="modal fade" id="task-add-modal" tabindex="-1" role="dialog" aria-labelledby="task-add-modal"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Change number</h5>
+                  <button type="button" class="close btn btn-round" data-dismiss="modal" aria-label="Close">
+                      <i class="material-icons">close</i>
+                  </button>
+              </div>
+              <div class="modal-body">
+                          <h6>Enter new number</h6>
+                          <div class="form-group row align-items-center">
+                              <label class="col-3">number</label>
+                              <input class="form-control col" type="text" placeholder="enter new number" id="entryNumber" name="entry-number" />
+                          </div>                     
+              </div>
+              <!--end of modal body-->
+              <div class="modal-footer">
+                  <button  class="btn btn-primary" id="createTask">
+                      Change
+                  </button>
+              </div>
+          </div>
+      </div>
+  </form>
+</template>

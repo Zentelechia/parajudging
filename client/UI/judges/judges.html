@@ -1,21 +1,30 @@
 <template name="judges">
-  <table class="table table-stripped">
-    <thead>
-      <th>Name</th>
-      <th>Function</th>
-      <th>PIN</th>
-    </thead>
-    {{#each judges}}
-    <tr>
-      <td>{{name}}</td>
-      <td>{{letter}}</td>
-      <td>{{PIN}}</td>
-    </tr>
-    {{/each}}
+  <div class="main-contrainer">
+    <div class="row">
+      <div class="col">
+
+        <table class="table table-stripped">
+          <thead>
+            <th>Name</th>
+            <th>Function</th>
+            <th>PIN</th>
+      </thead>
+      {{#each judges}}
+      <tr>
+        <td>{{name}}</td>
+        <td>{{letter}}</td>
+        <td>{{PIN}}</td>
+      </tr>
+      {{/each}}
   </table>
+</div>
+</div>
+</div>
 </template>
 
 <template name="athlethes">
+    <div class="main-contrainer">
+
   <table class="table table-stripped">
     <thead>
       <th>Athlete 1</th>
@@ -57,4 +66,5 @@
     </tr>
     {{/each}}
   </table>
+  </div>
 </template>

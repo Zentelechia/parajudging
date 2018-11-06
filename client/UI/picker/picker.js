@@ -161,13 +161,15 @@ Template.notFinal.onRendered(() => {
 
 })
 Template.notFinal.helpers({
-  participants(){
-    pe = ProgramElements.findOne({active:true})
-    if (pe){
-        return pe.Participants.length    
+  participants() {
+    pe = ProgramElements.findOne({
+      active: true
+    })
+    if (pe) {
+      return pe.Participants.length
     }
-    },  
-    toSelect() {
+  },
+  toSelect() {
     pi = ProgramItems.findOne({
       active: true
     })
@@ -185,8 +187,7 @@ Template.notFinal.helpers({
       Session.set('toSelect', toSelect)
       if (!toSelect) {
         $('.send').show()
-      }
-      else {
+      } else {
         $('.send').hide()
 
       }
@@ -200,7 +201,9 @@ Template.notFinal.helpers({
     if (pi) {
       heat = Session.get("heatToDisplay") || pi.heat
       return ProgramItems.findOne({
-        Description: {$not: "  1st Round"},
+        Description: {
+          $not: "  1st Round"
+        },
         program_element: pi.program_element,
         Dance: pi.Dance,
         Level: pi.Level,
