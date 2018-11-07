@@ -71,6 +71,10 @@ Template.results.helpers({
     if (pi) {
       return pi.Marks
     }
+  },
+  items() {
+    return true; 
+    // Session.get('items')
   }
 })
 
@@ -123,7 +127,8 @@ Template.results.events({
         $set: {
           active: false
         }
-      })
+      });
+ 
     }
 
     id = $(e.currentTarget).parent().attr('id')
@@ -134,34 +139,9 @@ Template.results.events({
         active: true,
         activated: true
       }
-    })
-    console.log(pi)
-  }
-})
-
-Template.results.helpers({
-  items() {
-    return Session.get('items')
-  },
-  entries() {
-    pi = ProgramItems.findOne({
-      active: true
-    })
-    if (pi) {
-      pp = ProgramItems.find({
-        program_element: pi.program_element,
-        Dance: pi.Dance,
-        Level: pi.Level
-      }).fetch()
-      flat = _.flatten(_.map(pp, p => {
-        return p.Entries
-      }))
-      return _.sortBy(flat, f => {
-        return +f
-      })
-
-    }
-  }
+    });
+    Session.get('activeProgramItem',pi);
+ }
 })
 
 
@@ -354,9 +334,8 @@ UI.registerHelper('inDance', (results, dance) => {
 
 })
 UI.registerHelper('voice', (Entry, judge) => {
-  pi = ProgramItems.findOne({
-    active: true
-  })
+  pi = Session.get('activeProgramItem');
+ 
   if (pi) {
     Entry = +Entry
     pp = Results.findOne({
@@ -373,9 +352,8 @@ UI.registerHelper('voice', (Entry, judge) => {
   }
 })
 UI.registerHelper('total', (Entry) => {
-  pi = ProgramItems.findOne({
-    active: true
-  })
+  
+  pi = Session.get('activeProgramItem');
   if (pi) {
     Entry = +Entry
     return Results.find({

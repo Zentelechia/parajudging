@@ -24,6 +24,8 @@ Router.route('/login', {
 
 Router.route('/picker', {
   name: 'picker',
+  layoutTemplate: 'full',
+
   action: function () {
     this.render('picker')
   }

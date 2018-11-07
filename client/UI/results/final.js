@@ -134,7 +134,7 @@ UI.registerHelper('finalScoreTot', function (Entry) {
       CPR = +($e.find('.CPR').text())
       DLR = +($e.find('.DLR').text())
       value = ((TSR + CPR) * DLR).toFixed(3)
-      if (value!='0.000'){
+      if (value != '0.000') {
         Meteor.call('score', {
           program_element: pi.program_element,
           Entry,
@@ -149,14 +149,14 @@ UI.registerHelper('finalScoreTot', function (Entry) {
 
 Template.judgingFinalTechnic.helpers({
 
-'click #total'() {
-  $('.total').each(function (i, e) {
-    TSR = +$(e).siblings('.TSR').text()
-    CPR = +$(e).siblings('.CPR').text()
-    DLR = +$(e).siblings('.DLR').text()
-    $(e).text(((TSR + CPR) * DLR).toFixed(3))
-  })
-}
+  'click #total'() {
+    $('.total').each(function (i, e) {
+      TSR = +$(e).siblings('.TSR').text()
+      CPR = +$(e).siblings('.CPR').text()
+      DLR = +$(e).siblings('.DLR').text()
+      $(e).text(((TSR + CPR) * DLR).toFixed(3))
+    })
+  }
 })
 Template.judgingFinalTechnic.helpers({
   entries() {
@@ -178,19 +178,16 @@ Template.judgingFinalTechnic.helpers({
 
     }
   },
-  difficulty(){
+  difficulty() {
     pi = ProgramItems.findOne({
       active: true
     })
     if (pi) {
-      if (pi.Level=='Normal'){
+      if (pi.Level == 'Normal') {
         return 1.15
-      }
-      else {
+      } else {
         return 1.35
       }
     }
-
-
   }
 })

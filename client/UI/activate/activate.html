@@ -1,9 +1,25 @@
 <template name="results">
-  <div class="col-4">
-    {{> judgingFinalTechnic}}
-    {{> judgingFinal}}
-    {{> judging}}
-    {{> notFinalResults}}
+  <div class="col-6">
+      {{#unless generalLook}}
+        {{#if items}}
+         {{#if final}}
+          {{#if technic}}
+            {{> judgingFinalTechnic}}
+          {{else}}
+            {{> judgingFinal}}
+          {{/if}}
+        {{else}}
+           {{> judging}}
+        {{/if}}
+      {{/if}}
+    {{#if items}}
+   {{#if final}}
+     {{> judgingFinal}}
+   {{else}}
+     {{> notFinalResults}}
+   {{/if}}
+  {{/if}}
+{{/unless}}
   </div>
 </template>
 
