@@ -20,10 +20,7 @@ Meteor.publish({
           program_element
         }),
         Results.find({
-          program_element,
-          byDance: {
-            $not: true
-          },
+          program_element
         }),
         JudgesFunctions.find()
       ]

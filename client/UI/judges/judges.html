@@ -1,5 +1,5 @@
 <template name="judges">
-  <div class="main-contrainer">
+  <div class="main-contrainer padding">
     <div class="row">
       <div class="col">
 
@@ -23,7 +23,7 @@
 </template>
 
 <template name="athlethes">
-    <div class="main-contrainer">
+    <div class="main-contrainer padding">
 
   <table class="table table-stripped">
     <thead>
@@ -48,21 +48,23 @@
 
         Gender
       </th>
+      <th>City</th>
       <th>
-        NPC
+        Club
       </th>
     </thead>
     {{#each athlethes }}
     <tr>
-      <th>{{Athlete_1}}</th>
-      <th>{{Athlete_2}}</th>
-      <th>{{Program}}</th>
-      <th>{{Number}}</th>
-      <th>{{Dance}}</th>
-      <th>{{Event}}</th>
-      <th>{{Class}}</th>
-      <th>{{Gender}}</th>
-      <th>{{NPC}}</th>
+      <td>{{Athlete_1Local_name}}</td>
+      <td>{{Athlete_2Local_name}}</td>
+      <td>{{Program}}</td>
+      <td>{{Number}}</td>
+      <td>{{Dance}}</td>
+      <td>{{Event}}</td>
+      <td>{{Class}}</td>
+      <td>{{Gender}}</td>
+      <td>{{RequestSingle_Line2}}</td>
+      <td>{{Requestlub_organization_name}}</td>
     </tr>
     {{/each}}
   </table>
