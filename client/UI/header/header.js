@@ -1,3 +1,4 @@
+
 Template.header.helpers({
   judge(){
     return Judges.findOne()
@@ -12,7 +13,6 @@ Template.header.helpers({
 })
 Template.header.events({
 'click .judge'(){
-  Meteor.subscribe('dataByPin',null)
   Session.set('pin',null)
   Router.go('/')
 },

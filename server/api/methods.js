@@ -11,9 +11,37 @@ Meteor.methods({
       $set: {
         active: true
       }
+    });
+    pe = ProgramElements.findOne(id);
+    ProgramItems.update({
+      active: true
+    }, {
+      $set: {
+        active: false
+      }
+    });
+
+
+    var opts = {
+      sort: {
+        Dance_order: 1,
+        Level: -1,
+        heat: 1
+      }
+    }
+    pi = ProgramItems.findOne({
+      program_element: pe.ID
+    }, opts)
+    ProgramItems.update(pi._id, {
+      $set: {
+        active: true
+      }
     })
+
   },
   activateItem(id) {
+
+    pi = ProgramItems.findOne(id);
     ProgramItems.update({
       active: true
     }, {
@@ -22,6 +50,21 @@ Meteor.methods({
       }
     })
     ProgramItems.update(id, {
+      $set: {
+        active: true
+      }
+    })
+
+    ProgramElements.update({
+      active: true
+    }, {
+      $set: {
+        active: false
+      }
+    })
+    ProgramElements.update({
+      ID: pi.program_element
+    }, {
       $set: {
         active: true
       }
@@ -36,22 +79,49 @@ Meteor.methods({
     api = ProgramItems.findOne({
       active: true
     })
-    Results.remove({
-      Description: api.Description,
+    results = Results.findOne({
       Entry,
-      judge,
-      program_element: api.program_element,
-      Dance: api.Dance,
-      Level: api.Level,
-    })
-    Results.insert({
-      Description: api.Description,
-      Entry,
-      judge,
-      value,
       program_element: api.program_element,
       Dance: api.Dance,
       Level: api.Level
+    })
+    value = value ? value : 0
+    selected = results && results.selected ? results.selected : {}
+    selected[judge] = value
+    total = 0;
+    _.each(_.keys(selected), k => {
+      selected[k] == 1 ? total++ : 0
+    })
+    Results.upsert({
+      Entry,
+      program_element: api.program_element,
+      Dance: api.Dance,
+      Level: api.Level
+    }, {
+      $set: {
+        selected,
+        total
+      }
+    });
+    result = Results.findOne({
+      Entry,
+      program_element: api.program_element,
+      total: true,
+      Level: api.Level
+    });
+
+    dances = result && result.dances ? result.dances : {}
+    danceFirstLetter = api.Dance[0]
+    dances[danceFirstLetter] = dances[danceFirstLetter] ? dances[danceFirstLetter] + 1 : 1
+    Results.upsert({
+      Entry,
+      program_element: api.program_element,
+      total: true,
+      Level: api.Level
+    }, {
+      $set: {
+        dances
+      }
     });
   },
   clearScores() {
@@ -67,58 +137,67 @@ Meteor.methods({
     api = ProgramItems.findOne({
       active: true
     })
-    Results.remove({
-      type,
-      judge,
+    score = Results.findOne({
       Entry,
+      byDance: false,
       program_element: api.program_element,
       Dance: api.Dance,
       Level: api.Level
     })
-    id = Results.insert({
-      type,
-      judge,
-      value,
+
+
+    scores = score && score.scores ? score.scores : {}
+    scores[type] = scores[type] || {}
+    scores[type][judge] = value
+    scores.RES = scores.RES || {}
+    if (api.level) {
+      scores.RES.DL = api.Level == 'Normal' ? 1.15 : 1.35
+    }
+    if (_.keys(scores[type]).length > 3) {
+      results = _.map(_.keys(scores[type]), k => {
+        return scores[type][k]
+      })
+      results = _.sortBy(results, r => {
+        return r
+      })
+      results = results.slice(1, results.length - 1)
+      sum = 0
+      _.each(results, r => {
+        sum += r
+      })
+      RES = (sum / results.length).toFixed(3)
+      scores.RES[type] = RES;
+    }
+    if (_.keys(scores.RES).length == 3) {
+      scores.TOTAL = ((+scores.RES.CP + +scores.RES.TS) * +scores.RES.DL).toFixed(3)
+    }
+
+    console.log(scores)
+    id = Results.upsert({
       Entry,
       program_element: api.program_element,
       Dance: api.Dance,
       Level: api.Level,
-    });
-
-    console.log(id)
-  },
-  fullScore({
-    judge,
-    Entry,
-    value,
-    type
-  }) {
-    console.log(arguments)
-    const {
-      program_element,
-      Dance,
-      Level
-    } = ProgramItems.findOne({
-      active: true
-    })
-    fs = Results.findOne({
-      full: true,
-      program_element,
-      Dance,
-      Level
-    });
-
-    scores = fs.scores || {}
-    scores[type] = scores[type] || {}
-    scored[type][judge] = value;
-    Results.upsert({
-      full: true,
-      program_element,
-      Dance,
-      Level
+      byDance: false
     }, {
-      scores
+      $set: {
+        scores
+      }
     });
+
+    if (scores.TOTAL) {
+      scoresByDance = {}
+      scoresByDance[Dance] = scores.TOTAL
+
+      id = Results.upsert({
+        Entry,
+        program_element: api.program_element,
+        Level: api.Level,
+        byDance: true
+      }, {
+        $set: scoresByDance
+      });
+    }
   },
 
   penalty({
@@ -181,76 +260,6 @@ Meteor.methods({
       }
 
     })
-  },
-  fetch() {
-    const zohoApp = 'https://creator.zohopublic.com/venture/paradance/json/'
-    const programItemsURL = `${zohoApp}ProgramsItems/gSRsVvBbXU4UE9kRErP0aMwNvVSF0zm7JM4rvXSPD9hVuDaw3GJsfQRU5xDPjvS0qEGnekVaqv4pqaE8MWVW4eUYyHBWyKH30kmg`
-    // const championshipURL=`${zohoApp}All_Championships/KXrGmGGtvx0pdDJTnWKYbuX5jE2xe3DObz1p9OmnsMsXCKghyHZSEw7b839YtvWm2Am3kzFZdBWmu0kv11qJ5k76O58KGvh7Ge5m`
-    const programElementsURL = `${zohoApp}Program/zgrDy3W8nhrXSAKAAaskyNwwrtDUb5CUu1p4wYZvSxrdkaVy7O5NmGjNtPZvmGb4uPgBD6e5eJ5TxGF0uYk9armFvPVrrrC2aVXr`
-    // const judgesFunctionsURL=`${zohoApp}Judges_functions_Report/P6XyjjYZqUF2RrYr7syqFCCEvznzM4P6RbwDx2vTdOK9KQEteAZtSrQuMgxQzH5PdTsjZ4qV3YYyCDO11FD84kHx9649UGNnYjHY`
-    var flag = true
-    // flag = false
-
-
-
-
-    // Results.remove({})
-    String.prototype.replaceAll = function (search, replace) {
-      return this.split(search).join(replace);
-    }
-    if (flag) {
-      ProgramItems.remove({})
-      ProgramElements.remove({
-        name: {
-          $exists: false
-        }
-      })
-      var {
-        data
-      } = HTTP.get(programItemsURL)
-      //   // const cs=HTTP.get(championshipURL)
-      // const pe=HTTP.get(programElementsURL)
-      //   // const { data } =HTTP.get(championshipURL)
-      //   // Judges.insert(data)
-      //   // judges=data.Championships[0]["Judges.Judge"]
-      //   // console.log(judges)
-      // console.log(_.keys(data))
-      _.each(data.programs_items, pi => {
-
-        delete pi["Entries.Number"]
-        ProgramItems.insert(pi)
-        // console.log(pi)
-      })
-
-
-      var {
-        content
-      } = HTTP.get(programElementsURL)
-      content = content.replaceAll('"ID":', '"ID":"')
-      content = content.replaceAll('}', '"}')
-      content = content.replace(']"}', ']}')
-
-      // console.log(content)
-      data = JSON.parse(content)
-      // console.log(result)
-
-
-
-      // console.log(data.program_elements)
-      _.each(data.program_elements, pe => {
-        // console.log(pe.ID)
-        ProgramElements.insert(pe)
-      })
-    }
-
-
-
-    // judges=Judges.findOne()
-    // jj=judges.Championships[0].Organizer.split(',')
-    // _.map(jj,j=>{
-    // ju=j.split(';')
-    // Judges.insert({name: ju[0].trim(), letter: ju[1].trim()})
-    // }) 
   },
   clearEmptyTotals() {
     Results.remove({

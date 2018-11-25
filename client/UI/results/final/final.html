@@ -1,0 +1,173 @@
+<template name='judgingFinal'>
+  <table class="bordered table plus" judgingFinal>
+    <thead>
+      <tr>
+        <th rowspan=2>Num</th>
+        <th colspan=6>TS</th>
+        <th rowspan=2>Res</th>
+        <th colspan=6>CP</th>
+        <th rowspan=2>Res</th>
+        <th colspan=6>DL</th>
+        <th rowspan=2>Res</th>
+        <th rowspan=2>Penalty</th>
+        <th rowspan=2>Total</th>
+      </tr>
+      <tr>
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>E</th>
+        <th>G</th>
+        <th>J</th>
+        
+        <th>A</th>
+        <th>C</th>
+        <th>D</th>
+        <th>E</th>
+        <th>F</th>
+        <th>H</th>
+
+        <th>B</th>
+        <th>D</th>
+        <th>F</th>
+        <th>G</th>
+        <th>H</th>
+        <th>J</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      {{#each e in entries}}
+      <tr id="final{{this}}">
+        <td>{{e.Entry}}</td>
+        <td>{{e.scores.TS.A}}</td>
+        <td>{{e.scores.TS.B}}</td>
+        <td>{{e.scores.TS.C}}</td>
+        <td>{{e.scores.TS.E}}</td>
+        <td>{{e.scores.TS.G}}</td>
+        <td>{{e.scores.TS.J}}</td>
+        <td class='TSR'>{{e.scores.RES.TS}}</td>
+
+        <td>{{e.scores.CP.A}}</td>
+        <td>{{e.scores.CP.C}}</td>
+        <td>{{e.scores.CP.D}}</td>
+        <td>{{e.scores.CP.E}}</td>
+        <td>{{e.scores.CP.F}}</td>
+        <td>{{e.scores.CP.H}}</td>
+        <td class='CPR'>{{e.scores.RES.CP}}</td>
+
+        <td>{{e.scores.DL.B}}</td>
+        <td>{{e.scores.DL.D}}</td>
+        <td>{{e.scores.DL.F}}</td>
+        <td>{{e.scores.DL.G}}</td>
+        <td>{{e.scores.DL.H}}</td>
+        <td>{{e.scores.DL.J}}</td>
+        <td class='DLR'>{{e.scores.RES.DL}}</td>
+
+        <td><input class="penalty" value={{penalty this}}></td>
+        <td class="total">{{e.scores.TOTAL}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</template>
+
+<template name='finalScores'>
+  <table class="table finalScores">
+    <thead>
+      <th>#</th>
+      <th>Num</th>
+      {{#each dances}}
+      <th>{{firstLetter this }}</th>
+      {{/each}}
+      <th>Total</th>
+    </thead>
+    <tbody>
+      {{#each entry in entries}}
+      <tr class="notFinalResultsRow" id="{{entry.Entry}}">
+        <td>{{entry.i}}</td>
+        <td>{{entry.Entry}}</td>
+        {{#each dance in dances}}
+        <td>{{inDance entry dance}}</td>
+        {{/each}}
+        <td>{{entry.total}}</td>
+
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</template>
+
+<template name='judgingFinalTechnic'>
+  <table class="bordered finalTechnic">
+    <thead>
+      <tr>
+        <th rowspan=2>Num</th>
+        <th colspan=10>TS</th>
+        <th colspan=10>CP</th>
+        <th rowspan=2>DL</th>
+        <th rowspan=2>Penalty</th>
+        <th rowspan=2>Total</th>
+
+      </tr>
+      <tr>
+
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+        <th>E</th>
+        <th>F</th>
+        <th>G</th>
+        <th>H</th>
+        <th>I</th>
+        <th>Res</th>
+
+
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+        <th>E</th>
+        <th>F</th>
+        <th>G</th>
+        <th>H</th>
+        <th>I</th>
+        <th>Res</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each entries}}
+      <tr id="final{{this}}">
+        <td>{{this}}</td>
+        <td>{{e.scores.TS.A}}</td>
+        <td>{{e.scores.TS.B}}</td>
+        <td>{{e.scores.TS.C}}</td>
+        <td>{{e.scores.TS.D}}</td>
+        <td>{{e.scores.TS.E}}</td>
+        <td>{{e.scores.TS.F}}</td>
+        <td>{{e.scores.TS.G}}</td>
+        <td>{{e.scores.TS.H}}</td>
+        <td>{{e.scores.TS.I}}</td>
+
+        <td class='TSR'>{{e.scores.TS.RES}}</td>
+
+        <td>{{e.scores.CP.A}}</td>
+        <td>{{e.scores.CP.B}}</td>
+        <td>{{e.scores.CP.C}}</td>
+        <td>{{e.scores.CP.D}}</td>
+        <td>{{e.scores.CP.E}}</td>
+        <td>{{e.scores.CP.F}}</td>
+        <td>{{e.scores.CP.G}}</td>
+        <td>{{e.scores.CP.H}}</td>
+        <td>{{e.scores.CP.I}}</td>
+        <td class='CPR'>{{e.scores.RES.CP}}</td>
+        <td class='DLR'>{{e.scores.RES.DL}}</td>
+        <td><input class="penalty" value={{penalty this}}></td>
+        <td class="total">{{e.scores.TOTAL}}</td>
+
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</template>

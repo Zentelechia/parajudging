@@ -66,10 +66,10 @@ th.function {
   right: 5vw;
   font-size: 4em;
 }
-.maybe {
+.state-1 {
   background-color: yellow !important;
 }
-.selected {
+.state1 {
   background-color: green !important;
 }
 .button {

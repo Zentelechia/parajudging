@@ -1,3 +1,7 @@
+.table th, .table td {
+  padding: 3px !important;
+  text-align: center;
+}
 body {
   padding: 0px;
   margin: 0px;

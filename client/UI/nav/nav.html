@@ -1,4 +1,5 @@
 <template name="nav">
+    {{> modals}}
   <div class="layout layout-nav-side">
     <div class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
       <a class="navbar-brand" href="/">
@@ -15,7 +16,7 @@
               <img alt="Image" src="/assets/img/avatar-male-4.jpg" class="avatar" />
             </a>
             <div class="dropdown-menu dropdown-menu-right">
-              <a href="user/profile" class="dropdown-item">Program</a>
+              <!-- <a href="user/profile" class="dropdown-item">Program</a> -->
               <a href="user/settings" class="dropdown-item">Athlethes</a>
               <a href="/logout" class="dropdown-item">Results</a>
             </div>
@@ -24,11 +25,11 @@
       </div>
       <div class="collapse navbar-collapse flex-column" id="navbar-collapse">
         <ul class="navbar-nav d-lg-block">
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="/">Dashboard</a>
-          </li>
+          </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="/program">Program</a>
+            <a class="nav-link" href="/">Program</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/athlethes">Athlethes</a>
@@ -42,7 +43,9 @@
           <span class="text-small text-muted">Quick Links</span>
           <ul class="nav nav-small flex-column mt-2">
             <li class="nav-item">
-              <a href="nav-side-team.html" class="nav-link">Current heat</a>
+              {{#if heat}}
+              <a href="/item/{{heat._id}}" class="nav-link">Current heat: {{heat.Description}}</a>
+              {{/if}}
             </li>
           </ul>
           <hr>
@@ -55,7 +58,7 @@
                   <i class="material-icons">search</i>
                 </span>
               </div>
-              <input type="search" class="form-control form-control-dark" placeholder="Search" aria-label="Search app"
+              <input type="search" id="filter" class="form-control form-control-dark" placeholder="Search" aria-label="Search app"
                 aria-describedby="search-app">
             </div>
           </form>

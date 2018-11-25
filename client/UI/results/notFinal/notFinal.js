@@ -1,149 +1,22 @@
-var randomize = function (array) {
-  return _.sortBy(array, e => {
-    return Math.random()
-  })
-}
-Template.results.onRendered(() => {
-  Meteor.subscribe('all')
-  pe = ProgramElements.findOne({
-    active: true
-  })
-  if (pe) {
-    Session.set('programElement', pe.ID)
-  }
-  $('.sortable').sortable({
-    connectWith: '.sortable',
-    placeholder: 'ui-state-highlight',
-    receive: function (event, ui) {
-      var sourceList = ui.sender;
-      var targetList = $(this);
-    },
-    stop: function (event, ui) {
-      console.log(ui)
-      if ($(ui.helper).hasClass('Entry')) {
-        Entry = $(ui.helper).attr('id')
-        ProgramElement
-      } else {
-        $('.sortable li').each((i, e) => {
-          ProgramElements.update($(e).attr('id'), {
-            $set: {
-              order: $(e).index() + 1
-            }
-          })
-        })
-      }
-    }
-  }).disableSelection()
-})
-
-Template.results.helpers({
-  programElement() {
-    const pe = ProgramElements.findOne({
-      active: true
-    })
-    if (pe) {
-      return pe._id
-    }
-  },
-  technic() {
-    pi = ProgramItems.findOne({
-      active: true
-    })
+Template.judging.helpers({
+  entries() {
+    pi = ProgramItems.findOne(Session.get('itemId'))
     if (pi) {
-      return pi.Level
+      return Results.find({
+        program_element: pi.program_element,
+        Dance: pi.Dance,
+        Level: pi.Level
+      }, {
+        sort: {
+          total: -1,
+          Entry: 1
+        }
+      }).fetch()
+    } else {
+      return []
     }
-  },
-  generalLook() {
-    pi = ProgramElements.findOne({
-      active: true
-    })
-    if (pi) {
-      if (pi.Description.indexOf("General") == 1) {
-        // Session.set('GL', true)
-        return true
-      }
-    }
-  },
-  final() {
-    pi = ProgramElements.findOne({
-      active: true
-    })
-    if (pi) {
-      return pi.Marks
-    }
-  },
-  items() {
-    return true; 
-    // Session.get('items')
   }
 })
-
-
-Template.results.events({
-  'change input'(e) {
-    id = $(e.currentTarget).parent().attr('id')
-    console.log(id)
-    ProgramElements.update(id, {
-      $set: {
-        name: e.currentTarget.value
-      }
-    })
-  },
-  'click #addElement'() {
-    ProgramElements.insert({
-      name: 'new program element'
-    })
-  },
-  'sortchange #sortable'() {
-    console.log('changed')
-  },
-  'click .activateElement'(e) {
-    pe = ProgramElements.findOne({
-      active: true
-    })
-    if (pe) {
-      ProgramElements.update(pe._id, {
-        $set: {
-          active: false
-        }
-      })
-    }
-
-    id = $(e.currentTarget).parent().attr('id')
-    pe = ProgramElements.findOne(id)
-    Session.set('programElement', pe.ID)
-    ProgramElements.update(id, {
-      $set: {
-        active: true
-      }
-    })
-  },
-  'click .activateItem'(e) {
-    pe = ProgramItems.findOne({
-      active: true
-    })
-    if (pe) {
-      ProgramItems.update(pe._id, {
-        $set: {
-          active: false
-        }
-      });
- 
-    }
-
-    id = $(e.currentTarget).parent().attr('id')
-    pi = ProgramItems.findOne(id)
-    Session.set('programItem', pi._id)
-    ProgramItems.update(id, {
-      $set: {
-        active: true,
-        activated: true
-      }
-    });
-    Session.get('activeProgramItem',pi);
- }
-})
-
 
 Template.notFinalResults.events({
   'click .notFinalResultsRow'({
@@ -285,19 +158,18 @@ Template.notFinalResults.helpers({
   },
 
   entries() {
-    pi = ProgramItems.findOne({
-      active: true
-    })
-    pe = ProgramElements.findOne({
-      active: true
-    })
-    if (pi && pe) {
+    pi = ProgramItems.findOne(Session.get('itemId'))
+    if (pi) {
+      return pi.Entries;
+    }
+    if (pi) {
       results = []
       dances = _.unique(ProgramItems.find({
         program_element: pi.program_element
       }).map((r) => {
         return r.Dance
       }))
+
       _.each(pe.Entries, Entry => {
         Entry = +Entry
         entry = {
@@ -335,7 +207,7 @@ UI.registerHelper('inDance', (results, dance) => {
 })
 UI.registerHelper('voice', (Entry, judge) => {
   pi = Session.get('activeProgramItem');
- 
+
   if (pi) {
     Entry = +Entry
     pp = Results.findOne({
@@ -352,7 +224,7 @@ UI.registerHelper('voice', (Entry, judge) => {
   }
 })
 UI.registerHelper('total', (Entry) => {
-  
+
   pi = Session.get('activeProgramItem');
   if (pi) {
     Entry = +Entry

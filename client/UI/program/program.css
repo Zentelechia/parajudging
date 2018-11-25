@@ -4,5 +4,8 @@
   margin: 2px;
 }
 .active_true {
-  background-color: lightcyan !important;
+  background-color: #7fffa9 !important;
+}
+.rightLine {
+  border-right:  1px solid #e9eef2;
 }

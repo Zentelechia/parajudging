@@ -16,6 +16,7 @@ Router.configure({
 })
 
 Router.route('/login', {
+  layoutTemplate: 'full',
   name: 'login',
   action: function () {
     this.render('login')
@@ -25,7 +26,12 @@ Router.route('/login', {
 Router.route('/picker', {
   name: 'picker',
   layoutTemplate: 'full',
-
+  onBeforeAction(){
+    if (!Session.get('pin')){
+      Router.go('/login')
+    }
+    this.next()
+  },
   action: function () {
     this.render('picker')
   }
@@ -33,16 +39,10 @@ Router.route('/picker', {
 Router.route('/', {
   name: 'main',
   template: 'elements',
-  layoutTemplate: 'navSide',
-  waitOn: function () {
-    return Meteor.subscribe('all');
-  }
+  layoutTemplate: 'navSide'
 })
 Router.route('/judges', {
   name: 'judjes',
-  waitOn: function () {
-    return Meteor.subscribe('all');
-  },
   action: function () {
     this.render('judges')
   }
@@ -58,6 +58,7 @@ Router.route('/athlethes', {
 })
 Router.route('/program/:id', function () {
   const id = this.params.id;
+  Session.set('itemId', null);
   Session.set('programId', id);
 
   this.layout('navSide2');

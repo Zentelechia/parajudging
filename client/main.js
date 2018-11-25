@@ -1,10 +1,7 @@
-Tracker.autorun(()=>{
-  // Meteor.subscribe('dataByPin', Session.get('pin'))
-})
 Template.login.events({
   'keyup #PIN'() {
     pin = $("#PIN").val()
-    if (pin.length > 4) {
+    if (pin.length > 3) {
       Session.set("pin", +pin)
     }
   }
@@ -14,10 +11,10 @@ Template.login.helpers({
     j = Judges.findOne()
     if (j) {
       Session.set('judge', j)
-      if (j.letter=='CH'){
+      if (j.letter == 'CH') {
         Router.go('/activate')
 
-      }else {
+      } else {
 
         Router.go('/picker')
       }
@@ -25,8 +22,8 @@ Template.login.helpers({
   }
 })
 Template.subscribe.helpers({
-  sub(){
-    Meteor.subscribe('elements');
+  helper(){
     Meteor.subscribe('dataByPin', Session.get('pin'))
+    return " "
   }
 })

@@ -15,15 +15,14 @@
 <body>
   {{> subscribe}}
 </body>
+<template name="subscribe">
+{{helper}}
+</template>
 
 <template name='login'>
   {{judge}}
   <span id="prePIN"> Please enter your PIN </span>
   <input type="password" id="PIN" placeholder="Enter your PIN (6 digits)">
-</template>
-
-<template name='subscribe'>
-  {{sub}}
 </template>
 
 

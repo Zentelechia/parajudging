@@ -104,7 +104,7 @@ Template.picker.helpers({
     }
   },
   isFinal() {
-    pi = ProgramItems.findOne({
+    pi = ProgramElements.findOne({
       active: true
     })
     if (pi) {
@@ -176,14 +176,15 @@ Template.notFinal.helpers({
     judge = Session.get('judge')
     if (pi && judge) {
       judge = judge.letter
-      selected = Results.find({
+      selected = {}
+      selected[judge] = 1
+      alreadySelected = Results.find({
         program_element: pi.program_element,
         Dance: pi.Dance,
         Level: pi.Level,
-        value: 'selected',
-        judge
+        selected
       }).count()
-      toSelect = pi.On_next_round - selected
+      toSelect = pi.On_next_round - alreadySelected
       Session.set('toSelect', toSelect)
       if (!toSelect) {
         $('.send').show()
@@ -194,6 +195,7 @@ Template.notFinal.helpers({
       return toSelect
     }
   },
+
   participants() {
     pi = ProgramItems.findOne({
       active: true
@@ -201,13 +203,10 @@ Template.notFinal.helpers({
     if (pi) {
       heat = Session.get("heatToDisplay") || pi.heat
       return ProgramItems.findOne({
-        Description: {
-          $not: "  1st Round"
-        },
-        program_element: pi.program_element,
+        heat,
         Dance: pi.Dance,
         Level: pi.Level,
-        heat
+        program_element: pi.program_element
       }).Entries;
     }
   }
@@ -217,39 +216,37 @@ UI.registerHelper('score', function (type, Entry) {
   judge = Session.get('judge').letter
   api = ProgramItems.findOne({
     active: true
-
   })
   Entry = +Entry
-  // console.log(arguments)
-  score = Results.findOne({
-    program_element: api.program_element,
-    Description: null,
-    type,
-    judge,
-    Entry,
-    Dance: api.Dance,
-    Level: api.Level
-  })
-  return (score && score.value) || "-.-"
-
-
-  // scoreType == 'skill' ? "1.0" : "5.0"
+  if (api) {
+    score = Results.findOne({
+      program_element: api.program_element,
+      Description: null,
+      Entry,
+      Dance: api.Dance,
+      Level: api.Level
+    })
+    return (score && score.scores && score.scores[type] && score.scores[type][judge]) || "-.-"
+  }
 });
+iterator = {
+  "0": 1,
+  "-1": 0,
+  "1": -1,
+  "undefined": 1
+}
+
+
 Template.notFinal.events({
   'click .selector'(e) {
     toSelect = Session.get("toSelect")
-    if (toSelect > 0 || $(e.currentTarget).hasClass('selected')) {
-
-
+    if (toSelect > 0 || $(e.currentTarget).attr('state') !== "0") {
       const judge = Session.get("judge").letter
       const Entry = +e.currentTarget.id
-      value = 'selected'
-      if ($(e.currentTarget).hasClass('selected')) {
-        value = 'maybe'
-      }
-      if ($(e.currentTarget).hasClass('maybe')) {
-        value = ''
-      }
+      state = $(e.currentTarget).attr('state');
+      value = state ? iterator[state] : 1
+      console.log('state: ' + state)
+      console.log('value: ' + value)
       Meteor.call('choose', {
         judge,
         Entry,
@@ -257,6 +254,26 @@ Template.notFinal.events({
       })
     }
   }
+})
+
+UI.registerHelper('selectedValue', function (Entry) {
+  var {
+    letter
+  } = Session.get('judge')
+  console.log(letter)
+  console.log(arguments)
+  pi = ProgramItems.findOne({
+    active: true
+  })
+  Entry = +Entry
+  result = Results.findOne({
+    program_element: pi.program_element,
+    Dance: pi.Dance,
+    Level: pi.Level,
+    Entry
+  })
+  console.log(result)
+  return result && result.selected ? result.selected[letter] : ''
 
 })
 
@@ -273,13 +290,14 @@ UI.registerHelper('class', (Entry) => {
     program_element: pi.program_element,
     Dance: pi.Dance,
     Level: pi.Level,
-    judge,
     Entry
   })
   console.log(result)
 
-  if (result) {
-    return result.value
+  if (result && result.selected && result.selected[judge]) {
+    return result.selected[judge] == '+' ? 'slected' : 'maybe'
+  } else {
+    return ''
   }
 })
 Template.generalLook.onRendered(() => {

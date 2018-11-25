@@ -4,43 +4,47 @@ Meteor.publish({
       PIN
     })
     if (j) {
+      var {
+        program_element
+      } = ProgramItems.findOne({
+        active: true
+      })
       return [
         Judges.find({
           _id: j._id
         }),
-        ProgramElements.find({}),
-        ProgramItems.find({}),
+        ProgramElements.find({
+          ID: program_element
+        }),
+        ProgramItems.find({
+          program_element
+        }),
         Results.find({
-          judge: j.letter
+          program_element,
+          byDance: false
         }),
         JudgesFunctions.find()
       ]
     } else {
-      // this.stop()
+      return
     }
   },
-  elements() {
-    return ProgramElements.find();
-
-  },
-  items(program_element) {
+   items(program_element) {
     return ProgramItems.find({
       program_element
     })
 
   },
+  elements() {
+    return ProgramElements.find()
+  },
   judging(program_item) {
     const {
       program_element
     } = ProgramItems.findOne(program_item);
-    return [
-      ProgramItems.find({
-        program_element
-      }),
-      Results.find({
-        program_element
-      })
-    ]
+    return Results.find({
+      program_element
+    })
   },
   all(id) {
     pe = ProgramElements.findOne({

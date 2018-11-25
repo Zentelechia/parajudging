@@ -1,0 +1,65 @@
+<template name='judging'>
+  <div class="col judging">
+    <table class="itemResults_ table">
+      <thead>
+        <th>Num</th>
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+        <th>E</th>
+        <th>F</th>
+        <th>G</th>
+        <th>H</th>
+        <th>I</th>
+        <th>J</th>
+        <th>Total</th>
+      </thead>
+      <tbody>
+        {{#each e in entries}}
+        <tr class="plus">
+          <td>{{e.Entry}}</td>
+          <td>{{#if e.selected.A}}+{{/if}}</td>
+          <td>{{#if e.selected.B}}+{{/if}}</td>
+          <td>{{#if e.selected.C}}+{{/if}}</td>
+          <td>{{#if e.selected.D}}+{{/if}}</td>
+          <td>{{#if e.selected.E}}+{{/if}}</td>
+          <td>{{#if e.selected.F}}+{{/if}}</td>
+          <td>{{#if e.selected.G}}+{{/if}}</td>
+          <td>{{#if e.selected.H}}+{{/if}}</td>
+          <td>{{#if e.selected.I}}+{{/if}}</td>
+          <td>{{#if e.selected.J}}+{{/if}}</td>
+          <td>{{e.total}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</template>
+
+<template name='notFinalResults'>
+  <h6>Selections</h6>
+  <table class="table notFinalResults">
+    <thead>
+      <th>#</th>
+      <th>Num</th>
+      {{#each dances}}
+      <th>{{firstLetter this }}</th>
+      {{/each}}
+      <th>Total</th>
+    </thead>
+    <tbody>
+      {{#each entry in entries}}
+      <tr class="notFinalResultsRow" id="{{entry.Entry}}">
+        <td>{{entry.i}}</td>
+        <td>{{entry.Entry}}</td>
+        {{#each dance in dances}}
+           <td>{{inDance entry dance}}</td>
+        {{/each}}
+        <td>{{entry.total}}</td>
+        <td><button class="btn btn-info">On next round</button></td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</template>

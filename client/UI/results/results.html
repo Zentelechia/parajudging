@@ -1,0 +1,32 @@
+<template name="results">
+  <div class="col-6">
+    <h6>{{heat.Dance}} Heat {{heat.heat}}</h6>
+    {{#unless generalLook}}
+      {{#if final}}
+        {{#if technic}}
+          {{> judgingFinalTechnic}}
+        {{else}}
+          {{> judgingFinal}}
+        {{/if}}
+      {{else}}
+          {{> judging}}
+      {{/if}}
+
+      {{#if final}}
+        {{> finalScores}}
+      {{else}}
+        {{> notFinalResults}}
+      {{/if}}
+
+      {{else}}
+      {{> GL}}
+    {{/unless}}
+
+  </div>
+</template>
+<template name="GL">
+  <h3>
+    General look - just relax
+  </h3>
+
+</template>

@@ -20,7 +20,6 @@ shell-server@0.3.1            # Server-side component of the `meteor shell` comm
 iron:router
 underscore@1.0.10
 session@1.1.7
-matb33:collection-hooks
 accounts-password
 http
 ostrio:files

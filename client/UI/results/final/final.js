@@ -1,8 +1,16 @@
 Template.judgingFinal.helpers({
   entries() {
-    pi = ProgramItems.findOne({
-      active: true
-    })
+    pi = ProgramItems.findOne(Session.get('itemId'))
+    if (pi) {
+      var entries = pi.Entries;
+      return Results.find({
+        program_element: pi.program_element,
+        Dance: pi.Dance,
+        Level: pi.Level
+      }).fetch();
+
+    }
+    return []
     if (pi) {
       pp = ProgramItems.find({
         program_element: pi.program_element,
@@ -37,10 +45,44 @@ Template.judgingFinal.events({
     })
   }
 })
+Template.finalScores.helpers({
+  dances() {
+    pi = ProgramItems.findOne(Session.get('itemId'))
+    if (pi) {
+      return _.unique(_.map(ProgramItems.find({
+        program_element: pi.program_element,
+        byDance: false
+      }, {
+        sort: {
+          Dance_order: 1
+        }
+      }).fetch(), pi => {
+        return pi.Dance
+      }))
+    }
+  },
+  entries() {
+    pi = ProgramItems.findOne(Session.get('itemId'))
+    if (pi) {
+      var entries = pi.Entries;
+      return Results.find({
+        program_element: pi.program_element,
+        Dance: pi.Dance,
+        Level: pi.Level
+      }, {
+        sort: {
+          TOTAL: 1,
+          Entry: -1
+        }
+      }).fetch();
+
+    }
+    return []
+  }
+
+})
 UI.registerHelper('finalScore', function (judge, type, Entry) {
-  pi = ProgramItems.findOne({
-    active: true
-  })
+  pi = ProgramItems.findOne(Session.get('itemId'))
   if (pi) {
     Entry = +Entry
     r = Results.findOne({
@@ -59,9 +101,7 @@ UI.registerHelper('finalScore', function (judge, type, Entry) {
 })
 
 UI.registerHelper('penalty', function (Entry) {
-  pi = ProgramItems.findOne({
-    active: true
-  })
+  pi = ProgramItems.findOne(Session.get('itemId'))
   if (pi) {
     Entry = +Entry
     r = Results.findOne({
@@ -78,9 +118,7 @@ UI.registerHelper('penalty', function (Entry) {
 
 })
 UI.registerHelper('finalScoreRes', function (type, Entry) {
-  pi = ProgramItems.findOne({
-    active: true
-  })
+  pi = ProgramItems.findOne(Session.get('itemId'))
   if (pi) {
     Entry = +Entry
     rr = Results.find({
@@ -114,9 +152,7 @@ UI.registerHelper('finalScorePen', function (argument) {
 
 });
 UI.registerHelper('finalScoreTot', function (Entry) {
-  pi = ProgramItems.findOne({
-    active: true
-  })
+  pi = ProgramItems.findOne(Session.get('itemId'))
   if (pi) {
     Entry = +Entry
     rr = Results.findOne({
@@ -160,28 +196,20 @@ Template.judgingFinalTechnic.helpers({
 })
 Template.judgingFinalTechnic.helpers({
   entries() {
-    pi = ProgramItems.findOne({
-      active: true
-    })
+    pi = ProgramItems.findOne(Session.get('itemId'))
     if (pi) {
-      pp = ProgramItems.find({
+      var entries = pi.Entries;
+      return Results.find({
         program_element: pi.program_element,
         Dance: pi.Dance,
         Level: pi.Level
-      }).fetch()
-      flat = _.flatten(_.map(pp, p => {
-        return p.Entries
-      }))
-      return _.sortBy(flat, f => {
-        return +f
-      })
+      }).fetch();
 
     }
+    return []
   },
   difficulty() {
-    pi = ProgramItems.findOne({
-      active: true
-    })
+    pi = ProgramItems.findOne(Session.get('itemId'))
     if (pi) {
       if (pi.Level == 'Normal') {
         return 1.15

@@ -65,18 +65,13 @@
 
 <template name="notFinal">
   <div class="notFinal">
-
     {{#each participants}}
-    <div class="selector {{state}} {{class this}}" id="{{this}}">
+    <div state={{selectedValue this}} class="selector state{{selectedValue this}}" id={{this}}>
       {{this}}
     </div>
     {{/each}}
     <div class="toSelect">
       Select {{toSelect}}  number(s)
-      <!-- {{#if toSelect}}
-      {{else}}
-      You can send results
-      {{/if}} -->
     </div>
   </div>
 </template>
