@@ -1,4 +1,4 @@
-  programs_items = [{
+programs_items = [{
     "heat": "",
     "Description": "    Final",
     "Program": "Freestyle",
@@ -9,14 +9,14 @@
     "Participants": 12,
     "Entries": [95, 97, 103, 104, 106, 107, 108, 111, 112, 113, 114, 116],
     "Marks": true,
-    "program_element": "3639887000000236072",
+    "program_element": "3639887000000237097",
     "Dance_order": "",
     "Dance": "",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000236074"
+    "ID": "3639887000000237099"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -28,14 +28,14 @@
     "Participants": 3,
     "Entries": [97, 101, 103],
     "Marks": true,
-    "program_element": "3639887000000230884",
+    "program_element": "3639887000000236909",
     "Dance_order": 2,
     "Dance": "Cha-cha",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230936"
+    "ID": "3639887000000236961"
   }, {
     "heat": 4,
     "Description": "     Final",
@@ -47,14 +47,14 @@
     "Participants": 3,
     "Entries": [107, 108, 109],
     "Marks": true,
-    "program_element": "3639887000000230884",
+    "program_element": "3639887000000236909",
     "Dance_order": 2,
     "Dance": "Cha-cha",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230940"
+    "ID": "3639887000000236965"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -66,14 +66,14 @@
     "Participants": 3,
     "Entries": [94, 95, 96],
     "Marks": true,
-    "program_element": "3639887000000230884",
+    "program_element": "3639887000000236909",
     "Dance_order": 2,
     "Dance": "Cha-cha",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230934"
+    "ID": "3639887000000236959"
   }, {
     "heat": 3,
     "Description": "     Final",
@@ -85,14 +85,14 @@
     "Participants": 3,
     "Entries": [104, 105, 106],
     "Marks": true,
-    "program_element": "3639887000000230884",
+    "program_element": "3639887000000236909",
     "Dance_order": 2,
     "Dance": "Cha-cha",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230938"
+    "ID": "3639887000000236963"
   }, {
     "heat": 5,
     "Description": "     Final",
@@ -104,14 +104,14 @@
     "Participants": 2,
     "Entries": [110, 111],
     "Marks": true,
-    "program_element": "3639887000000230884",
+    "program_element": "3639887000000236909",
     "Dance_order": 2,
     "Dance": "Cha-cha",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230942"
+    "ID": "3639887000000236967"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -123,14 +123,14 @@
     "Participants": 3,
     "Entries": [97, 101, 103],
     "Marks": true,
-    "program_element": "3639887000000230884",
+    "program_element": "3639887000000236909",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230920"
+    "ID": "3639887000000236945"
   }, {
     "heat": 4,
     "Description": "     Final",
@@ -142,14 +142,14 @@
     "Participants": 3,
     "Entries": [107, 108, 109],
     "Marks": true,
-    "program_element": "3639887000000230884",
+    "program_element": "3639887000000236909",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230924"
+    "ID": "3639887000000236949"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -161,14 +161,14 @@
     "Participants": 3,
     "Entries": [94, 95, 96],
     "Marks": true,
-    "program_element": "3639887000000230884",
+    "program_element": "3639887000000236909",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230918"
+    "ID": "3639887000000236943"
   }, {
     "heat": 3,
     "Description": "     Final",
@@ -180,14 +180,14 @@
     "Participants": 3,
     "Entries": [104, 105, 106],
     "Marks": true,
-    "program_element": "3639887000000230884",
+    "program_element": "3639887000000236909",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230922"
+    "ID": "3639887000000236947"
   }, {
     "heat": 5,
     "Description": "     Final",
@@ -199,14 +199,14 @@
     "Participants": 2,
     "Entries": [110, 111],
     "Marks": true,
-    "program_element": "3639887000000230884",
+    "program_element": "3639887000000236909",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230926"
+    "ID": "3639887000000236951"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -218,14 +218,14 @@
     "Participants": 3,
     "Entries": [97, 101, 103],
     "Marks": true,
-    "program_element": "3639887000000230884",
+    "program_element": "3639887000000236909",
     "Dance_order": 4,
     "Dance": "Pasodoble",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230952"
+    "ID": "3639887000000236977"
   }, {
     "heat": 4,
     "Description": "     Final",
@@ -237,14 +237,14 @@
     "Participants": 3,
     "Entries": [107, 108, 109],
     "Marks": true,
-    "program_element": "3639887000000230884",
+    "program_element": "3639887000000236909",
     "Dance_order": 4,
     "Dance": "Pasodoble",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230956"
+    "ID": "3639887000000236981"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -256,14 +256,14 @@
     "Participants": 3,
     "Entries": [94, 95, 96],
     "Marks": true,
-    "program_element": "3639887000000230884",
+    "program_element": "3639887000000236909",
     "Dance_order": 4,
     "Dance": "Pasodoble",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230950"
+    "ID": "3639887000000236975"
   }, {
     "heat": 3,
     "Description": "     Final",
@@ -275,14 +275,14 @@
     "Participants": 3,
     "Entries": [104, 105, 106],
     "Marks": true,
-    "program_element": "3639887000000230884",
+    "program_element": "3639887000000236909",
     "Dance_order": 4,
     "Dance": "Pasodoble",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230954"
+    "ID": "3639887000000236979"
   }, {
     "heat": 5,
     "Description": "     Final",
@@ -294,14 +294,33 @@
     "Participants": 2,
     "Entries": [110, 111],
     "Marks": true,
-    "program_element": "3639887000000230884",
+    "program_element": "3639887000000236909",
     "Dance_order": 4,
     "Dance": "Pasodoble",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230958"
+    "ID": "3639887000000236983"
+  }, {
+    "heat": 4,
+    "Description": "     Final",
+    "Program": "Latin",
+    "On_next_round": 14,
+    "active": false,
+    "EntriesNumber": [107, 108, 109],
+    "Gender": "Mixed",
+    "Participants": 3,
+    "Entries": [107, 108, 109],
+    "Marks": true,
+    "program_element": "3639887000000236909",
+    "Dance_order": 3,
+    "Dance": "Rumba",
+    "Stage": "",
+    "Event": "Combi",
+    "Class": "Class 1+2",
+    "Level": "",
+    "ID": "3639887000000236933"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -313,71 +332,14 @@
     "Participants": 3,
     "Entries": [97, 101, 103],
     "Marks": true,
-    "program_element": "3639887000000230884",
+    "program_element": "3639887000000236909",
     "Dance_order": 3,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230904"
-  }, {
-    "heat": 4,
-    "Description": "     Final",
-    "Program": "Latin",
-    "On_next_round": 14,
-    "active": false,
-    "EntriesNumber": [107, 108, 109],
-    "Gender": "Mixed",
-    "Participants": 3,
-    "Entries": [107, 108, 109],
-    "Marks": true,
-    "program_element": "3639887000000230884",
-    "Dance_order": 3,
-    "Dance": "Rumba",
-    "Stage": "",
-    "Event": "Combi",
-    "Class": "Class 1+2",
-    "Level": "",
-    "ID": "3639887000000230908"
-  }, {
-    "heat": 1,
-    "Description": "     Final",
-    "Program": "Latin",
-    "On_next_round": 14,
-    "active": false,
-    "EntriesNumber": [94, 95, 96],
-    "Gender": "Mixed",
-    "Participants": 3,
-    "Entries": [94, 95, 96],
-    "Marks": true,
-    "program_element": "3639887000000230884",
-    "Dance_order": 3,
-    "Dance": "Rumba",
-    "Stage": "",
-    "Event": "Combi",
-    "Class": "Class 1+2",
-    "Level": "",
-    "ID": "3639887000000230902"
-  }, {
-    "heat": 3,
-    "Description": "     Final",
-    "Program": "Latin",
-    "On_next_round": 14,
-    "active": false,
-    "EntriesNumber": [104, 105, 106],
-    "Gender": "Mixed",
-    "Participants": 3,
-    "Entries": [104, 105, 106],
-    "Marks": true,
-    "program_element": "3639887000000230884",
-    "Dance_order": 3,
-    "Dance": "Rumba",
-    "Stage": "",
-    "Event": "Combi",
-    "Class": "Class 1+2",
-    "Level": "",
-    "ID": "3639887000000230906"
+    "ID": "3639887000000236929"
   }, {
     "heat": 5,
     "Description": "     Final",
@@ -389,14 +351,71 @@
     "Participants": 2,
     "Entries": [110, 111],
     "Marks": true,
-    "program_element": "3639887000000230884",
+    "program_element": "3639887000000236909",
     "Dance_order": 3,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230910"
+    "ID": "3639887000000236935"
+  }, {
+    "heat": 1,
+    "Description": "     Final",
+    "Program": "Latin",
+    "On_next_round": 14,
+    "active": false,
+    "EntriesNumber": [94, 95, 96],
+    "Gender": "Mixed",
+    "Participants": 3,
+    "Entries": [94, 95, 96],
+    "Marks": true,
+    "program_element": "3639887000000236909",
+    "Dance_order": 3,
+    "Dance": "Rumba",
+    "Stage": "",
+    "Event": "Combi",
+    "Class": "Class 1+2",
+    "Level": "",
+    "ID": "3639887000000236927"
+  }, {
+    "heat": 3,
+    "Description": "     Final",
+    "Program": "Latin",
+    "On_next_round": 14,
+    "active": false,
+    "EntriesNumber": [104, 105, 106],
+    "Gender": "Mixed",
+    "Participants": 3,
+    "Entries": [104, 105, 106],
+    "Marks": true,
+    "program_element": "3639887000000236909",
+    "Dance_order": 3,
+    "Dance": "Rumba",
+    "Stage": "",
+    "Event": "Combi",
+    "Class": "Class 1+2",
+    "Level": "",
+    "ID": "3639887000000236931"
+  }, {
+    "heat": 4,
+    "Description": "     Final",
+    "Program": "Latin",
+    "On_next_round": 14,
+    "active": false,
+    "EntriesNumber": [107, 108, 109],
+    "Gender": "Mixed",
+    "Participants": 3,
+    "Entries": [107, 108, 109],
+    "Marks": true,
+    "program_element": "3639887000000236909",
+    "Dance_order": 1,
+    "Dance": "Samba",
+    "Stage": "",
+    "Event": "Combi",
+    "Class": "Class 1+2",
+    "Level": "",
+    "ID": "3639887000000236917"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -408,33 +427,14 @@
     "Participants": 3,
     "Entries": [97, 101, 103],
     "Marks": true,
-    "program_element": "3639887000000230884",
+    "program_element": "3639887000000236909",
     "Dance_order": 1,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230888"
-  }, {
-    "heat": 4,
-    "Description": "     Final",
-    "Program": "Latin",
-    "On_next_round": 14,
-    "active": false,
-    "EntriesNumber": [107, 108, 109],
-    "Gender": "Mixed",
-    "Participants": 3,
-    "Entries": [107, 108, 109],
-    "Marks": true,
-    "program_element": "3639887000000230884",
-    "Dance_order": 1,
-    "Dance": "Samba",
-    "Stage": "",
-    "Event": "Combi",
-    "Class": "Class 1+2",
-    "Level": "",
-    "ID": "3639887000000230892"
+    "ID": "3639887000000236913"
   }, {
     "heat": 5,
     "Description": "     Final",
@@ -446,14 +446,14 @@
     "Participants": 2,
     "Entries": [110, 111],
     "Marks": true,
-    "program_element": "3639887000000230884",
+    "program_element": "3639887000000236909",
     "Dance_order": 1,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230894"
+    "ID": "3639887000000236919"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -465,14 +465,14 @@
     "Participants": 3,
     "Entries": [94, 95, 96],
     "Marks": true,
-    "program_element": "3639887000000230884",
+    "program_element": "3639887000000236909",
     "Dance_order": 1,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230886"
+    "ID": "3639887000000236911"
   }, {
     "heat": 3,
     "Description": "     Final",
@@ -484,52 +484,52 @@
     "Participants": 3,
     "Entries": [104, 105, 106],
     "Marks": true,
-    "program_element": "3639887000000230884",
+    "program_element": "3639887000000236909",
     "Dance_order": 1,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230890"
+    "ID": "3639887000000236915"
   }, {
-    "heat": 3,
+    "heat": 1,
     "Description": " General look",
     "Program": "Latin",
     "On_next_round": "",
     "active": false,
-    "EntriesNumber": [108, 109, 110, 111],
+    "EntriesNumber": [94, 95, 96, 97, 101],
     "Gender": "Mixed",
-    "Participants": 4,
-    "Entries": [108, 109, 110, 111],
+    "Participants": 5,
+    "Entries": [94, 95, 96, 97, 101],
     "Marks": false,
-    "program_element": "3639887000000230876",
+    "program_element": "3639887000000236901",
     "Dance_order": 2,
     "Dance": "Cha-cha",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230932"
+    "ID": "3639887000000236953"
   }, {
-    "heat": 1,
+    "heat": 3,
     "Description": " General look",
     "Program": "Latin",
     "On_next_round": "",
     "active": false,
-    "EntriesNumber": [94, 95, 96, 97, 101],
+    "EntriesNumber": [108, 109, 110, 111],
     "Gender": "Mixed",
-    "Participants": 5,
-    "Entries": [94, 95, 96, 97, 101],
+    "Participants": 4,
+    "Entries": [108, 109, 110, 111],
     "Marks": false,
-    "program_element": "3639887000000230876",
+    "program_element": "3639887000000236901",
     "Dance_order": 2,
     "Dance": "Cha-cha",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230928"
+    "ID": "3639887000000236957"
   }, {
     "heat": 2,
     "Description": " General look",
@@ -541,14 +541,14 @@
     "Participants": 5,
     "Entries": [103, 104, 105, 106, 107],
     "Marks": false,
-    "program_element": "3639887000000230876",
+    "program_element": "3639887000000236901",
     "Dance_order": 2,
     "Dance": "Cha-cha",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230930"
+    "ID": "3639887000000236955"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -560,14 +560,14 @@
     "Participants": 5,
     "Entries": [94, 95, 96, 97, 101],
     "Marks": false,
-    "program_element": "3639887000000230876",
+    "program_element": "3639887000000236901",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230912"
+    "ID": "3639887000000236937"
   }, {
     "heat": 3,
     "Description": " General look",
@@ -579,14 +579,14 @@
     "Participants": 4,
     "Entries": [108, 109, 110, 111],
     "Marks": false,
-    "program_element": "3639887000000230876",
+    "program_element": "3639887000000236901",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230916"
+    "ID": "3639887000000236941"
   }, {
     "heat": 2,
     "Description": " General look",
@@ -598,14 +598,14 @@
     "Participants": 5,
     "Entries": [103, 104, 105, 106, 107],
     "Marks": false,
-    "program_element": "3639887000000230876",
+    "program_element": "3639887000000236901",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230914"
+    "ID": "3639887000000236939"
   }, {
     "heat": 3,
     "Description": " General look",
@@ -617,14 +617,14 @@
     "Participants": 4,
     "Entries": [108, 109, 110, 111],
     "Marks": false,
-    "program_element": "3639887000000230876",
+    "program_element": "3639887000000236901",
     "Dance_order": 4,
     "Dance": "Pasodoble",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230948"
+    "ID": "3639887000000236973"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -636,14 +636,14 @@
     "Participants": 5,
     "Entries": [94, 95, 96, 97, 101],
     "Marks": false,
-    "program_element": "3639887000000230876",
+    "program_element": "3639887000000236901",
     "Dance_order": 4,
     "Dance": "Pasodoble",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230944"
+    "ID": "3639887000000236969"
   }, {
     "heat": 2,
     "Description": " General look",
@@ -655,14 +655,14 @@
     "Participants": 5,
     "Entries": [103, 104, 105, 106, 107],
     "Marks": false,
-    "program_element": "3639887000000230876",
+    "program_element": "3639887000000236901",
     "Dance_order": 4,
     "Dance": "Pasodoble",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230946"
+    "ID": "3639887000000236971"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -674,14 +674,14 @@
     "Participants": 5,
     "Entries": [94, 95, 96, 97, 101],
     "Marks": false,
-    "program_element": "3639887000000230876",
+    "program_element": "3639887000000236901",
     "Dance_order": 3,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230896"
+    "ID": "3639887000000236921"
   }, {
     "heat": 3,
     "Description": " General look",
@@ -693,14 +693,14 @@
     "Participants": 4,
     "Entries": [108, 109, 110, 111],
     "Marks": false,
-    "program_element": "3639887000000230876",
+    "program_element": "3639887000000236901",
     "Dance_order": 3,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230900"
+    "ID": "3639887000000236925"
   }, {
     "heat": 2,
     "Description": " General look",
@@ -712,14 +712,14 @@
     "Participants": 5,
     "Entries": [103, 104, 105, 106, 107],
     "Marks": false,
-    "program_element": "3639887000000230876",
+    "program_element": "3639887000000236901",
     "Dance_order": 3,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230898"
+    "ID": "3639887000000236923"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -731,14 +731,14 @@
     "Participants": 5,
     "Entries": [94, 95, 96, 97, 101],
     "Marks": false,
-    "program_element": "3639887000000230876",
+    "program_element": "3639887000000236901",
     "Dance_order": 1,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230878"
+    "ID": "3639887000000236903"
   }, {
     "heat": 3,
     "Description": " General look",
@@ -750,14 +750,14 @@
     "Participants": 4,
     "Entries": [108, 109, 110, 111],
     "Marks": false,
-    "program_element": "3639887000000230876",
+    "program_element": "3639887000000236901",
     "Dance_order": 1,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230882"
+    "ID": "3639887000000236907"
   }, {
     "heat": 2,
     "Description": " General look",
@@ -769,14 +769,14 @@
     "Participants": 5,
     "Entries": [103, 104, 105, 106, 107],
     "Marks": false,
-    "program_element": "3639887000000230876",
+    "program_element": "3639887000000236901",
     "Dance_order": 1,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230880"
+    "ID": "3639887000000236905"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -788,14 +788,14 @@
     "Participants": 3,
     "Entries": [93, 94, 95],
     "Marks": true,
-    "program_element": "3639887000000230966",
+    "program_element": "3639887000000236991",
     "Dance_order": 4,
     "Dance": "Foxtrot",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000236016"
+    "ID": "3639887000000237041"
   }, {
     "heat": 3,
     "Description": "     Final",
@@ -807,14 +807,14 @@
     "Participants": 3,
     "Entries": [99, 100, 101],
     "Marks": true,
-    "program_element": "3639887000000230966",
+    "program_element": "3639887000000236991",
     "Dance_order": 4,
     "Dance": "Foxtrot",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000236020"
+    "ID": "3639887000000237045"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -826,14 +826,14 @@
     "Participants": 3,
     "Entries": [96, 97, 98],
     "Marks": true,
-    "program_element": "3639887000000230966",
+    "program_element": "3639887000000236991",
     "Dance_order": 4,
     "Dance": "Foxtrot",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000236018"
+    "ID": "3639887000000237043"
   }, {
     "heat": 4,
     "Description": "     Final",
@@ -845,14 +845,33 @@
     "Participants": 3,
     "Entries": [102, 103, 115],
     "Marks": true,
-    "program_element": "3639887000000230966",
+    "program_element": "3639887000000236991",
     "Dance_order": 4,
     "Dance": "Foxtrot",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000236022"
+    "ID": "3639887000000237047"
+  }, {
+    "heat": 3,
+    "Description": "     Final",
+    "Program": "Standard",
+    "On_next_round": 12,
+    "active": false,
+    "EntriesNumber": [99, 100, 101],
+    "Gender": "Mixed",
+    "Participants": 3,
+    "Entries": [99, 100, 101],
+    "Marks": true,
+    "program_element": "3639887000000236991",
+    "Dance_order": 5,
+    "Dance": "Quickstep",
+    "Stage": "",
+    "Event": "Combi",
+    "Class": "Class 1+2",
+    "Level": "",
+    "ID": "3639887000000237033"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -864,33 +883,14 @@
     "Participants": 3,
     "Entries": [93, 94, 95],
     "Marks": true,
-    "program_element": "3639887000000230966",
+    "program_element": "3639887000000236991",
     "Dance_order": 5,
     "Dance": "Quickstep",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000236004"
-  }, {
-    "heat": 3,
-    "Description": "     Final",
-    "Program": "Standard",
-    "On_next_round": 12,
-    "active": false,
-    "EntriesNumber": [99, 100, 101],
-    "Gender": "Mixed",
-    "Participants": 3,
-    "Entries": [99, 100, 101],
-    "Marks": true,
-    "program_element": "3639887000000230966",
-    "Dance_order": 5,
-    "Dance": "Quickstep",
-    "Stage": "",
-    "Event": "Combi",
-    "Class": "Class 1+2",
-    "Level": "",
-    "ID": "3639887000000236008"
+    "ID": "3639887000000237029"
   }, {
     "heat": 4,
     "Description": "     Final",
@@ -902,14 +902,14 @@
     "Participants": 3,
     "Entries": [102, 103, 115],
     "Marks": true,
-    "program_element": "3639887000000230966",
+    "program_element": "3639887000000236991",
     "Dance_order": 5,
     "Dance": "Quickstep",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000236010"
+    "ID": "3639887000000237035"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -921,14 +921,14 @@
     "Participants": 3,
     "Entries": [96, 97, 98],
     "Marks": true,
-    "program_element": "3639887000000230966",
+    "program_element": "3639887000000236991",
     "Dance_order": 5,
     "Dance": "Quickstep",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000236006"
+    "ID": "3639887000000237031"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -940,14 +940,14 @@
     "Participants": 3,
     "Entries": [93, 94, 95],
     "Marks": true,
-    "program_element": "3639887000000230966",
+    "program_element": "3639887000000236991",
     "Dance_order": 2,
     "Dance": "Tango",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230980"
+    "ID": "3639887000000237005"
   }, {
     "heat": 3,
     "Description": "     Final",
@@ -959,14 +959,14 @@
     "Participants": 3,
     "Entries": [99, 100, 101],
     "Marks": true,
-    "program_element": "3639887000000230966",
+    "program_element": "3639887000000236991",
     "Dance_order": 2,
     "Dance": "Tango",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230984"
+    "ID": "3639887000000237009"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -978,14 +978,14 @@
     "Participants": 3,
     "Entries": [96, 97, 98],
     "Marks": true,
-    "program_element": "3639887000000230966",
+    "program_element": "3639887000000236991",
     "Dance_order": 2,
     "Dance": "Tango",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230982"
+    "ID": "3639887000000237007"
   }, {
     "heat": 4,
     "Description": "     Final",
@@ -997,14 +997,14 @@
     "Participants": 3,
     "Entries": [102, 103, 115],
     "Marks": true,
-    "program_element": "3639887000000230966",
+    "program_element": "3639887000000236991",
     "Dance_order": 2,
     "Dance": "Tango",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230986"
+    "ID": "3639887000000237011"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -1016,14 +1016,14 @@
     "Participants": 3,
     "Entries": [93, 94, 95],
     "Marks": true,
-    "program_element": "3639887000000230966",
+    "program_element": "3639887000000236991",
     "Dance_order": 3,
     "Dance": "V_Waltz",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230992"
+    "ID": "3639887000000237017"
   }, {
     "heat": 3,
     "Description": "     Final",
@@ -1035,14 +1035,14 @@
     "Participants": 3,
     "Entries": [99, 100, 101],
     "Marks": true,
-    "program_element": "3639887000000230966",
+    "program_element": "3639887000000236991",
     "Dance_order": 3,
     "Dance": "V_Waltz",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230996"
+    "ID": "3639887000000237021"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -1054,14 +1054,14 @@
     "Participants": 3,
     "Entries": [96, 97, 98],
     "Marks": true,
-    "program_element": "3639887000000230966",
+    "program_element": "3639887000000236991",
     "Dance_order": 3,
     "Dance": "V_Waltz",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230994"
+    "ID": "3639887000000237019"
   }, {
     "heat": 4,
     "Description": "     Final",
@@ -1073,14 +1073,14 @@
     "Participants": 3,
     "Entries": [102, 103, 115],
     "Marks": true,
-    "program_element": "3639887000000230966",
+    "program_element": "3639887000000236991",
     "Dance_order": 3,
     "Dance": "V_Waltz",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230998"
+    "ID": "3639887000000237023"
   }, {
     "heat": 3,
     "Description": "     Final",
@@ -1092,14 +1092,14 @@
     "Participants": 3,
     "Entries": [99, 100, 101],
     "Marks": true,
-    "program_element": "3639887000000230966",
+    "program_element": "3639887000000236991",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230972"
+    "ID": "3639887000000236997"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -1111,33 +1111,14 @@
     "Participants": 3,
     "Entries": [93, 94, 95],
     "Marks": true,
-    "program_element": "3639887000000230966",
+    "program_element": "3639887000000236991",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230968"
-  }, {
-    "heat": 4,
-    "Description": "     Final",
-    "Program": "Standard",
-    "On_next_round": 12,
-    "active": false,
-    "EntriesNumber": [102, 103, 115],
-    "Gender": "Mixed",
-    "Participants": 3,
-    "Entries": [102, 103, 115],
-    "Marks": true,
-    "program_element": "3639887000000230966",
-    "Dance_order": 1,
-    "Dance": "Waltz",
-    "Stage": "",
-    "Event": "Combi",
-    "Class": "Class 1+2",
-    "Level": "",
-    "ID": "3639887000000230974"
+    "ID": "3639887000000236993"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -1149,14 +1130,33 @@
     "Participants": 3,
     "Entries": [96, 97, 98],
     "Marks": true,
-    "program_element": "3639887000000230966",
+    "program_element": "3639887000000236991",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230970"
+    "ID": "3639887000000236995"
+  }, {
+    "heat": 4,
+    "Description": "     Final",
+    "Program": "Standard",
+    "On_next_round": 12,
+    "active": false,
+    "EntriesNumber": [102, 103, 115],
+    "Gender": "Mixed",
+    "Participants": 3,
+    "Entries": [102, 103, 115],
+    "Marks": true,
+    "program_element": "3639887000000236991",
+    "Dance_order": 1,
+    "Dance": "Waltz",
+    "Stage": "",
+    "Event": "Combi",
+    "Class": "Class 1+2",
+    "Level": "",
+    "ID": "3639887000000236999"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -1168,14 +1168,14 @@
     "Participants": 6,
     "Entries": [93, 94, 95, 96, 97, 98],
     "Marks": false,
-    "program_element": "3639887000000230960",
+    "program_element": "3639887000000236985",
     "Dance_order": 4,
     "Dance": "Foxtrot",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000236012"
+    "ID": "3639887000000237037"
   }, {
     "heat": 2,
     "Description": " General look",
@@ -1187,14 +1187,14 @@
     "Participants": 6,
     "Entries": [99, 100, 101, 102, 103, 115],
     "Marks": false,
-    "program_element": "3639887000000230960",
+    "program_element": "3639887000000236985",
     "Dance_order": 4,
     "Dance": "Foxtrot",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000236014"
+    "ID": "3639887000000237039"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -1206,14 +1206,14 @@
     "Participants": 6,
     "Entries": [93, 94, 95, 96, 97, 98],
     "Marks": false,
-    "program_element": "3639887000000230960",
+    "program_element": "3639887000000236985",
     "Dance_order": 5,
     "Dance": "Quickstep",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000231000"
+    "ID": "3639887000000237025"
   }, {
     "heat": 2,
     "Description": " General look",
@@ -1225,14 +1225,14 @@
     "Participants": 6,
     "Entries": [99, 100, 101, 102, 103, 115],
     "Marks": false,
-    "program_element": "3639887000000230960",
+    "program_element": "3639887000000236985",
     "Dance_order": 5,
     "Dance": "Quickstep",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000236002"
+    "ID": "3639887000000237027"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -1244,14 +1244,14 @@
     "Participants": 6,
     "Entries": [93, 94, 95, 96, 97, 98],
     "Marks": false,
-    "program_element": "3639887000000230960",
+    "program_element": "3639887000000236985",
     "Dance_order": 2,
     "Dance": "Tango",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230976"
+    "ID": "3639887000000237001"
   }, {
     "heat": 2,
     "Description": " General look",
@@ -1263,14 +1263,14 @@
     "Participants": 6,
     "Entries": [99, 100, 101, 102, 103, 115],
     "Marks": false,
-    "program_element": "3639887000000230960",
+    "program_element": "3639887000000236985",
     "Dance_order": 2,
     "Dance": "Tango",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230978"
+    "ID": "3639887000000237003"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -1282,14 +1282,14 @@
     "Participants": 6,
     "Entries": [93, 94, 95, 96, 97, 98],
     "Marks": false,
-    "program_element": "3639887000000230960",
+    "program_element": "3639887000000236985",
     "Dance_order": 3,
     "Dance": "V_Waltz",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230988"
+    "ID": "3639887000000237013"
   }, {
     "heat": 2,
     "Description": " General look",
@@ -1301,14 +1301,14 @@
     "Participants": 6,
     "Entries": [99, 100, 101, 102, 103, 115],
     "Marks": false,
-    "program_element": "3639887000000230960",
+    "program_element": "3639887000000236985",
     "Dance_order": 3,
     "Dance": "V_Waltz",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230990"
+    "ID": "3639887000000237015"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -1320,14 +1320,14 @@
     "Participants": 6,
     "Entries": [93, 94, 95, 96, 97, 98],
     "Marks": false,
-    "program_element": "3639887000000230960",
+    "program_element": "3639887000000236985",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230962"
+    "ID": "3639887000000236987"
   }, {
     "heat": 2,
     "Description": " General look",
@@ -1339,14 +1339,14 @@
     "Participants": 6,
     "Entries": [99, 100, 101, 102, 103, 115],
     "Marks": false,
-    "program_element": "3639887000000230960",
+    "program_element": "3639887000000236985",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Combi",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230964"
+    "ID": "3639887000000236989"
   }, {
     "heat": "",
     "Description": "    Final",
@@ -1358,14 +1358,14 @@
     "Participants": 7,
     "Entries": [81, 82, 83, 86, 88, 91, 92],
     "Marks": true,
-    "program_element": "3639887000000236068",
+    "program_element": "3639887000000237093",
     "Dance_order": "",
     "Dance": "",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000236070"
+    "ID": "3639887000000237095"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -1377,14 +1377,14 @@
     "Participants": 3,
     "Entries": [82, 84, 86],
     "Marks": true,
-    "program_element": "3639887000000230794",
+    "program_element": "3639887000000236819",
     "Dance_order": 2,
     "Dance": "Cha-cha",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230826"
+    "ID": "3639887000000236851"
   }, {
     "heat": 3,
     "Description": "     Final",
@@ -1396,14 +1396,14 @@
     "Participants": 2,
     "Entries": [89, 90],
     "Marks": true,
-    "program_element": "3639887000000230794",
+    "program_element": "3639887000000236819",
     "Dance_order": 2,
     "Dance": "Cha-cha",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230830"
+    "ID": "3639887000000236855"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -1415,14 +1415,14 @@
     "Participants": 2,
     "Entries": [87, 88],
     "Marks": true,
-    "program_element": "3639887000000230794",
+    "program_element": "3639887000000236819",
     "Dance_order": 2,
     "Dance": "Cha-cha",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230828"
+    "ID": "3639887000000236853"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -1434,14 +1434,14 @@
     "Participants": 2,
     "Entries": [87, 88],
     "Marks": true,
-    "program_element": "3639887000000230794",
+    "program_element": "3639887000000236819",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230818"
+    "ID": "3639887000000236843"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -1453,14 +1453,14 @@
     "Participants": 3,
     "Entries": [82, 84, 86],
     "Marks": true,
-    "program_element": "3639887000000230794",
+    "program_element": "3639887000000236819",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230816"
+    "ID": "3639887000000236841"
   }, {
     "heat": 3,
     "Description": "     Final",
@@ -1472,14 +1472,14 @@
     "Participants": 2,
     "Entries": [89, 90],
     "Marks": true,
-    "program_element": "3639887000000230794",
+    "program_element": "3639887000000236819",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230820"
+    "ID": "3639887000000236845"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -1491,14 +1491,14 @@
     "Participants": 2,
     "Entries": [87, 88],
     "Marks": true,
-    "program_element": "3639887000000230794",
+    "program_element": "3639887000000236819",
     "Dance_order": 4,
     "Dance": "Pasodoble",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230838"
+    "ID": "3639887000000236863"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -1510,14 +1510,14 @@
     "Participants": 3,
     "Entries": [82, 84, 86],
     "Marks": true,
-    "program_element": "3639887000000230794",
+    "program_element": "3639887000000236819",
     "Dance_order": 4,
     "Dance": "Pasodoble",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230836"
+    "ID": "3639887000000236861"
   }, {
     "heat": 3,
     "Description": "     Final",
@@ -1529,33 +1529,14 @@
     "Participants": 2,
     "Entries": [89, 90],
     "Marks": true,
-    "program_element": "3639887000000230794",
+    "program_element": "3639887000000236819",
     "Dance_order": 4,
     "Dance": "Pasodoble",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230840"
-  }, {
-    "heat": 3,
-    "Description": "     Final",
-    "Program": "Latin",
-    "On_next_round": 7,
-    "active": false,
-    "EntriesNumber": [89, 90],
-    "Gender": "Mixed",
-    "Participants": 2,
-    "Entries": [89, 90],
-    "Marks": true,
-    "program_element": "3639887000000230794",
-    "Dance_order": 3,
-    "Dance": "Rumba",
-    "Stage": "",
-    "Event": "Duo",
-    "Class": "Class 1+2",
-    "Level": "",
-    "ID": "3639887000000230810"
+    "ID": "3639887000000236865"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -1567,14 +1548,33 @@
     "Participants": 3,
     "Entries": [82, 84, 86],
     "Marks": true,
-    "program_element": "3639887000000230794",
+    "program_element": "3639887000000236819",
     "Dance_order": 3,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230806"
+    "ID": "3639887000000236831"
+  }, {
+    "heat": 3,
+    "Description": "     Final",
+    "Program": "Latin",
+    "On_next_round": 7,
+    "active": false,
+    "EntriesNumber": [89, 90],
+    "Gender": "Mixed",
+    "Participants": 2,
+    "Entries": [89, 90],
+    "Marks": true,
+    "program_element": "3639887000000236819",
+    "Dance_order": 3,
+    "Dance": "Rumba",
+    "Stage": "",
+    "Event": "Duo",
+    "Class": "Class 1+2",
+    "Level": "",
+    "ID": "3639887000000236835"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -1586,14 +1586,14 @@
     "Participants": 2,
     "Entries": [87, 88],
     "Marks": true,
-    "program_element": "3639887000000230794",
+    "program_element": "3639887000000236819",
     "Dance_order": 3,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230808"
+    "ID": "3639887000000236833"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -1605,14 +1605,14 @@
     "Participants": 2,
     "Entries": [87, 88],
     "Marks": true,
-    "program_element": "3639887000000230794",
+    "program_element": "3639887000000236819",
     "Dance_order": 1,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230798"
+    "ID": "3639887000000236823"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -1624,14 +1624,14 @@
     "Participants": 3,
     "Entries": [82, 84, 86],
     "Marks": true,
-    "program_element": "3639887000000230794",
+    "program_element": "3639887000000236819",
     "Dance_order": 1,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230796"
+    "ID": "3639887000000236821"
   }, {
     "heat": 3,
     "Description": "     Final",
@@ -1643,14 +1643,14 @@
     "Participants": 2,
     "Entries": [89, 90],
     "Marks": true,
-    "program_element": "3639887000000230794",
+    "program_element": "3639887000000236819",
     "Dance_order": 1,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230800"
+    "ID": "3639887000000236825"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -1662,14 +1662,14 @@
     "Participants": 4,
     "Entries": [82, 84, 86, 87],
     "Marks": false,
-    "program_element": "3639887000000230788",
+    "program_element": "3639887000000236813",
     "Dance_order": 2,
     "Dance": "Cha-cha",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230822"
+    "ID": "3639887000000236847"
   }, {
     "heat": 2,
     "Description": " General look",
@@ -1681,14 +1681,14 @@
     "Participants": 3,
     "Entries": [88, 89, 90],
     "Marks": false,
-    "program_element": "3639887000000230788",
+    "program_element": "3639887000000236813",
     "Dance_order": 2,
     "Dance": "Cha-cha",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230824"
+    "ID": "3639887000000236849"
   }, {
     "heat": 2,
     "Description": " General look",
@@ -1700,14 +1700,14 @@
     "Participants": 3,
     "Entries": [88, 89, 90],
     "Marks": false,
-    "program_element": "3639887000000230788",
+    "program_element": "3639887000000236813",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230814"
+    "ID": "3639887000000236839"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -1719,14 +1719,14 @@
     "Participants": 4,
     "Entries": [82, 84, 86, 87],
     "Marks": false,
-    "program_element": "3639887000000230788",
+    "program_element": "3639887000000236813",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230812"
+    "ID": "3639887000000236837"
   }, {
     "heat": 2,
     "Description": " General look",
@@ -1738,14 +1738,14 @@
     "Participants": 3,
     "Entries": [88, 89, 90],
     "Marks": false,
-    "program_element": "3639887000000230788",
+    "program_element": "3639887000000236813",
     "Dance_order": 4,
     "Dance": "Pasodoble",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230834"
+    "ID": "3639887000000236859"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -1757,14 +1757,14 @@
     "Participants": 4,
     "Entries": [82, 84, 86, 87],
     "Marks": false,
-    "program_element": "3639887000000230788",
+    "program_element": "3639887000000236813",
     "Dance_order": 4,
     "Dance": "Pasodoble",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230832"
+    "ID": "3639887000000236857"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -1776,14 +1776,14 @@
     "Participants": 4,
     "Entries": [82, 84, 86, 87],
     "Marks": false,
-    "program_element": "3639887000000230788",
+    "program_element": "3639887000000236813",
     "Dance_order": 3,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230802"
+    "ID": "3639887000000236827"
   }, {
     "heat": 2,
     "Description": " General look",
@@ -1795,14 +1795,14 @@
     "Participants": 3,
     "Entries": [88, 89, 90],
     "Marks": false,
-    "program_element": "3639887000000230788",
+    "program_element": "3639887000000236813",
     "Dance_order": 3,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230804"
+    "ID": "3639887000000236829"
   }, {
     "heat": 2,
     "Description": " General look",
@@ -1814,14 +1814,14 @@
     "Participants": 3,
     "Entries": [88, 89, 90],
     "Marks": false,
-    "program_element": "3639887000000230788",
+    "program_element": "3639887000000236813",
     "Dance_order": 1,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230792"
+    "ID": "3639887000000236817"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -1833,14 +1833,14 @@
     "Participants": 4,
     "Entries": [82, 84, 86, 87],
     "Marks": false,
-    "program_element": "3639887000000230788",
+    "program_element": "3639887000000236813",
     "Dance_order": 1,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230790"
+    "ID": "3639887000000236815"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -1852,14 +1852,14 @@
     "Participants": 3,
     "Entries": [82, 83, 85],
     "Marks": true,
-    "program_element": "3639887000000230846",
+    "program_element": "3639887000000236871",
     "Dance_order": 4,
     "Dance": "Foxtrot",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230872"
+    "ID": "3639887000000236897"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -1871,14 +1871,14 @@
     "Participants": 2,
     "Entries": [86, 87],
     "Marks": true,
-    "program_element": "3639887000000230846",
+    "program_element": "3639887000000236871",
     "Dance_order": 4,
     "Dance": "Foxtrot",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230874"
+    "ID": "3639887000000236899"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -1890,14 +1890,14 @@
     "Participants": 2,
     "Entries": [86, 87],
     "Marks": true,
-    "program_element": "3639887000000230846",
+    "program_element": "3639887000000236871",
     "Dance_order": 5,
     "Dance": "Quickstep",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230868"
+    "ID": "3639887000000236893"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -1909,14 +1909,14 @@
     "Participants": 3,
     "Entries": [82, 83, 85],
     "Marks": true,
-    "program_element": "3639887000000230846",
+    "program_element": "3639887000000236871",
     "Dance_order": 5,
     "Dance": "Quickstep",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230866"
+    "ID": "3639887000000236891"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -1928,14 +1928,14 @@
     "Participants": 2,
     "Entries": [86, 87],
     "Marks": true,
-    "program_element": "3639887000000230846",
+    "program_element": "3639887000000236871",
     "Dance_order": 2,
     "Dance": "Tango",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230856"
+    "ID": "3639887000000236881"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -1947,14 +1947,14 @@
     "Participants": 3,
     "Entries": [82, 83, 85],
     "Marks": true,
-    "program_element": "3639887000000230846",
+    "program_element": "3639887000000236871",
     "Dance_order": 2,
     "Dance": "Tango",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230854"
+    "ID": "3639887000000236879"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -1966,14 +1966,14 @@
     "Participants": 3,
     "Entries": [82, 83, 85],
     "Marks": true,
-    "program_element": "3639887000000230846",
+    "program_element": "3639887000000236871",
     "Dance_order": 3,
     "Dance": "V_Waltz",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230860"
+    "ID": "3639887000000236885"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -1985,14 +1985,14 @@
     "Participants": 2,
     "Entries": [86, 87],
     "Marks": true,
-    "program_element": "3639887000000230846",
+    "program_element": "3639887000000236871",
     "Dance_order": 3,
     "Dance": "V_Waltz",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230862"
+    "ID": "3639887000000236887"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -2004,14 +2004,14 @@
     "Participants": 3,
     "Entries": [82, 83, 85],
     "Marks": true,
-    "program_element": "3639887000000230846",
+    "program_element": "3639887000000236871",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230848"
+    "ID": "3639887000000236873"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -2023,14 +2023,14 @@
     "Participants": 2,
     "Entries": [86, 87],
     "Marks": true,
-    "program_element": "3639887000000230846",
+    "program_element": "3639887000000236871",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230850"
+    "ID": "3639887000000236875"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -2042,14 +2042,14 @@
     "Participants": 5,
     "Entries": [82, 83, 85, 86, 87],
     "Marks": false,
-    "program_element": "3639887000000230842",
+    "program_element": "3639887000000236867",
     "Dance_order": 4,
     "Dance": "Foxtrot",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230870"
+    "ID": "3639887000000236895"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -2061,14 +2061,14 @@
     "Participants": 5,
     "Entries": [82, 83, 85, 86, 87],
     "Marks": false,
-    "program_element": "3639887000000230842",
+    "program_element": "3639887000000236867",
     "Dance_order": 5,
     "Dance": "Quickstep",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230864"
+    "ID": "3639887000000236889"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -2080,14 +2080,14 @@
     "Participants": 5,
     "Entries": [82, 83, 85, 86, 87],
     "Marks": false,
-    "program_element": "3639887000000230842",
+    "program_element": "3639887000000236867",
     "Dance_order": 2,
     "Dance": "Tango",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230852"
+    "ID": "3639887000000236877"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -2099,14 +2099,14 @@
     "Participants": 5,
     "Entries": [82, 83, 85, 86, 87],
     "Marks": false,
-    "program_element": "3639887000000230842",
+    "program_element": "3639887000000236867",
     "Dance_order": 3,
     "Dance": "V_Waltz",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230858"
+    "ID": "3639887000000236883"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -2118,14 +2118,14 @@
     "Participants": 5,
     "Entries": [82, 83, 85, 86, 87],
     "Marks": false,
-    "program_element": "3639887000000230842",
+    "program_element": "3639887000000236867",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Duo",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230844"
+    "ID": "3639887000000236869"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -2137,14 +2137,14 @@
     "Participants": 3,
     "Entries": [10, 11, 12],
     "Marks": true,
-    "program_element": "3639887000000230590",
+    "program_element": "3639887000000236615",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230640"
+    "ID": "3639887000000236665"
   }, {
     "heat": 3,
     "Description": "     Final",
@@ -2156,33 +2156,14 @@
     "Participants": 3,
     "Entries": [20, 21, 45],
     "Marks": true,
-    "program_element": "3639887000000230590",
+    "program_element": "3639887000000236615",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230644"
-  }, {
-    "heat": 4,
-    "Description": "     Final",
-    "Program": "Conventional",
-    "On_next_round": 11,
-    "active": false,
-    "EntriesNumber": [48, 52],
-    "Gender": "Man",
-    "Participants": 2,
-    "Entries": [48, 52],
-    "Marks": true,
-    "program_element": "3639887000000230590",
-    "Dance_order": 5,
-    "Dance": "Jive",
-    "Stage": "",
-    "Event": "Single",
-    "Class": "Class 1+2",
-    "Level": "",
-    "ID": "3639887000000230646"
+    "ID": "3639887000000236669"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -2194,14 +2175,33 @@
     "Participants": 3,
     "Entries": [16, 17, 19],
     "Marks": true,
-    "program_element": "3639887000000230590",
+    "program_element": "3639887000000236615",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230642"
+    "ID": "3639887000000236667"
+  }, {
+    "heat": 4,
+    "Description": "     Final",
+    "Program": "Conventional",
+    "On_next_round": 11,
+    "active": false,
+    "EntriesNumber": [48, 52],
+    "Gender": "Man",
+    "Participants": 2,
+    "Entries": [48, 52],
+    "Marks": true,
+    "program_element": "3639887000000236615",
+    "Dance_order": 5,
+    "Dance": "Jive",
+    "Stage": "",
+    "Event": "Single",
+    "Class": "Class 1+2",
+    "Level": "",
+    "ID": "3639887000000236671"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -2213,14 +2213,14 @@
     "Participants": 3,
     "Entries": [10, 11, 12],
     "Marks": true,
-    "program_element": "3639887000000230590",
+    "program_element": "3639887000000236615",
     "Dance_order": 4,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230616"
+    "ID": "3639887000000236641"
   }, {
     "heat": 3,
     "Description": "     Final",
@@ -2232,14 +2232,14 @@
     "Participants": 3,
     "Entries": [20, 21, 45],
     "Marks": true,
-    "program_element": "3639887000000230590",
+    "program_element": "3639887000000236615",
     "Dance_order": 4,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230620"
+    "ID": "3639887000000236645"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -2251,14 +2251,14 @@
     "Participants": 3,
     "Entries": [16, 17, 19],
     "Marks": true,
-    "program_element": "3639887000000230590",
+    "program_element": "3639887000000236615",
     "Dance_order": 4,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230618"
+    "ID": "3639887000000236643"
   }, {
     "heat": 4,
     "Description": "     Final",
@@ -2270,33 +2270,14 @@
     "Participants": 2,
     "Entries": [48, 52],
     "Marks": true,
-    "program_element": "3639887000000230590",
+    "program_element": "3639887000000236615",
     "Dance_order": 4,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230622"
-  }, {
-    "heat": 3,
-    "Description": "     Final",
-    "Program": "Conventional",
-    "On_next_round": 11,
-    "active": false,
-    "EntriesNumber": [20, 21, 45],
-    "Gender": "Man",
-    "Participants": 3,
-    "Entries": [20, 21, 45],
-    "Marks": true,
-    "program_element": "3639887000000230590",
-    "Dance_order": 3,
-    "Dance": "Samba",
-    "Stage": "",
-    "Event": "Single",
-    "Class": "Class 1+2",
-    "Level": "",
-    "ID": "3639887000000230608"
+    "ID": "3639887000000236647"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -2308,71 +2289,14 @@
     "Participants": 3,
     "Entries": [10, 11, 12],
     "Marks": true,
-    "program_element": "3639887000000230590",
+    "program_element": "3639887000000236615",
     "Dance_order": 3,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230604"
-  }, {
-    "heat": 4,
-    "Description": "     Final",
-    "Program": "Conventional",
-    "On_next_round": 11,
-    "active": false,
-    "EntriesNumber": [48, 52],
-    "Gender": "Man",
-    "Participants": 2,
-    "Entries": [48, 52],
-    "Marks": true,
-    "program_element": "3639887000000230590",
-    "Dance_order": 3,
-    "Dance": "Samba",
-    "Stage": "",
-    "Event": "Single",
-    "Class": "Class 1+2",
-    "Level": "",
-    "ID": "3639887000000230610"
-  }, {
-    "heat": 2,
-    "Description": "     Final",
-    "Program": "Conventional",
-    "On_next_round": 11,
-    "active": false,
-    "EntriesNumber": [16, 17, 19],
-    "Gender": "Man",
-    "Participants": 3,
-    "Entries": [16, 17, 19],
-    "Marks": true,
-    "program_element": "3639887000000230590",
-    "Dance_order": 3,
-    "Dance": "Samba",
-    "Stage": "",
-    "Event": "Single",
-    "Class": "Class 1+2",
-    "Level": "",
-    "ID": "3639887000000230606"
-  }, {
-    "heat": 1,
-    "Description": "     Final",
-    "Program": "Conventional",
-    "On_next_round": 11,
-    "active": false,
-    "EntriesNumber": [10, 11, 12],
-    "Gender": "Man",
-    "Participants": 3,
-    "Entries": [10, 11, 12],
-    "Marks": true,
-    "program_element": "3639887000000230590",
-    "Dance_order": 2,
-    "Dance": "Tango",
-    "Stage": "",
-    "Event": "Single",
-    "Class": "Class 1+2",
-    "Level": "",
-    "ID": "3639887000000230628"
+    "ID": "3639887000000236629"
   }, {
     "heat": 3,
     "Description": "     Final",
@@ -2384,14 +2308,14 @@
     "Participants": 3,
     "Entries": [20, 21, 45],
     "Marks": true,
-    "program_element": "3639887000000230590",
-    "Dance_order": 2,
-    "Dance": "Tango",
+    "program_element": "3639887000000236615",
+    "Dance_order": 3,
+    "Dance": "Samba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230632"
+    "ID": "3639887000000236633"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -2403,14 +2327,14 @@
     "Participants": 3,
     "Entries": [16, 17, 19],
     "Marks": true,
-    "program_element": "3639887000000230590",
-    "Dance_order": 2,
-    "Dance": "Tango",
+    "program_element": "3639887000000236615",
+    "Dance_order": 3,
+    "Dance": "Samba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230630"
+    "ID": "3639887000000236631"
   }, {
     "heat": 4,
     "Description": "     Final",
@@ -2422,14 +2346,14 @@
     "Participants": 2,
     "Entries": [48, 52],
     "Marks": true,
-    "program_element": "3639887000000230590",
-    "Dance_order": 2,
-    "Dance": "Tango",
+    "program_element": "3639887000000236615",
+    "Dance_order": 3,
+    "Dance": "Samba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230634"
+    "ID": "3639887000000236635"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -2441,14 +2365,14 @@
     "Participants": 3,
     "Entries": [10, 11, 12],
     "Marks": true,
-    "program_element": "3639887000000230590",
-    "Dance_order": 1,
-    "Dance": "Waltz",
+    "program_element": "3639887000000236615",
+    "Dance_order": 2,
+    "Dance": "Tango",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230592"
+    "ID": "3639887000000236653"
   }, {
     "heat": 3,
     "Description": "     Final",
@@ -2460,14 +2384,14 @@
     "Participants": 3,
     "Entries": [20, 21, 45],
     "Marks": true,
-    "program_element": "3639887000000230590",
-    "Dance_order": 1,
-    "Dance": "Waltz",
+    "program_element": "3639887000000236615",
+    "Dance_order": 2,
+    "Dance": "Tango",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230596"
+    "ID": "3639887000000236657"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -2479,14 +2403,14 @@
     "Participants": 3,
     "Entries": [16, 17, 19],
     "Marks": true,
-    "program_element": "3639887000000230590",
-    "Dance_order": 1,
-    "Dance": "Waltz",
+    "program_element": "3639887000000236615",
+    "Dance_order": 2,
+    "Dance": "Tango",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230594"
+    "ID": "3639887000000236655"
   }, {
     "heat": 4,
     "Description": "     Final",
@@ -2498,14 +2422,90 @@
     "Participants": 2,
     "Entries": [48, 52],
     "Marks": true,
-    "program_element": "3639887000000230590",
+    "program_element": "3639887000000236615",
+    "Dance_order": 2,
+    "Dance": "Tango",
+    "Stage": "",
+    "Event": "Single",
+    "Class": "Class 1+2",
+    "Level": "",
+    "ID": "3639887000000236659"
+  }, {
+    "heat": 1,
+    "Description": "     Final",
+    "Program": "Conventional",
+    "On_next_round": 11,
+    "active": false,
+    "EntriesNumber": [10, 11, 12],
+    "Gender": "Man",
+    "Participants": 3,
+    "Entries": [10, 11, 12],
+    "Marks": true,
+    "program_element": "3639887000000236615",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230598"
+    "ID": "3639887000000236617"
+  }, {
+    "heat": 3,
+    "Description": "     Final",
+    "Program": "Conventional",
+    "On_next_round": 11,
+    "active": false,
+    "EntriesNumber": [20, 21, 45],
+    "Gender": "Man",
+    "Participants": 3,
+    "Entries": [20, 21, 45],
+    "Marks": true,
+    "program_element": "3639887000000236615",
+    "Dance_order": 1,
+    "Dance": "Waltz",
+    "Stage": "",
+    "Event": "Single",
+    "Class": "Class 1+2",
+    "Level": "",
+    "ID": "3639887000000236621"
+  }, {
+    "heat": 4,
+    "Description": "     Final",
+    "Program": "Conventional",
+    "On_next_round": 11,
+    "active": false,
+    "EntriesNumber": [48, 52],
+    "Gender": "Man",
+    "Participants": 2,
+    "Entries": [48, 52],
+    "Marks": true,
+    "program_element": "3639887000000236615",
+    "Dance_order": 1,
+    "Dance": "Waltz",
+    "Stage": "",
+    "Event": "Single",
+    "Class": "Class 1+2",
+    "Level": "",
+    "ID": "3639887000000236623"
+  }, {
+    "heat": 2,
+    "Description": "     Final",
+    "Program": "Conventional",
+    "On_next_round": 11,
+    "active": false,
+    "EntriesNumber": [16, 17, 19],
+    "Gender": "Man",
+    "Participants": 3,
+    "Entries": [16, 17, 19],
+    "Marks": true,
+    "program_element": "3639887000000236615",
+    "Dance_order": 1,
+    "Dance": "Waltz",
+    "Stage": "",
+    "Event": "Single",
+    "Class": "Class 1+2",
+    "Level": "",
+    "ID": "3639887000000236619"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -2517,14 +2517,14 @@
     "Participants": 6,
     "Entries": [10, 11, 12, 16, 17, 19],
     "Marks": false,
-    "program_element": "3639887000000230584",
+    "program_element": "3639887000000236609",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230636"
+    "ID": "3639887000000236661"
   }, {
     "heat": 2,
     "Description": " General look",
@@ -2536,14 +2536,14 @@
     "Participants": 5,
     "Entries": [20, 21, 45, 48, 52],
     "Marks": false,
-    "program_element": "3639887000000230584",
+    "program_element": "3639887000000236609",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230638"
+    "ID": "3639887000000236663"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -2555,14 +2555,14 @@
     "Participants": 6,
     "Entries": [10, 11, 12, 16, 17, 19],
     "Marks": false,
-    "program_element": "3639887000000230584",
+    "program_element": "3639887000000236609",
     "Dance_order": 4,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230612"
+    "ID": "3639887000000236637"
   }, {
     "heat": 2,
     "Description": " General look",
@@ -2574,14 +2574,14 @@
     "Participants": 5,
     "Entries": [20, 21, 45, 48, 52],
     "Marks": false,
-    "program_element": "3639887000000230584",
+    "program_element": "3639887000000236609",
     "Dance_order": 4,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230614"
+    "ID": "3639887000000236639"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -2593,14 +2593,14 @@
     "Participants": 6,
     "Entries": [10, 11, 12, 16, 17, 19],
     "Marks": false,
-    "program_element": "3639887000000230584",
+    "program_element": "3639887000000236609",
     "Dance_order": 3,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230600"
+    "ID": "3639887000000236625"
   }, {
     "heat": 2,
     "Description": " General look",
@@ -2612,14 +2612,14 @@
     "Participants": 5,
     "Entries": [20, 21, 45, 48, 52],
     "Marks": false,
-    "program_element": "3639887000000230584",
+    "program_element": "3639887000000236609",
     "Dance_order": 3,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230602"
+    "ID": "3639887000000236627"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -2631,14 +2631,14 @@
     "Participants": 6,
     "Entries": [10, 11, 12, 16, 17, 19],
     "Marks": false,
-    "program_element": "3639887000000230584",
+    "program_element": "3639887000000236609",
     "Dance_order": 2,
     "Dance": "Tango",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230624"
+    "ID": "3639887000000236649"
   }, {
     "heat": 2,
     "Description": " General look",
@@ -2650,14 +2650,14 @@
     "Participants": 5,
     "Entries": [20, 21, 45, 48, 52],
     "Marks": false,
-    "program_element": "3639887000000230584",
+    "program_element": "3639887000000236609",
     "Dance_order": 2,
     "Dance": "Tango",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230626"
+    "ID": "3639887000000236651"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -2669,14 +2669,14 @@
     "Participants": 6,
     "Entries": [10, 11, 12, 16, 17, 19],
     "Marks": false,
-    "program_element": "3639887000000230584",
+    "program_element": "3639887000000236609",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230586"
+    "ID": "3639887000000236611"
   }, {
     "heat": 2,
     "Description": " General look",
@@ -2688,14 +2688,14 @@
     "Participants": 5,
     "Entries": [20, 21, 45, 48, 52],
     "Marks": false,
-    "program_element": "3639887000000230584",
+    "program_element": "3639887000000236609",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000230588"
+    "ID": "3639887000000236613"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -2707,14 +2707,14 @@
     "Participants": 2,
     "Entries": [26, 27],
     "Marks": true,
-    "program_element": "3639887000000230652",
+    "program_element": "3639887000000236677",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1",
     "Level": "",
-    "ID": "3639887000000230680"
+    "ID": "3639887000000236705"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -2726,14 +2726,14 @@
     "Participants": 3,
     "Entries": [23, 24, 25],
     "Marks": true,
-    "program_element": "3639887000000230652",
+    "program_element": "3639887000000236677",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1",
     "Level": "",
-    "ID": "3639887000000230678"
+    "ID": "3639887000000236703"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -2745,14 +2745,14 @@
     "Participants": 2,
     "Entries": [26, 27],
     "Marks": true,
-    "program_element": "3639887000000230652",
+    "program_element": "3639887000000236677",
     "Dance_order": 4,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1",
     "Level": "",
-    "ID": "3639887000000230668"
+    "ID": "3639887000000236693"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -2764,14 +2764,14 @@
     "Participants": 3,
     "Entries": [23, 24, 25],
     "Marks": true,
-    "program_element": "3639887000000230652",
+    "program_element": "3639887000000236677",
     "Dance_order": 4,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1",
     "Level": "",
-    "ID": "3639887000000230666"
+    "ID": "3639887000000236691"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -2783,14 +2783,14 @@
     "Participants": 3,
     "Entries": [23, 24, 25],
     "Marks": true,
-    "program_element": "3639887000000230652",
+    "program_element": "3639887000000236677",
     "Dance_order": 3,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1",
     "Level": "",
-    "ID": "3639887000000230660"
+    "ID": "3639887000000236685"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -2802,14 +2802,14 @@
     "Participants": 2,
     "Entries": [26, 27],
     "Marks": true,
-    "program_element": "3639887000000230652",
+    "program_element": "3639887000000236677",
     "Dance_order": 3,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1",
     "Level": "",
-    "ID": "3639887000000230662"
+    "ID": "3639887000000236687"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -2821,14 +2821,14 @@
     "Participants": 3,
     "Entries": [23, 24, 25],
     "Marks": true,
-    "program_element": "3639887000000230652",
+    "program_element": "3639887000000236677",
     "Dance_order": 2,
     "Dance": "Tango",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1",
     "Level": "",
-    "ID": "3639887000000230672"
+    "ID": "3639887000000236697"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -2840,14 +2840,14 @@
     "Participants": 2,
     "Entries": [26, 27],
     "Marks": true,
-    "program_element": "3639887000000230652",
+    "program_element": "3639887000000236677",
     "Dance_order": 2,
     "Dance": "Tango",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1",
     "Level": "",
-    "ID": "3639887000000230674"
+    "ID": "3639887000000236699"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -2859,14 +2859,14 @@
     "Participants": 2,
     "Entries": [26, 27],
     "Marks": true,
-    "program_element": "3639887000000230652",
+    "program_element": "3639887000000236677",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1",
     "Level": "",
-    "ID": "3639887000000230656"
+    "ID": "3639887000000236681"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -2878,14 +2878,14 @@
     "Participants": 3,
     "Entries": [23, 24, 25],
     "Marks": true,
-    "program_element": "3639887000000230652",
+    "program_element": "3639887000000236677",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1",
     "Level": "",
-    "ID": "3639887000000230654"
+    "ID": "3639887000000236679"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -2897,14 +2897,14 @@
     "Participants": 5,
     "Entries": [23, 24, 25, 26, 27],
     "Marks": false,
-    "program_element": "3639887000000230648",
+    "program_element": "3639887000000236673",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1",
     "Level": "",
-    "ID": "3639887000000230676"
+    "ID": "3639887000000236701"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -2916,14 +2916,14 @@
     "Participants": 5,
     "Entries": [23, 24, 25, 26, 27],
     "Marks": false,
-    "program_element": "3639887000000230648",
+    "program_element": "3639887000000236673",
     "Dance_order": 4,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1",
     "Level": "",
-    "ID": "3639887000000230664"
+    "ID": "3639887000000236689"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -2935,14 +2935,14 @@
     "Participants": 5,
     "Entries": [23, 24, 25, 26, 27],
     "Marks": false,
-    "program_element": "3639887000000230648",
+    "program_element": "3639887000000236673",
     "Dance_order": 3,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1",
     "Level": "",
-    "ID": "3639887000000230658"
+    "ID": "3639887000000236683"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -2954,14 +2954,14 @@
     "Participants": 5,
     "Entries": [23, 24, 25, 26, 27],
     "Marks": false,
-    "program_element": "3639887000000230648",
+    "program_element": "3639887000000236673",
     "Dance_order": 2,
     "Dance": "Tango",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1",
     "Level": "",
-    "ID": "3639887000000230670"
+    "ID": "3639887000000236695"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -2973,14 +2973,14 @@
     "Participants": 5,
     "Entries": [23, 24, 25, 26, 27],
     "Marks": false,
-    "program_element": "3639887000000230648",
+    "program_element": "3639887000000236673",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1",
     "Level": "",
-    "ID": "3639887000000230650"
+    "ID": "3639887000000236675"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -2992,14 +2992,14 @@
     "Participants": 3,
     "Entries": [],
     "Marks": true,
-    "program_element": "3639887000000230698",
+    "program_element": "3639887000000236723",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230780"
+    "ID": "3639887000000236805"
   }, {
     "heat": 3,
     "Description": "     Final",
@@ -3011,14 +3011,14 @@
     "Participants": 3,
     "Entries": [],
     "Marks": true,
-    "program_element": "3639887000000230698",
+    "program_element": "3639887000000236723",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230784"
+    "ID": "3639887000000236809"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -3030,14 +3030,14 @@
     "Participants": 3,
     "Entries": [],
     "Marks": true,
-    "program_element": "3639887000000230698",
+    "program_element": "3639887000000236723",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230782"
+    "ID": "3639887000000236807"
   }, {
     "heat": 4,
     "Description": "     Final",
@@ -3049,33 +3049,14 @@
     "Participants": 3,
     "Entries": [],
     "Marks": true,
-    "program_element": "3639887000000230698",
+    "program_element": "3639887000000236723",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230786"
-  }, {
-    "heat": 1,
-    "Description": "     Final",
-    "Program": "Conventional",
-    "On_next_round": 12,
-    "active": false,
-    "EntriesNumber": [],
-    "Gender": "Woman",
-    "Participants": 3,
-    "Entries": [],
-    "Marks": true,
-    "program_element": "3639887000000230698",
-    "Dance_order": 4,
-    "Dance": "Rumba",
-    "Stage": "",
-    "Event": "Single",
-    "Class": "Class 2",
-    "Level": "",
-    "ID": "3639887000000230740"
+    "ID": "3639887000000236811"
   }, {
     "heat": 3,
     "Description": "     Final",
@@ -3087,52 +3068,14 @@
     "Participants": 3,
     "Entries": [],
     "Marks": true,
-    "program_element": "3639887000000230698",
+    "program_element": "3639887000000236723",
     "Dance_order": 4,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230744"
-  }, {
-    "heat": 2,
-    "Description": "     Final",
-    "Program": "Conventional",
-    "On_next_round": 12,
-    "active": false,
-    "EntriesNumber": [],
-    "Gender": "Woman",
-    "Participants": 3,
-    "Entries": [],
-    "Marks": true,
-    "program_element": "3639887000000230698",
-    "Dance_order": 4,
-    "Dance": "Rumba",
-    "Stage": "",
-    "Event": "Single",
-    "Class": "Class 2",
-    "Level": "",
-    "ID": "3639887000000230742"
-  }, {
-    "heat": 4,
-    "Description": "     Final",
-    "Program": "Conventional",
-    "On_next_round": 12,
-    "active": false,
-    "EntriesNumber": [],
-    "Gender": "Woman",
-    "Participants": 3,
-    "Entries": [],
-    "Marks": true,
-    "program_element": "3639887000000230698",
-    "Dance_order": 4,
-    "Dance": "Rumba",
-    "Stage": "",
-    "Event": "Single",
-    "Class": "Class 2",
-    "Level": "",
-    "ID": "3639887000000230746"
+    "ID": "3639887000000236769"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -3144,33 +3087,14 @@
     "Participants": 3,
     "Entries": [],
     "Marks": true,
-    "program_element": "3639887000000230698",
-    "Dance_order": 3,
-    "Dance": "Samba",
+    "program_element": "3639887000000236723",
+    "Dance_order": 4,
+    "Dance": "Rumba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230720"
-  }, {
-    "heat": 3,
-    "Description": "     Final",
-    "Program": "Conventional",
-    "On_next_round": 12,
-    "active": false,
-    "EntriesNumber": [],
-    "Gender": "Woman",
-    "Participants": 3,
-    "Entries": [],
-    "Marks": true,
-    "program_element": "3639887000000230698",
-    "Dance_order": 3,
-    "Dance": "Samba",
-    "Stage": "",
-    "Event": "Single",
-    "Class": "Class 2",
-    "Level": "",
-    "ID": "3639887000000230724"
+    "ID": "3639887000000236765"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -3182,14 +3106,14 @@
     "Participants": 3,
     "Entries": [],
     "Marks": true,
-    "program_element": "3639887000000230698",
-    "Dance_order": 3,
-    "Dance": "Samba",
+    "program_element": "3639887000000236723",
+    "Dance_order": 4,
+    "Dance": "Rumba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230722"
+    "ID": "3639887000000236767"
   }, {
     "heat": 4,
     "Description": "     Final",
@@ -3201,14 +3125,33 @@
     "Participants": 3,
     "Entries": [],
     "Marks": true,
-    "program_element": "3639887000000230698",
+    "program_element": "3639887000000236723",
+    "Dance_order": 4,
+    "Dance": "Rumba",
+    "Stage": "",
+    "Event": "Single",
+    "Class": "Class 2",
+    "Level": "",
+    "ID": "3639887000000236771"
+  }, {
+    "heat": 3,
+    "Description": "     Final",
+    "Program": "Conventional",
+    "On_next_round": 12,
+    "active": false,
+    "EntriesNumber": [],
+    "Gender": "Woman",
+    "Participants": 3,
+    "Entries": [],
+    "Marks": true,
+    "program_element": "3639887000000236723",
     "Dance_order": 3,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230726"
+    "ID": "3639887000000236749"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -3220,33 +3163,14 @@
     "Participants": 3,
     "Entries": [],
     "Marks": true,
-    "program_element": "3639887000000230698",
-    "Dance_order": 2,
-    "Dance": "Tango",
+    "program_element": "3639887000000236723",
+    "Dance_order": 3,
+    "Dance": "Samba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230760"
-  }, {
-    "heat": 3,
-    "Description": "     Final",
-    "Program": "Conventional",
-    "On_next_round": 12,
-    "active": false,
-    "EntriesNumber": [],
-    "Gender": "Woman",
-    "Participants": 3,
-    "Entries": [],
-    "Marks": true,
-    "program_element": "3639887000000230698",
-    "Dance_order": 2,
-    "Dance": "Tango",
-    "Stage": "",
-    "Event": "Single",
-    "Class": "Class 2",
-    "Level": "",
-    "ID": "3639887000000230764"
+    "ID": "3639887000000236745"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -3258,14 +3182,14 @@
     "Participants": 3,
     "Entries": [],
     "Marks": true,
-    "program_element": "3639887000000230698",
-    "Dance_order": 2,
-    "Dance": "Tango",
+    "program_element": "3639887000000236723",
+    "Dance_order": 3,
+    "Dance": "Samba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230762"
+    "ID": "3639887000000236747"
   }, {
     "heat": 4,
     "Description": "     Final",
@@ -3277,14 +3201,33 @@
     "Participants": 3,
     "Entries": [],
     "Marks": true,
-    "program_element": "3639887000000230698",
+    "program_element": "3639887000000236723",
+    "Dance_order": 3,
+    "Dance": "Samba",
+    "Stage": "",
+    "Event": "Single",
+    "Class": "Class 2",
+    "Level": "",
+    "ID": "3639887000000236751"
+  }, {
+    "heat": 3,
+    "Description": "     Final",
+    "Program": "Conventional",
+    "On_next_round": 12,
+    "active": false,
+    "EntriesNumber": [],
+    "Gender": "Woman",
+    "Participants": 3,
+    "Entries": [],
+    "Marks": true,
+    "program_element": "3639887000000236723",
     "Dance_order": 2,
     "Dance": "Tango",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230766"
+    "ID": "3639887000000236789"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -3296,33 +3239,14 @@
     "Participants": 3,
     "Entries": [],
     "Marks": true,
-    "program_element": "3639887000000230698",
-    "Dance_order": 1,
-    "Dance": "Waltz",
+    "program_element": "3639887000000236723",
+    "Dance_order": 2,
+    "Dance": "Tango",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230700"
-  }, {
-    "heat": 3,
-    "Description": "     Final",
-    "Program": "Conventional",
-    "On_next_round": 12,
-    "active": false,
-    "EntriesNumber": [],
-    "Gender": "Woman",
-    "Participants": 3,
-    "Entries": [],
-    "Marks": true,
-    "program_element": "3639887000000230698",
-    "Dance_order": 1,
-    "Dance": "Waltz",
-    "Stage": "",
-    "Event": "Single",
-    "Class": "Class 2",
-    "Level": "",
-    "ID": "3639887000000230704"
+    "ID": "3639887000000236785"
   }, {
     "heat": 2,
     "Description": "     Final",
@@ -3334,14 +3258,14 @@
     "Participants": 3,
     "Entries": [],
     "Marks": true,
-    "program_element": "3639887000000230698",
-    "Dance_order": 1,
-    "Dance": "Waltz",
+    "program_element": "3639887000000236723",
+    "Dance_order": 2,
+    "Dance": "Tango",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230702"
+    "ID": "3639887000000236787"
   }, {
     "heat": 4,
     "Description": "     Final",
@@ -3353,14 +3277,90 @@
     "Participants": 3,
     "Entries": [],
     "Marks": true,
-    "program_element": "3639887000000230698",
+    "program_element": "3639887000000236723",
+    "Dance_order": 2,
+    "Dance": "Tango",
+    "Stage": "",
+    "Event": "Single",
+    "Class": "Class 2",
+    "Level": "",
+    "ID": "3639887000000236791"
+  }, {
+    "heat": 3,
+    "Description": "     Final",
+    "Program": "Conventional",
+    "On_next_round": 12,
+    "active": false,
+    "EntriesNumber": [],
+    "Gender": "Woman",
+    "Participants": 3,
+    "Entries": [],
+    "Marks": true,
+    "program_element": "3639887000000236723",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230706"
+    "ID": "3639887000000236729"
+  }, {
+    "heat": 1,
+    "Description": "     Final",
+    "Program": "Conventional",
+    "On_next_round": 12,
+    "active": false,
+    "EntriesNumber": [],
+    "Gender": "Woman",
+    "Participants": 3,
+    "Entries": [],
+    "Marks": true,
+    "program_element": "3639887000000236723",
+    "Dance_order": 1,
+    "Dance": "Waltz",
+    "Stage": "",
+    "Event": "Single",
+    "Class": "Class 2",
+    "Level": "",
+    "ID": "3639887000000236725"
+  }, {
+    "heat": 2,
+    "Description": "     Final",
+    "Program": "Conventional",
+    "On_next_round": 12,
+    "active": false,
+    "EntriesNumber": [],
+    "Gender": "Woman",
+    "Participants": 3,
+    "Entries": [],
+    "Marks": true,
+    "program_element": "3639887000000236723",
+    "Dance_order": 1,
+    "Dance": "Waltz",
+    "Stage": "",
+    "Event": "Single",
+    "Class": "Class 2",
+    "Level": "",
+    "ID": "3639887000000236727"
+  }, {
+    "heat": 4,
+    "Description": "     Final",
+    "Program": "Conventional",
+    "On_next_round": 12,
+    "active": false,
+    "EntriesNumber": [],
+    "Gender": "Woman",
+    "Participants": 3,
+    "Entries": [],
+    "Marks": true,
+    "program_element": "3639887000000236723",
+    "Dance_order": 1,
+    "Dance": "Waltz",
+    "Stage": "",
+    "Event": "Single",
+    "Class": "Class 2",
+    "Level": "",
+    "ID": "3639887000000236731"
   }, {
     "heat": 1,
     "Description": "   Re-dance",
@@ -3372,14 +3372,14 @@
     "Participants": 6,
     "Entries": [],
     "Marks": false,
-    "program_element": "3639887000000230692",
+    "program_element": "3639887000000236717",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230776"
+    "ID": "3639887000000236801"
   }, {
     "heat": 2,
     "Description": "   Re-dance",
@@ -3391,14 +3391,14 @@
     "Participants": 6,
     "Entries": [],
     "Marks": false,
-    "program_element": "3639887000000230692",
+    "program_element": "3639887000000236717",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230778"
+    "ID": "3639887000000236803"
   }, {
     "heat": 1,
     "Description": "   Re-dance",
@@ -3410,14 +3410,14 @@
     "Participants": 6,
     "Entries": [],
     "Marks": false,
-    "program_element": "3639887000000230692",
+    "program_element": "3639887000000236717",
     "Dance_order": 4,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230736"
+    "ID": "3639887000000236761"
   }, {
     "heat": 2,
     "Description": "   Re-dance",
@@ -3429,14 +3429,14 @@
     "Participants": 6,
     "Entries": [],
     "Marks": false,
-    "program_element": "3639887000000230692",
+    "program_element": "3639887000000236717",
     "Dance_order": 4,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230738"
+    "ID": "3639887000000236763"
   }, {
     "heat": 1,
     "Description": "   Re-dance",
@@ -3448,14 +3448,14 @@
     "Participants": 6,
     "Entries": [],
     "Marks": false,
-    "program_element": "3639887000000230692",
+    "program_element": "3639887000000236717",
     "Dance_order": 3,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230716"
+    "ID": "3639887000000236741"
   }, {
     "heat": 2,
     "Description": "   Re-dance",
@@ -3467,14 +3467,14 @@
     "Participants": 6,
     "Entries": [],
     "Marks": false,
-    "program_element": "3639887000000230692",
+    "program_element": "3639887000000236717",
     "Dance_order": 3,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230718"
+    "ID": "3639887000000236743"
   }, {
     "heat": 1,
     "Description": "   Re-dance",
@@ -3486,14 +3486,14 @@
     "Participants": 6,
     "Entries": [],
     "Marks": false,
-    "program_element": "3639887000000230692",
+    "program_element": "3639887000000236717",
     "Dance_order": 2,
     "Dance": "Tango",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230756"
+    "ID": "3639887000000236781"
   }, {
     "heat": 2,
     "Description": "   Re-dance",
@@ -3505,14 +3505,14 @@
     "Participants": 6,
     "Entries": [],
     "Marks": false,
-    "program_element": "3639887000000230692",
+    "program_element": "3639887000000236717",
     "Dance_order": 2,
     "Dance": "Tango",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230758"
+    "ID": "3639887000000236783"
   }, {
     "heat": 1,
     "Description": "   Re-dance",
@@ -3524,14 +3524,14 @@
     "Participants": 6,
     "Entries": [],
     "Marks": false,
-    "program_element": "3639887000000230692",
+    "program_element": "3639887000000236717",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230694"
+    "ID": "3639887000000236719"
   }, {
     "heat": 2,
     "Description": "   Re-dance",
@@ -3543,14 +3543,14 @@
     "Participants": 6,
     "Entries": [],
     "Marks": false,
-    "program_element": "3639887000000230692",
+    "program_element": "3639887000000236717",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230696"
+    "ID": "3639887000000236721"
   }, {
     "heat": 1,
     "Description": "  1st Round",
@@ -3562,14 +3562,14 @@
     "Participants": 5,
     "Entries": [28, 29, 30, 31, 32],
     "Marks": false,
-    "program_element": "3639887000000230682",
+    "program_element": "3639887000000236707",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230768"
+    "ID": "3639887000000236793"
   }, {
     "heat": 3,
     "Description": "  1st Round",
@@ -3581,14 +3581,14 @@
     "Participants": 5,
     "Entries": [38, 39, 40, 41, 42],
     "Marks": false,
-    "program_element": "3639887000000230682",
+    "program_element": "3639887000000236707",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230772"
+    "ID": "3639887000000236797"
   }, {
     "heat": 2,
     "Description": "  1st Round",
@@ -3600,14 +3600,14 @@
     "Participants": 5,
     "Entries": [33, 34, 35, 36, 37],
     "Marks": false,
-    "program_element": "3639887000000230682",
+    "program_element": "3639887000000236707",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230770"
+    "ID": "3639887000000236795"
   }, {
     "heat": 4,
     "Description": "  1st Round",
@@ -3619,33 +3619,14 @@
     "Participants": 4,
     "Entries": [50, 51, 53, 54],
     "Marks": false,
-    "program_element": "3639887000000230682",
+    "program_element": "3639887000000236707",
     "Dance_order": 5,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230774"
-  }, {
-    "heat": 3,
-    "Description": "  1st Round",
-    "Program": "Conventional",
-    "On_next_round": 7,
-    "active": false,
-    "EntriesNumber": [38, 39, 40, 41, 42],
-    "Gender": "Woman",
-    "Participants": 5,
-    "Entries": [38, 39, 40, 41, 42],
-    "Marks": false,
-    "program_element": "3639887000000230682",
-    "Dance_order": 4,
-    "Dance": "Rumba",
-    "Stage": "",
-    "Event": "Single",
-    "Class": "Class 2",
-    "Level": "",
-    "ID": "3639887000000230732"
+    "ID": "3639887000000236799"
   }, {
     "heat": 1,
     "Description": "  1st Round",
@@ -3657,71 +3638,14 @@
     "Participants": 5,
     "Entries": [28, 29, 30, 31, 32],
     "Marks": false,
-    "program_element": "3639887000000230682",
+    "program_element": "3639887000000236707",
     "Dance_order": 4,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230728"
-  }, {
-    "heat": 2,
-    "Description": "  1st Round",
-    "Program": "Conventional",
-    "On_next_round": 7,
-    "active": false,
-    "EntriesNumber": [33, 34, 35, 36, 37],
-    "Gender": "Woman",
-    "Participants": 5,
-    "Entries": [33, 34, 35, 36, 37],
-    "Marks": false,
-    "program_element": "3639887000000230682",
-    "Dance_order": 4,
-    "Dance": "Rumba",
-    "Stage": "",
-    "Event": "Single",
-    "Class": "Class 2",
-    "Level": "",
-    "ID": "3639887000000230730"
-  }, {
-    "heat": 4,
-    "Description": "  1st Round",
-    "Program": "Conventional",
-    "On_next_round": 7,
-    "active": false,
-    "EntriesNumber": [50, 51, 53, 54],
-    "Gender": "Woman",
-    "Participants": 4,
-    "Entries": [50, 51, 53, 54],
-    "Marks": false,
-    "program_element": "3639887000000230682",
-    "Dance_order": 4,
-    "Dance": "Rumba",
-    "Stage": "",
-    "Event": "Single",
-    "Class": "Class 2",
-    "Level": "",
-    "ID": "3639887000000230734"
-  }, {
-    "heat": 1,
-    "Description": "  1st Round",
-    "Program": "Conventional",
-    "On_next_round": 7,
-    "active": false,
-    "EntriesNumber": [28, 29, 30, 31, 32],
-    "Gender": "Woman",
-    "Participants": 5,
-    "Entries": [28, 29, 30, 31, 32],
-    "Marks": false,
-    "program_element": "3639887000000230682",
-    "Dance_order": 3,
-    "Dance": "Samba",
-    "Stage": "",
-    "Event": "Single",
-    "Class": "Class 2",
-    "Level": "",
-    "ID": "3639887000000230708"
+    "ID": "3639887000000236753"
   }, {
     "heat": 3,
     "Description": "  1st Round",
@@ -3733,14 +3657,14 @@
     "Participants": 5,
     "Entries": [38, 39, 40, 41, 42],
     "Marks": false,
-    "program_element": "3639887000000230682",
-    "Dance_order": 3,
-    "Dance": "Samba",
+    "program_element": "3639887000000236707",
+    "Dance_order": 4,
+    "Dance": "Rumba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230712"
+    "ID": "3639887000000236757"
   }, {
     "heat": 2,
     "Description": "  1st Round",
@@ -3752,14 +3676,14 @@
     "Participants": 5,
     "Entries": [33, 34, 35, 36, 37],
     "Marks": false,
-    "program_element": "3639887000000230682",
-    "Dance_order": 3,
-    "Dance": "Samba",
+    "program_element": "3639887000000236707",
+    "Dance_order": 4,
+    "Dance": "Rumba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230710"
+    "ID": "3639887000000236755"
   }, {
     "heat": 4,
     "Description": "  1st Round",
@@ -3771,33 +3695,14 @@
     "Participants": 4,
     "Entries": [50, 51, 53, 54],
     "Marks": false,
-    "program_element": "3639887000000230682",
-    "Dance_order": 3,
-    "Dance": "Samba",
+    "program_element": "3639887000000236707",
+    "Dance_order": 4,
+    "Dance": "Rumba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230714"
-  }, {
-    "heat": 3,
-    "Description": "  1st Round",
-    "Program": "Conventional",
-    "On_next_round": 7,
-    "active": false,
-    "EntriesNumber": [38, 39, 40, 41, 42],
-    "Gender": "Woman",
-    "Participants": 5,
-    "Entries": [38, 39, 40, 41, 42],
-    "Marks": false,
-    "program_element": "3639887000000230682",
-    "Dance_order": 2,
-    "Dance": "Tango",
-    "Stage": "",
-    "Event": "Single",
-    "Class": "Class 2",
-    "Level": "",
-    "ID": "3639887000000230752"
+    "ID": "3639887000000236759"
   }, {
     "heat": 1,
     "Description": "  1st Round",
@@ -3809,71 +3714,14 @@
     "Participants": 5,
     "Entries": [28, 29, 30, 31, 32],
     "Marks": false,
-    "program_element": "3639887000000230682",
-    "Dance_order": 2,
-    "Dance": "Tango",
+    "program_element": "3639887000000236707",
+    "Dance_order": 3,
+    "Dance": "Samba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230748"
-  }, {
-    "heat": 2,
-    "Description": "  1st Round",
-    "Program": "Conventional",
-    "On_next_round": 7,
-    "active": false,
-    "EntriesNumber": [33, 34, 35, 36, 37],
-    "Gender": "Woman",
-    "Participants": 5,
-    "Entries": [33, 34, 35, 36, 37],
-    "Marks": false,
-    "program_element": "3639887000000230682",
-    "Dance_order": 2,
-    "Dance": "Tango",
-    "Stage": "",
-    "Event": "Single",
-    "Class": "Class 2",
-    "Level": "",
-    "ID": "3639887000000230750"
-  }, {
-    "heat": 4,
-    "Description": "  1st Round",
-    "Program": "Conventional",
-    "On_next_round": 7,
-    "active": false,
-    "EntriesNumber": [50, 51, 53, 54],
-    "Gender": "Woman",
-    "Participants": 4,
-    "Entries": [50, 51, 53, 54],
-    "Marks": false,
-    "program_element": "3639887000000230682",
-    "Dance_order": 2,
-    "Dance": "Tango",
-    "Stage": "",
-    "Event": "Single",
-    "Class": "Class 2",
-    "Level": "",
-    "ID": "3639887000000230754"
-  }, {
-    "heat": 1,
-    "Description": "  1st Round",
-    "Program": "Conventional",
-    "On_next_round": 7,
-    "active": false,
-    "EntriesNumber": [28, 29, 30, 31, 32],
-    "Gender": "Woman",
-    "Participants": 5,
-    "Entries": [28, 29, 30, 31, 32],
-    "Marks": false,
-    "program_element": "3639887000000230682",
-    "Dance_order": 1,
-    "Dance": "Waltz",
-    "Stage": "",
-    "Event": "Single",
-    "Class": "Class 2",
-    "Level": "",
-    "ID": "3639887000000230684"
+    "ID": "3639887000000236733"
   }, {
     "heat": 3,
     "Description": "  1st Round",
@@ -3885,14 +3733,14 @@
     "Participants": 5,
     "Entries": [38, 39, 40, 41, 42],
     "Marks": false,
-    "program_element": "3639887000000230682",
-    "Dance_order": 1,
-    "Dance": "Waltz",
+    "program_element": "3639887000000236707",
+    "Dance_order": 3,
+    "Dance": "Samba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230688"
+    "ID": "3639887000000236737"
   }, {
     "heat": 2,
     "Description": "  1st Round",
@@ -3904,14 +3752,14 @@
     "Participants": 5,
     "Entries": [33, 34, 35, 36, 37],
     "Marks": false,
-    "program_element": "3639887000000230682",
-    "Dance_order": 1,
-    "Dance": "Waltz",
+    "program_element": "3639887000000236707",
+    "Dance_order": 3,
+    "Dance": "Samba",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230686"
+    "ID": "3639887000000236735"
   }, {
     "heat": 4,
     "Description": "  1st Round",
@@ -3923,14 +3771,166 @@
     "Participants": 4,
     "Entries": [50, 51, 53, 54],
     "Marks": false,
-    "program_element": "3639887000000230682",
+    "program_element": "3639887000000236707",
+    "Dance_order": 3,
+    "Dance": "Samba",
+    "Stage": "",
+    "Event": "Single",
+    "Class": "Class 2",
+    "Level": "",
+    "ID": "3639887000000236739"
+  }, {
+    "heat": 1,
+    "Description": "  1st Round",
+    "Program": "Conventional",
+    "On_next_round": 7,
+    "active": false,
+    "EntriesNumber": [28, 29, 30, 31, 32],
+    "Gender": "Woman",
+    "Participants": 5,
+    "Entries": [28, 29, 30, 31, 32],
+    "Marks": false,
+    "program_element": "3639887000000236707",
+    "Dance_order": 2,
+    "Dance": "Tango",
+    "Stage": "",
+    "Event": "Single",
+    "Class": "Class 2",
+    "Level": "",
+    "ID": "3639887000000236773"
+  }, {
+    "heat": 3,
+    "Description": "  1st Round",
+    "Program": "Conventional",
+    "On_next_round": 7,
+    "active": false,
+    "EntriesNumber": [38, 39, 40, 41, 42],
+    "Gender": "Woman",
+    "Participants": 5,
+    "Entries": [38, 39, 40, 41, 42],
+    "Marks": false,
+    "program_element": "3639887000000236707",
+    "Dance_order": 2,
+    "Dance": "Tango",
+    "Stage": "",
+    "Event": "Single",
+    "Class": "Class 2",
+    "Level": "",
+    "ID": "3639887000000236777"
+  }, {
+    "heat": 2,
+    "Description": "  1st Round",
+    "Program": "Conventional",
+    "On_next_round": 7,
+    "active": false,
+    "EntriesNumber": [33, 34, 35, 36, 37],
+    "Gender": "Woman",
+    "Participants": 5,
+    "Entries": [33, 34, 35, 36, 37],
+    "Marks": false,
+    "program_element": "3639887000000236707",
+    "Dance_order": 2,
+    "Dance": "Tango",
+    "Stage": "",
+    "Event": "Single",
+    "Class": "Class 2",
+    "Level": "",
+    "ID": "3639887000000236775"
+  }, {
+    "heat": 4,
+    "Description": "  1st Round",
+    "Program": "Conventional",
+    "On_next_round": 7,
+    "active": false,
+    "EntriesNumber": [50, 51, 53, 54],
+    "Gender": "Woman",
+    "Participants": 4,
+    "Entries": [50, 51, 53, 54],
+    "Marks": false,
+    "program_element": "3639887000000236707",
+    "Dance_order": 2,
+    "Dance": "Tango",
+    "Stage": "",
+    "Event": "Single",
+    "Class": "Class 2",
+    "Level": "",
+    "ID": "3639887000000236779"
+  }, {
+    "heat": 1,
+    "Description": "  1st Round",
+    "Program": "Conventional",
+    "On_next_round": 7,
+    "active": false,
+    "EntriesNumber": [28, 29, 30, 31, 32],
+    "Gender": "Woman",
+    "Participants": 5,
+    "Entries": [28, 29, 30, 31, 32],
+    "Marks": false,
+    "program_element": "3639887000000236707",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000230690"
+    "ID": "3639887000000236709"
+  }, {
+    "heat": 3,
+    "Description": "  1st Round",
+    "Program": "Conventional",
+    "On_next_round": 7,
+    "active": false,
+    "EntriesNumber": [38, 39, 40, 41, 42],
+    "Gender": "Woman",
+    "Participants": 5,
+    "Entries": [38, 39, 40, 41, 42],
+    "Marks": false,
+    "program_element": "3639887000000236707",
+    "Dance_order": 1,
+    "Dance": "Waltz",
+    "Stage": "",
+    "Event": "Single",
+    "Class": "Class 2",
+    "Level": "",
+    "ID": "3639887000000236713"
+  }, {
+    "heat": 2,
+    "Description": "  1st Round",
+    "Program": "Conventional",
+    "On_next_round": 7,
+    "active": false,
+    "EntriesNumber": [33, 34, 35, 36, 37],
+    "Gender": "Woman",
+    "Participants": 5,
+    "Entries": [33, 34, 35, 36, 37],
+    "Marks": false,
+    "program_element": "3639887000000236707",
+    "Dance_order": 1,
+    "Dance": "Waltz",
+    "Stage": "",
+    "Event": "Single",
+    "Class": "Class 2",
+    "Level": "",
+    "ID": "3639887000000236711"
+  }, {
+    "heat": 4,
+    "Description": "  1st Round",
+    "Program": "Conventional",
+    "On_next_round": 7,
+    "active": false,
+    "EntriesNumber": [50, 51, 53, 54],
+    "Gender": "Woman",
+    "Participants": 4,
+    "Entries": [50, 51, 53, 54],
+    "Marks": false,
+    "program_element": "3639887000000236707",
+    "Dance_order": 1,
+    "Dance": "Waltz",
+    "Stage": "",
+    "Event": "Single",
+    "Class": "Class 2",
+    "Level": "",
+    "ID": "3639887000000236715"
   }, {
     "heat": "",
     "Description": "    Final",
@@ -3942,14 +3942,14 @@
     "Participants": 7,
     "Entries": [10, 12, 13, 17, 19, 20, 22],
     "Marks": true,
-    "program_element": "3639887000000236056",
+    "program_element": "3639887000000237081",
     "Dance_order": "",
     "Dance": "",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1+2",
     "Level": "",
-    "ID": "3639887000000236058"
+    "ID": "3639887000000237083"
   }, {
     "heat": "",
     "Description": "    Final",
@@ -3961,14 +3961,14 @@
     "Participants": 3,
     "Entries": [23, 24, 25],
     "Marks": true,
-    "program_element": "3639887000000236060",
+    "program_element": "3639887000000237085",
     "Dance_order": "",
     "Dance": "",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 1",
     "Level": "",
-    "ID": "3639887000000236062"
+    "ID": "3639887000000237087"
   }, {
     "heat": "",
     "Description": "    Final",
@@ -3980,14 +3980,14 @@
     "Participants": 13,
     "Entries": [28, 30, 32, 34, 35, 39, 40, 41, 43, 44, 51, 59, 60],
     "Marks": true,
-    "program_element": "3639887000000236064",
+    "program_element": "3639887000000237089",
     "Dance_order": "",
     "Dance": "",
     "Stage": "",
     "Event": "Single",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000236066"
+    "ID": "3639887000000237091"
   }, {
     "heat": 6,
     "Description": "Technical skills",
@@ -3999,14 +3999,14 @@
     "Participants": 4,
     "Entries": [42, 45, 46, 47],
     "Marks": true,
-    "program_element": "3639887000000230528",
+    "program_element": "3639887000000236553",
     "Dance_order": 3,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Single",
     "Class": "",
     "Level": "Normal",
-    "ID": "3639887000000230566"
+    "ID": "3639887000000236591"
   }, {
     "heat": 8,
     "Description": "Technical skills",
@@ -4018,14 +4018,14 @@
     "Participants": 3,
     "Entries": [52, 53, 55],
     "Marks": true,
-    "program_element": "3639887000000230528",
+    "program_element": "3639887000000236553",
     "Dance_order": 3,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Single",
     "Class": "",
     "Level": "Normal",
-    "ID": "3639887000000230570"
+    "ID": "3639887000000236595"
   }, {
     "heat": 2,
     "Description": "Technical skills",
@@ -4037,14 +4037,14 @@
     "Participants": 4,
     "Entries": [21, 22, 23, 24],
     "Marks": true,
-    "program_element": "3639887000000230528",
+    "program_element": "3639887000000236553",
     "Dance_order": 3,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Single",
     "Class": "",
     "Level": "Normal",
-    "ID": "3639887000000230558"
+    "ID": "3639887000000236583"
   }, {
     "heat": 4,
     "Description": "Technical skills",
@@ -4056,14 +4056,14 @@
     "Participants": 4,
     "Entries": [31, 32, 33, 34],
     "Marks": true,
-    "program_element": "3639887000000230528",
+    "program_element": "3639887000000236553",
     "Dance_order": 3,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Single",
     "Class": "",
     "Level": "Normal",
-    "ID": "3639887000000230562"
+    "ID": "3639887000000236587"
   }, {
     "heat": 7,
     "Description": "Technical skills",
@@ -4075,14 +4075,14 @@
     "Participants": 4,
     "Entries": [48, 49, 50, 51],
     "Marks": true,
-    "program_element": "3639887000000230528",
+    "program_element": "3639887000000236553",
     "Dance_order": 3,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Single",
     "Class": "",
     "Level": "Normal",
-    "ID": "3639887000000230568"
+    "ID": "3639887000000236593"
   }, {
     "heat": 9,
     "Description": "Technical skills",
@@ -4094,14 +4094,14 @@
     "Participants": 3,
     "Entries": [56, 57, 58],
     "Marks": true,
-    "program_element": "3639887000000230528",
+    "program_element": "3639887000000236553",
     "Dance_order": 3,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Single",
     "Class": "",
     "Level": "Normal",
-    "ID": "3639887000000230572"
+    "ID": "3639887000000236597"
   }, {
     "heat": 1,
     "Description": "Technical skills",
@@ -4113,14 +4113,14 @@
     "Participants": 4,
     "Entries": [14, 15, 16, 18],
     "Marks": true,
-    "program_element": "3639887000000230528",
+    "program_element": "3639887000000236553",
     "Dance_order": 3,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Single",
     "Class": "",
     "Level": "Normal",
-    "ID": "3639887000000230556"
+    "ID": "3639887000000236581"
   }, {
     "heat": 3,
     "Description": "Technical skills",
@@ -4132,14 +4132,14 @@
     "Participants": 4,
     "Entries": [25, 26, 28, 29],
     "Marks": true,
-    "program_element": "3639887000000230528",
+    "program_element": "3639887000000236553",
     "Dance_order": 3,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Single",
     "Class": "",
     "Level": "Normal",
-    "ID": "3639887000000230560"
+    "ID": "3639887000000236585"
   }, {
     "heat": 5,
     "Description": "Technical skills",
@@ -4151,14 +4151,14 @@
     "Participants": 4,
     "Entries": [36, 37, 39, 41],
     "Marks": true,
-    "program_element": "3639887000000230528",
+    "program_element": "3639887000000236553",
     "Dance_order": 3,
     "Dance": "Rumba",
     "Stage": "",
     "Event": "Single",
     "Class": "",
     "Level": "Normal",
-    "ID": "3639887000000230564"
+    "ID": "3639887000000236589"
   }, {
     "heat": 5,
     "Description": "Technical skills",
@@ -4170,14 +4170,14 @@
     "Participants": 4,
     "Entries": [42, 45, 46, 47],
     "Marks": true,
-    "program_element": "3639887000000230528",
+    "program_element": "3639887000000236553",
     "Dance_order": 2,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Single",
     "Class": "",
     "Level": "Normal",
-    "ID": "3639887000000230550"
+    "ID": "3639887000000236575"
   }, {
     "heat": 7,
     "Description": "Technical skills",
@@ -4189,14 +4189,14 @@
     "Participants": 4,
     "Entries": [55, 56, 57, 58],
     "Marks": true,
-    "program_element": "3639887000000230528",
+    "program_element": "3639887000000236553",
     "Dance_order": 2,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Single",
     "Class": "",
     "Level": "Normal",
-    "ID": "3639887000000230554"
+    "ID": "3639887000000236579"
   }, {
     "heat": 1,
     "Description": "Technical skills",
@@ -4208,14 +4208,14 @@
     "Participants": 4,
     "Entries": [14, 15, 16, 18],
     "Marks": true,
-    "program_element": "3639887000000230528",
+    "program_element": "3639887000000236553",
     "Dance_order": 2,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Single",
     "Class": "",
     "Level": "Normal",
-    "ID": "3639887000000230542"
+    "ID": "3639887000000236567"
   }, {
     "heat": 2,
     "Description": "Technical skills",
@@ -4227,14 +4227,14 @@
     "Participants": 3,
     "Entries": [39, 48, 51],
     "Marks": true,
-    "program_element": "3639887000000230528",
+    "program_element": "3639887000000236553",
     "Dance_order": 2,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Single",
     "Class": "",
     "Level": "High",
-    "ID": "3639887000000230582"
+    "ID": "3639887000000236607"
   }, {
     "heat": 3,
     "Description": "Technical skills",
@@ -4246,71 +4246,14 @@
     "Participants": 4,
     "Entries": [25, 26, 28, 29],
     "Marks": true,
-    "program_element": "3639887000000230528",
+    "program_element": "3639887000000236553",
     "Dance_order": 2,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Single",
     "Class": "",
     "Level": "Normal",
-    "ID": "3639887000000230546"
-  }, {
-    "heat": 6,
-    "Description": "Technical skills",
-    "Program": "Technics",
-    "On_next_round": "",
-    "active": false,
-    "EntriesNumber": [49, 50, 52, 53],
-    "Gender": "",
-    "Participants": 4,
-    "Entries": [49, 50, 52, 53],
-    "Marks": true,
-    "program_element": "3639887000000230528",
-    "Dance_order": 2,
-    "Dance": "Samba",
-    "Stage": "",
-    "Event": "Single",
-    "Class": "",
-    "Level": "Normal",
-    "ID": "3639887000000230552"
-  }, {
-    "heat": 1,
-    "Description": "Technical skills",
-    "Program": "Technics",
-    "On_next_round": "",
-    "active": false,
-    "EntriesNumber": [30, 32, 36, 37],
-    "Gender": "",
-    "Participants": 4,
-    "Entries": [30, 32, 36, 37],
-    "Marks": true,
-    "program_element": "3639887000000230528",
-    "Dance_order": 2,
-    "Dance": "Samba",
-    "Stage": "",
-    "Event": "Single",
-    "Class": "",
-    "Level": "High",
-    "ID": "3639887000000230580"
-  }, {
-    "heat": 2,
-    "Description": "Technical skills",
-    "Program": "Technics",
-    "On_next_round": "",
-    "active": false,
-    "EntriesNumber": [21, 22, 23, 24],
-    "Gender": "",
-    "Participants": 4,
-    "Entries": [21, 22, 23, 24],
-    "Marks": true,
-    "program_element": "3639887000000230528",
-    "Dance_order": 2,
-    "Dance": "Samba",
-    "Stage": "",
-    "Event": "Single",
-    "Class": "",
-    "Level": "Normal",
-    "ID": "3639887000000230544"
+    "ID": "3639887000000236571"
   }, {
     "heat": 4,
     "Description": "Technical skills",
@@ -4322,14 +4265,71 @@
     "Participants": 4,
     "Entries": [31, 33, 34, 41],
     "Marks": true,
-    "program_element": "3639887000000230528",
+    "program_element": "3639887000000236553",
     "Dance_order": 2,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Single",
     "Class": "",
     "Level": "Normal",
-    "ID": "3639887000000230548"
+    "ID": "3639887000000236573"
+  }, {
+    "heat": 6,
+    "Description": "Technical skills",
+    "Program": "Technics",
+    "On_next_round": "",
+    "active": false,
+    "EntriesNumber": [49, 50, 52, 53],
+    "Gender": "",
+    "Participants": 4,
+    "Entries": [49, 50, 52, 53],
+    "Marks": true,
+    "program_element": "3639887000000236553",
+    "Dance_order": 2,
+    "Dance": "Samba",
+    "Stage": "",
+    "Event": "Single",
+    "Class": "",
+    "Level": "Normal",
+    "ID": "3639887000000236577"
+  }, {
+    "heat": 1,
+    "Description": "Technical skills",
+    "Program": "Technics",
+    "On_next_round": "",
+    "active": false,
+    "EntriesNumber": [30, 32, 36, 37],
+    "Gender": "",
+    "Participants": 4,
+    "Entries": [30, 32, 36, 37],
+    "Marks": true,
+    "program_element": "3639887000000236553",
+    "Dance_order": 2,
+    "Dance": "Samba",
+    "Stage": "",
+    "Event": "Single",
+    "Class": "",
+    "Level": "High",
+    "ID": "3639887000000236605"
+  }, {
+    "heat": 2,
+    "Description": "Technical skills",
+    "Program": "Technics",
+    "On_next_round": "",
+    "active": false,
+    "EntriesNumber": [21, 22, 23, 24],
+    "Gender": "",
+    "Participants": 4,
+    "Entries": [21, 22, 23, 24],
+    "Marks": true,
+    "program_element": "3639887000000236553",
+    "Dance_order": 2,
+    "Dance": "Samba",
+    "Stage": "",
+    "Event": "Single",
+    "Class": "",
+    "Level": "Normal",
+    "ID": "3639887000000236569"
   }, {
     "heat": 1,
     "Description": "Technical skills",
@@ -4341,14 +4341,14 @@
     "Participants": 4,
     "Entries": [14, 15, 16, 18],
     "Marks": true,
-    "program_element": "3639887000000230528",
+    "program_element": "3639887000000236553",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Single",
     "Class": "",
     "Level": "Normal",
-    "ID": "3639887000000230530"
+    "ID": "3639887000000236555"
   }, {
     "heat": 3,
     "Description": "Technical skills",
@@ -4360,14 +4360,14 @@
     "Participants": 4,
     "Entries": [28, 29, 31, 33],
     "Marks": true,
-    "program_element": "3639887000000230528",
+    "program_element": "3639887000000236553",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Single",
     "Class": "",
     "Level": "Normal",
-    "ID": "3639887000000230534"
+    "ID": "3639887000000236559"
   }, {
     "heat": 1,
     "Description": "Technical skills",
@@ -4379,14 +4379,14 @@
     "Participants": 4,
     "Entries": [21, 25, 30, 32],
     "Marks": true,
-    "program_element": "3639887000000230528",
+    "program_element": "3639887000000236553",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Single",
     "Class": "",
     "Level": "High",
-    "ID": "3639887000000230574"
+    "ID": "3639887000000236599"
   }, {
     "heat": 5,
     "Description": "Technical skills",
@@ -4398,14 +4398,14 @@
     "Participants": 4,
     "Entries": [46, 47, 49, 50],
     "Marks": true,
-    "program_element": "3639887000000230528",
+    "program_element": "3639887000000236553",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Single",
     "Class": "",
     "Level": "Normal",
-    "ID": "3639887000000230538"
+    "ID": "3639887000000236563"
   }, {
     "heat": 3,
     "Description": "Technical skills",
@@ -4417,14 +4417,14 @@
     "Participants": 3,
     "Entries": [51, 52, 53],
     "Marks": true,
-    "program_element": "3639887000000230528",
+    "program_element": "3639887000000236553",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Single",
     "Class": "",
     "Level": "High",
-    "ID": "3639887000000230578"
+    "ID": "3639887000000236603"
   }, {
     "heat": 2,
     "Description": "Technical skills",
@@ -4436,14 +4436,14 @@
     "Participants": 4,
     "Entries": [22, 23, 24, 26],
     "Marks": true,
-    "program_element": "3639887000000230528",
+    "program_element": "3639887000000236553",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Single",
     "Class": "",
     "Level": "Normal",
-    "ID": "3639887000000230532"
+    "ID": "3639887000000236557"
   }, {
     "heat": 4,
     "Description": "Technical skills",
@@ -4455,14 +4455,14 @@
     "Participants": 4,
     "Entries": [34, 41, 42, 45],
     "Marks": true,
-    "program_element": "3639887000000230528",
+    "program_element": "3639887000000236553",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Single",
     "Class": "",
     "Level": "Normal",
-    "ID": "3639887000000230536"
+    "ID": "3639887000000236561"
   }, {
     "heat": 2,
     "Description": "Technical skills",
@@ -4474,14 +4474,14 @@
     "Participants": 4,
     "Entries": [36, 37, 39, 48],
     "Marks": true,
-    "program_element": "3639887000000230528",
+    "program_element": "3639887000000236553",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Single",
     "Class": "",
     "Level": "High",
-    "ID": "3639887000000230576"
+    "ID": "3639887000000236601"
   }, {
     "heat": 6,
     "Description": "Technical skills",
@@ -4493,14 +4493,14 @@
     "Participants": 4,
     "Entries": [55, 56, 57, 58],
     "Marks": true,
-    "program_element": "3639887000000230528",
+    "program_element": "3639887000000236553",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Single",
     "Class": "",
     "Level": "Normal",
-    "ID": "3639887000000230540"
+    "ID": "3639887000000236565"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -4512,14 +4512,14 @@
     "Participants": 3,
     "Entries": [10, 45, 46],
     "Marks": true,
-    "program_element": "3639887000000236028",
+    "program_element": "3639887000000237053",
     "Dance_order": 3,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Single junior",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000236038"
+    "ID": "3639887000000237063"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -4531,14 +4531,14 @@
     "Participants": 3,
     "Entries": [10, 45, 46],
     "Marks": true,
-    "program_element": "3639887000000236028",
+    "program_element": "3639887000000237053",
     "Dance_order": 2,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Single junior",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000236034"
+    "ID": "3639887000000237059"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -4550,14 +4550,14 @@
     "Participants": 3,
     "Entries": [10, 45, 46],
     "Marks": true,
-    "program_element": "3639887000000236028",
+    "program_element": "3639887000000237053",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Single junior",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000236030"
+    "ID": "3639887000000237055"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -4569,14 +4569,14 @@
     "Participants": 3,
     "Entries": [10, 45, 46],
     "Marks": false,
-    "program_element": "3639887000000236024",
+    "program_element": "3639887000000237049",
     "Dance_order": 3,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Single junior",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000236036"
+    "ID": "3639887000000237061"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -4588,14 +4588,14 @@
     "Participants": 3,
     "Entries": [10, 45, 46],
     "Marks": false,
-    "program_element": "3639887000000236024",
+    "program_element": "3639887000000237049",
     "Dance_order": 2,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Single junior",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000236032"
+    "ID": "3639887000000237057"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -4607,14 +4607,14 @@
     "Participants": 3,
     "Entries": [10, 45, 46],
     "Marks": false,
-    "program_element": "3639887000000236024",
+    "program_element": "3639887000000237049",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Single junior",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000236026"
+    "ID": "3639887000000237051"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -4626,14 +4626,14 @@
     "Participants": 3,
     "Entries": [29, 36, 37],
     "Marks": true,
-    "program_element": "3639887000000236044",
+    "program_element": "3639887000000237069",
     "Dance_order": 3,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Single junior",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000236054"
+    "ID": "3639887000000237079"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -4645,14 +4645,14 @@
     "Participants": 3,
     "Entries": [29, 36, 37],
     "Marks": true,
-    "program_element": "3639887000000236044",
+    "program_element": "3639887000000237069",
     "Dance_order": 2,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Single junior",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000236050"
+    "ID": "3639887000000237075"
   }, {
     "heat": 1,
     "Description": "     Final",
@@ -4664,14 +4664,14 @@
     "Participants": 3,
     "Entries": [29, 36, 37],
     "Marks": true,
-    "program_element": "3639887000000236044",
+    "program_element": "3639887000000237069",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Single junior",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000236046"
+    "ID": "3639887000000237071"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -4683,14 +4683,14 @@
     "Participants": 3,
     "Entries": [29, 36, 37],
     "Marks": false,
-    "program_element": "3639887000000236040",
+    "program_element": "3639887000000237065",
     "Dance_order": 3,
     "Dance": "Jive",
     "Stage": "",
     "Event": "Single junior",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000236052"
+    "ID": "3639887000000237077"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -4702,14 +4702,14 @@
     "Participants": 3,
     "Entries": [29, 36, 37],
     "Marks": false,
-    "program_element": "3639887000000236040",
+    "program_element": "3639887000000237065",
     "Dance_order": 2,
     "Dance": "Samba",
     "Stage": "",
     "Event": "Single junior",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000236048"
+    "ID": "3639887000000237073"
   }, {
     "heat": 1,
     "Description": " General look",
@@ -4721,12 +4721,12 @@
     "Participants": 3,
     "Entries": [29, 36, 37],
     "Marks": false,
-    "program_element": "3639887000000236040",
+    "program_element": "3639887000000237065",
     "Dance_order": 1,
     "Dance": "Waltz",
     "Stage": "",
     "Event": "Single junior",
     "Class": "Class 2",
     "Level": "",
-    "ID": "3639887000000236042"
+    "ID": "3639887000000237067"
   }]

@@ -1,6 +1,12 @@
 String.prototype.replaceAll = function (search, replace) {
   return this.split(search).join(replace);
 }
+randomize = function (array) {
+  return _.sortBy(array, e => {
+    return Math.random()
+  })
+}
+
 
 Meteor.methods({
   fetch() {
@@ -26,14 +32,41 @@ Meteor.methods({
     })
 
     _.each(programs_items, pi => {
-      pi.heat=+pi.heat || 1
+      pi.heat = +pi.heat || 1
       ProgramItems.insert(pi)
     })
 
-      _.each(Program, pe => {
+    _.each(Program, pe => {
+      // // pe.Entries = pe.Entries? pe.Entries.split(',') : []
+      // pe.Entries = _.map(pe.Entries, e => {
+      //   return +e
+      // })
+
+      Entries = pe.Entries;
+      _.each(ProgramItems.find({
+        program_element: pe.ID
+      }, {
+        sort: {
+          Dance_order: 1,
+          heat: 1
+        }
+      }).fetch(), pi => {
+        if (pi.heat == 1) {
+          ee = randomize(Entries)
+        }
+
+        ProgramItems.update(pi._id, {
+          $set: {
+            Entries: _.sortBy(ee.splice(0, pi.Entries.length), e => {
+              return e
+            })
+          }
+        })
+      })
+
       ProgramElements.insert(pe)
     })
-    
+
 
     _.each(judges, j => {
       Judges.insert(j)
