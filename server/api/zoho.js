@@ -26,6 +26,7 @@ Meteor.methods({
     })
 
     _.each(programs_items, pi => {
+      pi.heat=+pi.heat || 1
       ProgramItems.insert(pi)
     })
 

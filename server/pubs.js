@@ -1,14 +1,25 @@
 Meteor.publish({
+  heats() {
+    pi = ProgramItems.findOne({
+      active: true
+    })
+    if (pi) {
+      program_element = pi.program_element
+      return ProgramItems.find({
+        program_element
+      })
+    }
+  },
   dataByPin(PIN) {
     j = Judges.findOne({
       PIN
     })
     if (j) {
-      var {
-        program_element
-      } = ProgramItems.findOne({
+      var pi = ProgramItems.findOne({
         active: true
       })
+      program_element = pi.program_element
+
       return [
         Judges.find({
           _id: j._id
@@ -21,11 +32,10 @@ Meteor.publish({
         }),
         Results.find({
           program_element
-        }),
-        JudgesFunctions.find()
+        })
       ]
     } else {
-      return
+      return []
     }
   },
   items(program_element) {

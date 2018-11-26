@@ -166,10 +166,10 @@ Meteor.methods({
         sum += r
       })
       RES = (sum / results.length).toFixed(3)
-      scores.RES[type] = RES;
+      scores.RES[type] = +RES;
     }
     if (_.keys(scores.RES).length == 3) {
-      scores.TOTAL = ((+scores.RES.CP + +scores.RES.TS) * +scores.RES.DL).toFixed(3)
+      scores.TOTAL = (((+scores.RES.CP) + (+scores.RES.TS)) * (+scores.RES.DL) - (+(scores.penalty || 0))).toFixed(3)
     }
 
     console.log(scores)
@@ -187,7 +187,7 @@ Meteor.methods({
 
     if (scores.TOTAL) {
       scoresByDance = {}
-      scoresByDance[Dance] = scores.TOTAL
+      scoresByDance[api.Dance] = scores.TOTAL
 
       id = Results.upsert({
         Entry,
@@ -207,21 +207,31 @@ Meteor.methods({
     api = ProgramItems.findOne({
       active: true
     })
-    Results.remove({
-      type: 'penalty',
+    Entry = +Entry
+    score = Results.findOne({
       Entry,
+      byDance: false,
       program_element: api.program_element,
       Dance: api.Dance,
       Level: api.Level
     })
-    Results.insert({
-      type: 'penalty',
-      penalty,
+    TOTAL = null;
+    if (score && score.scores && _.keys(score.scores.RES).length == 3) {
+      TOTAL = (((+score.scores.RES.CP) + (+score.scores.RES.TS)) * (+score.scores.RES.DL) - (+(score.penalty || 0))).toFixed(3)
+    }
+
+    id = Results.upsert({
       Entry,
       program_element: api.program_element,
       Dance: api.Dance,
       Level: api.Level,
-    })
+      byDance: false
+    }, {
+      $set: {
+        penalty,
+        TOTAL
+      }
+    });
   },
   vote() {
     judges = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']

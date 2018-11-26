@@ -2,14 +2,15 @@
   border: 2px solid black;
   padding-left: 10px;
 padding-right: 10px;
-  margin: 1vw;
   color: white;
   font-size: 2em;
   min-width: 7vw;
-  min-height: 4vh; 
   font-weight: 900;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+  height: 100%;
+  margin-right: 30px;
+
 }
 .red {
   background-color: coral;
@@ -27,7 +28,7 @@ padding-right: 10px;
   position: absolute;
   bottom: 0px;
   left: 0px;
-  height: 13vh;
+  height: 10vh;
   width: 100vw;
 }
 .hidden {

@@ -21,9 +21,9 @@ Template.login.helpers({
     }
   }
 })
-Template.subscribe.helpers({
-  helper(){
+Template.zubscribe.helpers({
+  zelper(){
     Meteor.subscribe('dataByPin', Session.get('pin'))
     return " "
   }
-})
+});

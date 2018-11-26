@@ -1,6 +1,6 @@
 .numPad {
   position: absolute;
-  bottom: 10vh;
+  top: 0vh;
   right: 0vw;
   height: 80vh;
   width: 25vw;
@@ -17,9 +17,23 @@
 .selectedScore {
   background-color: green !important;
 }
+.generalLook {
+  position: relative;
+}
+.reload {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-weight: 700;
+  width: 8vw;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
 th.function {
   font-size: 2em !important;
   font-weight: 700;
+  text-align: center;
 }
 .numPad td, .score {
   font-size: 3em;
@@ -87,7 +101,7 @@ th.function {
 }
 
 .finalContainer {
-  height: 70vh;
+  height: 80vh;
   overflow-y: scroll;
 
 }

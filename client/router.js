@@ -22,12 +22,26 @@ Router.route('/login', {
     this.render('login')
   }
 })
+Router.route('/heats', {
+  name: 'heats',
+  layoutTemplate: 'full',
+  waitOn: function () {
+    return Meteor.subscribe('heats');
+  },
+  onBeforeAction() {
+
+    this.next()
+  },
+  action: function () {
+    this.render('heats')
+  }
+})
 
 Router.route('/picker', {
   name: 'picker',
   layoutTemplate: 'full',
-  onBeforeAction(){
-    if (!Session.get('pin')){
+  onBeforeAction() {
+    if (!Session.get('pin') && !Session.get('reload')) {
       Router.go('/login')
     }
     this.next()

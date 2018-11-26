@@ -37,11 +37,11 @@ Template.judgingFinal.events({
     })
   },
   'change input'(e) {
-    value = $(e.currentTarget).val()
+    penalty = $(e.currentTarget).val()
     Entry = $(e.currentTarget).parent().attr('id')
     Meteor.call('penalty', {
       Entry,
-      value
+      penalty
     })
   }
 })
@@ -68,7 +68,8 @@ Template.finalScores.helpers({
       return Results.find({
         program_element: pi.program_element,
         Dance: pi.Dance,
-        Level: pi.Level
+        Level: pi.Level,
+        byDance: false
       }, {
         sort: {
           TOTAL: 1,
@@ -100,23 +101,7 @@ UI.registerHelper('finalScore', function (judge, type, Entry) {
 
 })
 
-UI.registerHelper('penalty', function (Entry) {
-  pi = ProgramItems.findOne(Session.get('itemId'))
-  if (pi) {
-    Entry = +Entry
-    r = Results.findOne({
-      program_element: pi.program_element,
-      Dance: pi.Dance,
-      Level: pi.Level,
-      type: 'penalty',
-      Entry
-    })
-    if (r) {
-      return r.value
-    }
-  }
 
-})
 UI.registerHelper('finalScoreRes', function (type, Entry) {
   pi = ProgramItems.findOne(Session.get('itemId'))
   if (pi) {
@@ -148,52 +133,6 @@ UI.registerHelper('finalScoreRes', function (type, Entry) {
 
 })
 
-UI.registerHelper('finalScorePen', function (argument) {
-
-});
-UI.registerHelper('finalScoreTot', function (Entry) {
-  pi = ProgramItems.findOne(Session.get('itemId'))
-  if (pi) {
-    Entry = +Entry
-    rr = Results.findOne({
-      program_element: pi.program_element,
-      Dance: pi.Dance,
-      Level: pi.Level,
-      type: 'total',
-      Entry
-    })
-    if (rr && rr.value) {
-      return rr.value
-    } else {
-      $e = $('#final' + Entry)
-      TSR = +($e.find('.TSR').text())
-      CPR = +($e.find('.CPR').text())
-      DLR = +($e.find('.DLR').text())
-      value = ((TSR + CPR) * DLR).toFixed(3)
-      if (value != '0.000') {
-        Meteor.call('score', {
-          program_element: pi.program_element,
-          Entry,
-          value,
-          type: 'total'
-        })
-      }
-      return value
-    }
-  }
-});
-
-Template.judgingFinalTechnic.helpers({
-
-  'click #total'() {
-    $('.total').each(function (i, e) {
-      TSR = +$(e).siblings('.TSR').text()
-      CPR = +$(e).siblings('.CPR').text()
-      DLR = +$(e).siblings('.DLR').text()
-      $(e).text(((TSR + CPR) * DLR).toFixed(3))
-    })
-  }
-})
 Template.judgingFinalTechnic.helpers({
   entries() {
     pi = ProgramItems.findOne(Session.get('itemId'))
@@ -202,20 +141,11 @@ Template.judgingFinalTechnic.helpers({
       return Results.find({
         program_element: pi.program_element,
         Dance: pi.Dance,
-        Level: pi.Level
+        Level: pi.Level,
+        byDance: false
       }).fetch();
 
     }
     return []
-  },
-  difficulty() {
-    pi = ProgramItems.findOne(Session.get('itemId'))
-    if (pi) {
-      if (pi.Level == 'Normal') {
-        return 1.15
-      } else {
-        return 1.35
-      }
-    }
   }
 })

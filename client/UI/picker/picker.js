@@ -304,4 +304,19 @@ Template.generalLook.onRendered(() => {
   $(".currentHeat").hide()
   $(".all").hide()
   $(".violation").hide()
+  pin = Session.get('pin')
+  Session.set('reload',true)
+  Session.set('pin', '')
+
+  setTimeout(function () {
+    Session.set('pin', pin)
+    Session.set('reload',false)
+
+  }, 1000)
+})
+
+Template.generalLook.events({
+  'click .reload'() {
+    Meteor.subscribe('dataByPin', Session.get('pin'))
+  }
 })

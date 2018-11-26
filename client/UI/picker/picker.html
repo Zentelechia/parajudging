@@ -1,15 +1,15 @@
 <template name="picker">
   {{> header}}
   {{#unless sended}}
-  {{#if isFinal}}
-  {{> final}}
-  {{else}}
-  {{#if GL}}
-  {{> notFinal}}
-  {{else}}
-  {{> generalLook}}
-  {{/if}}
-  {{/if}}
+    {{#if isFinal}}
+      {{> final}}
+    {{else}}
+      {{#unless GL}}
+        {{> generalLook}}
+      {{else}}
+        {{> notFinal}}
+      {{/unless}}
+    {{/if}}
   {{else}}
   <div class="generalLook">
     <h1>
@@ -29,7 +29,7 @@
       <thead>
         <th class="function">Number</th>
         {{#unless technic}}
-          <th class="function">{{judge.first.short}}</th>
+        <th class="function">{{judge.first.short}}</th>
          <th class="function">{{judge.second.short}}</th>
         {{else}}
           <th class="function">TS</th>
@@ -48,7 +48,7 @@
         <td type="{{judge.second.short}}" class="score {{judge.second.type}}">
           {{score judge.second.short this}}
         </td>
-      {{else}}
+        {{else}}
         <td type="TS" class="score numpad">
           {{score "TS" this}}
         </td>
@@ -132,16 +132,16 @@
         <td>1.50</td>
         <td class="nob"></td>
       </tr>
-
+      
     </table>
   </div>
 </template>
 
 <template name="generalLook">
+
   <div class="generalLook">
     <h1>
       General look. Just watch
-
     </h1>
   </div>
 </template>

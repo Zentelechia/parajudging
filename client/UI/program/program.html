@@ -41,20 +41,20 @@
   </h6>
   {{else}}
   <a class="list-group-item list-group-item-action active_{{data.active}}" id={{data._id}} href="/program/{{data.ID}}">
-  <h6 class="mb-0" data-filter-by="text">
-    {{data.Event}} {{data.Program}} {{data.Gender}}
-    <div class="dropdown float-right" style="width: 40px">
-      <button class="btn-options" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <i class="material-icons">more_vert</i>
-      </button>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Add athlete</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item activate" href="#">Activate</a>
+    <h6 class="mb-0" data-filter-by="text">
+      {{data.Event}} {{data.Program}} {{data.Gender}}
+      <div class="dropdown float-right" style="width: 40px">
+        <button class="btn-options" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="material-icons">more_vert</i>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Add athlete</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item activate" href="#">Activate</a>
+        </div>
       </div>
-    </div>
-  </h6>
-      {{data.Class}}
+    </h6>
+    {{data.Class}}
     <span data-filter-by="text">{{data.Description}}</span>
   </a>
   {{/if}}
@@ -69,47 +69,34 @@
     </div>
   </div>
 </template>
+<template name="heats">
+  <div class="heats list-group list-group-flush">
+    {{#each item in items}}
+    {{> programItem data=item}}
+    {{/each}}
+  </div>
+</template>
 
 <template name="programItem">
-  <a class="list-group-item list-group-item-action active_{{data.active}}" href="/item/{{data._id}}">
+  <a id="active{{data.active}}" class="list-group-item list-group-item-action active_{{data.active}}" href="/item/{{data._id}}">
     <div class="media media-member mb-0">
       <div class="media-body">
-        <div class="dropdown" style="width: 40px; float: right">
-          <button class="btn-options" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="material-icons">more_vert</i>
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item activate" href="#">Activate</a>
-          </div>
-        </div>
-        <h6 class="mb-0" data-filter-by="text"> 
+
+        <h6 class="mb-0" data-filter-by="text">
           {{#if data.Dance}}
           {{data.Dance}}
           {{else}}
           Freestyle
-          {{/if}} 
-          {{data.Level}} 
+          {{/if}}
+          {{data.Level}}
           {{#if data.heat}}
-           Heat {{data.heat}}
+          Heat {{data.heat}}
           {{/if}}</h6>
-        <div data-filter-by="text">
-          {{#each data.Entries}}
-          <div class="dropdown" style="width: 40px; float: left">
-            <button class="btn-options" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              {{this}}
-              <i class="material-icons">more_vert</i>
-            </button>
-            <div class="dropdown-menu" entry="{{this}}">
-              <a class="dropdown-item change" href="#">Change number</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item remove" href="#">Remove</a>
-            </div>
+          <div class="entrys" data-filter-by="text">
+            {{#each data.Entries}}
+            {{this}}
+            {{/each}}
           </div>
-
-
-
-          {{/each}}
-        </div>
       </div>
     </div>
   </a>

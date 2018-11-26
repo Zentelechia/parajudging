@@ -3,9 +3,11 @@
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A project management Bootstrap theme by Medium Rare">
   <link href="favicon.ico" rel="icon" type="image/x-icon">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
 
 
 
@@ -13,15 +15,16 @@
 </head>
 
 <body>
-  {{> subscribe}}
 </body>
-<template name="subscribe">
-{{helper}}
+
+<template name="zubscribe">
+{{zelper}}
 </template>
 
 <template name='login'>
+  {{> zubscribe}}
+
   {{judge}}
-  <span id="prePIN"> Please enter your PIN </span>
   <input type="password" id="PIN" placeholder="Enter your PIN (6 digits)">
 </template>
 

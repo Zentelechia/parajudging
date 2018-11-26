@@ -77,6 +77,19 @@ Template.items.helpers({
 
   }
 })
+Template.heats.helpers({
+  items() {
+    var opts = {
+      sort: {
+        Dance_order: 1,
+        Level: -1,
+        heat: 1
+      }
+    }
+    return ProgramItems.find({}, opts).fetch()
+
+  }
+})
 Template.programElement.events({
   'click .activate'(e, t) {
     var id = t.data.data._id;
@@ -112,4 +125,13 @@ Template.programItem.events({
     Session.set('entry', entry)
     $("#itemRemoveNumber").modal('show')
   }
+})
+
+Template.heats.onCreated(function () {
+  setInterval(function () {
+    e = document.getElementById("activetrue")
+    if (e) {
+      e.scrollIntoView()
+    }
+  }, 5000)
 })

@@ -17,6 +17,14 @@ Template.header.events({
   Router.go('/')
 },
 'click .switch'(){
+    var el = document.documentElement,
+      rfs = el.requestFullscreen
+        || el.webkitRequestFullScreen
+        || el.mozRequestFullScreen
+        || el.msRequestFullscreen 
+    ;
+
+    rfs.call(el);
   if (Session.get('final')){
     Session.set('final',false)
     Session.set("programItem",notFinal)
