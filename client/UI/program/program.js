@@ -1,21 +1,21 @@
 Template.programElement.onCreated(function () {
-  $('.sortable').sortable({
-    connectWith: '.sortable',
-    placeholder: 'ui-state-highlight',
-    receive: function (event, ui) {
-      var sourceList = ui.sender;
-      var targetList = $(this);
-    },
-    stop: function (event, ui) {
-      $('.sortable a').each((i, e) => {
-        ProgramElements.update($(e).attr('id'), {
-          $set: {
-            order: $(e).index() + 1
-          }
-        })
-      })
-    }
-  }).disableSelection()
+  // $('.sortable').sortable({
+  //   connectWith: '.sortable',
+  //   placeholder: 'ui-state-highlight',
+  //   receive: function (event, ui) {
+  //     var sourceList = ui.sender;
+  //     var targetList = $(this);
+  //   },
+  //   stop: function (event, ui) {
+  //     $('.sortable a').each((i, e) => {
+  //       ProgramElements.update($(e).attr('id'), {
+  //         $set: {
+  //           order: $(e).index() + 1
+  //         }
+  //       })
+  //     })
+  //   }
+  // }).disableSelection()
 })
 Template.elements.helpers({
   programElements() {

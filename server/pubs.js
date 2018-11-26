@@ -14,10 +14,10 @@ Meteor.publish({
     j = Judges.findOne({
       PIN
     })
-    if (j) {
-      var pi = ProgramItems.findOne({
-        active: true
-      })
+    var pi = ProgramItems.findOne({
+      active: true
+    })
+    if (j && pi) {
       program_element = pi.program_element
 
       return [

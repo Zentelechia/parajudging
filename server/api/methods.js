@@ -124,7 +124,7 @@ Meteor.methods({
       }
     });
   },
-  clearScores() {
+  clearScorez() {
     Results.remove({})
   },
   score({

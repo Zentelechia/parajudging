@@ -14,4 +14,6 @@ Template.nav.events({
 Template.nav.onCreated(function(){
   Meteor.subscribe('elements');
   Meteor.subscribe('all');
+  Meteor.subscribe('athlethes');
+
 })

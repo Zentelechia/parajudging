@@ -10,7 +10,9 @@ Template.athlethes.helpers({
     let filter = Session.get('filter')
     if (filter) {
       q = {
-        $or: [{
+        $or: [
+          {Number: +filter},
+          {
           Athlete_1Local_name: {
               $regex: filter,
               $options: 'i'

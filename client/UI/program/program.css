@@ -16,4 +16,14 @@
 
 .heats {
   font-size: 10vh !important;
+
+}
+.heats i {
+  display: none;
+}
+.heats button {
+  margin: 50px !important
+}
+.heats div {
+  page-break-inside: avoid
 }

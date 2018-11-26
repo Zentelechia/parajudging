@@ -46,6 +46,35 @@ Template.judgingFinal.events({
   }
 })
 Template.finalScores.helpers({
+  results(){
+    s="";
+    dances= _.unique(_.map(Results.find({byDance: false}).fetch(),r=>{return r.Dance}))
+    d=""
+    _.each(dances,dance=>{
+      d+=`<th>${dance}</th>`
+    })
+  s+=`<tr><th>Номер</th><th>Спортсмен</th><th>Город</th><th>Клуб</th>${d}<th>Total</th></tr>`;
+    rr=Results.find({byDance: true}).fetch()
+    final=_.map( rr,r=>{
+    a=Athlethes.findOne({Number: r.Entry})||{};
+    total=0;
+    _.each(dances,dance=>{
+      total+=(+r[dance])
+    })
+    total=total.toFixed(3);
+    d=""
+    _.each(dances,dance=>{
+      d+=`<td>${r[dance]}</td>`
+    })
+    return {
+      line: `<tr><td>${r.Entry}</td><td>${a.Athlete_1Local_name}</td><td>${a.RequestSingle_Line2}</td><td>${a.Requestlub_organization_name}</td>${d}<td>${total}</td></tr>`, 
+      total }
+    })
+    final=_.sortBy(final,f=>{return -f.total});
+    _.each(final,f=>s+=f.line)
+    return s
+  
+  },
   dances() {
     pi = ProgramItems.findOne(Session.get('itemId'))
     if (pi) {

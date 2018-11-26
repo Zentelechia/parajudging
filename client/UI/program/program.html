@@ -70,10 +70,10 @@
   </div>
 </template>
 <template name="heats">
-    <div class="col-3 rightLine">
+    <div class="heats rightLine">
       <div class="list-group list-group-flush">
         {{#each item in items}}
-        {{> programItem data=item}}
+        {{> heatItem  data=item}}
         {{/each}}
       </div>
     </div>
@@ -124,3 +124,26 @@
   </a>
 
 </template>
+
+<template name="heatItem">
+  <div>
+
+    <h2 class="mb-0" data-filter-by="text"> 
+      {{#if data.Dance}}
+      {{data.Dance}}
+      {{else}}
+      Freestyle
+      {{/if}} 
+      {{data.Level}} 
+      {{#if data.heat}}
+      Heat {{data.heat}}
+      {{/if}}</h2>
+      <div data-filter-by="text">
+        {{#each data.Entries}}
+        {{this}}
+        {{/each}}
+      </div>
+      
+    </div>
+      
+    </template>

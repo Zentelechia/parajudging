@@ -5,8 +5,10 @@ Template.modals.helpers({
 })
 Template.modals.events({
   'click #changeEntryNumberButton'() {
-    const newEntry = newEntryNumber.value;
-    const entry = Session.get('entry')
+    const newEntry = +newEntryNumber.value;
+    const entry = +Session.get('entry')
+    console.log(newEntry)
+    console.log(entry)
     ii = ProgramItems.find({
       program_element: Session.get('programId')
     }).fetch()

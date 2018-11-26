@@ -311,8 +311,7 @@ Template.generalLook.onRendered(() => {
   setTimeout(function () {
     Session.set('pin', pin)
     Session.set('reload',false)
-
-  }, 1000)
+  }, 2000)
 })
 
 Template.generalLook.events({

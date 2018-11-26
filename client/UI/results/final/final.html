@@ -73,28 +73,8 @@
 </template>
 
 <template name='finalScores'>
-  <table class="table finalScores">
-    <thead>
-      <th>#</th>
-      <th>Num</th>
-      {{#each dances}}
-      <th>{{firstLetter this }}</th>
-      {{/each}}
-      <th>Total</th>
-    </thead>
-    <tbody>
-      {{#each entry in entries}}
-      <tr class="notFinalResultsRow" id="{{entry.Entry}}">
-        <td>{{entry.i}}</td>
-        <td>{{entry.Entry}}</td>
-        {{#each dance in dances}}
-        <td>{{inDance entry dance}}</td>
-        {{/each}}
-        <td>{{entry.total}}</td>
-
-      </tr>
-      {{/each}}
-    </tbody>
+  <table class="table">
+    {{{results}}}
   </table>
 </template>
 
