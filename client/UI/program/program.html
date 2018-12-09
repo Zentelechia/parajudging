@@ -139,8 +139,8 @@
       Heat {{data.heat}}
       {{/if}}</h2>
       <div data-filter-by="text">
-        {{#each data.Entries}}
-        {{this}}
+        {{#each en in data.Entries}}
+        {{en}} {{#unless data.Dance}} {{Ath en}} <br> {{/unless}}
         {{/each}}
       </div>
       

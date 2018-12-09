@@ -135,3 +135,11 @@ Template.heats.onCreated(function () {
     }
   }, 5000)
 })
+
+UI.registerHelper('Ath',(Number)=>{
+  Number=+Number
+  A = Athlethes.findOne({Number});
+  if (A) {
+    return A.Athlete_1Local_name + " и " +A.Athlete_2Local_name
+  }
+})

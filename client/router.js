@@ -26,10 +26,12 @@ Router.route('/heats', {
   name: 'heats',
   layoutTemplate: 'full',
   waitOn: function () {
-    return Meteor.subscribe('heats');
+    return [
+      Meteor.subscribe('heats'),
+      Meteor.subscribe('athlethes')
+    ]
   },
   onBeforeAction() {
-
     this.next()
   },
   action: function () {

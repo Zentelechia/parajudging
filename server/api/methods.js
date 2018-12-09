@@ -150,7 +150,7 @@ Meteor.methods({
     scores[type] = scores[type] || {}
     scores[type][judge] = value
     scores.RES = scores.RES || {}
-    if (api.level) {
+    if (api.Level) {
       scores.RES.DL = api.Level == 'Normal' ? 1.15 : 1.35
     }
     if (_.keys(scores[type]).length > 3) {

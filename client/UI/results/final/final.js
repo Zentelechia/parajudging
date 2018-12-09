@@ -53,8 +53,14 @@ Template.finalScores.helpers({
     _.each(dances,dance=>{
       d+=`<th>${dance}</th>`
     })
-  s+=`<tr><th>Номер</th><th>Спортсмен</th><th>Город</th><th>Клуб</th>${d}<th>Total</th></tr>`;
+    console.log(d);
+    if (!d){
+      d="<th>Freestyle</th>"
+    }
+
+    s+=`<tr><th>Номер</th><th colspan="2">Спортсмен</th><th>Город</th><th>Клуб</th>${d}<th>Total</th></tr>`;
     rr=Results.find({byDance: true}).fetch()
+    
     final=_.map( rr,r=>{
     a=Athlethes.findOne({Number: r.Entry})||{};
     total=0;
@@ -67,11 +73,25 @@ Template.finalScores.helpers({
       d+=`<td>${r[dance]}</td>`
     })
     return {
-      line: `<tr><td>${r.Entry}</td><td>${a.Athlete_1Local_name}</td><td>${a.RequestSingle_Line2}</td><td>${a.Requestlub_organization_name}</td>${d}<td>${total}</td></tr>`, 
+      line: `<tr><td>${r.Entry}</td><td>${a.Athlete_1Local_name}</td><td>${a.Athlete_2Local_name}</td><td>${a.RequestSingle_Line2}</td><td>${a.Requestlub_organization_name}</td>${d}<td>${total}</td></tr>`, 
       total }
     })
     final=_.sortBy(final,f=>{return -f.total});
     _.each(final,f=>s+=f.line)
+
+    if (!rr.length){
+      rr=Results.find().fetch();
+      final=_.map( rr,r=>{
+        a=Athlethes.findOne({Number: r.Entry})||{};
+        total=r.scores && r.scores.TOTAL
+        d="<td>"+total+"</td>"
+        return {
+          line: `<tr><td>${r.Entry}</td><td>${a.Athlete_1Local_name}</td><td>${a.Athlete_2Local_name}</td><td>${a.RequestSingle_Line2}</td><td>${a.Requestlub_organization_name}</td>${d}<td>${total}</td></tr>`, 
+          total }
+        })
+        final=_.sortBy(final,f=>{return -f.total});
+        _.each(final,f=>s+=f.line)
+    }
     return s
   
   },

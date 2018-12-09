@@ -79,7 +79,7 @@
 </template>
 
 <template name='judgingFinalTechnic'>
-  <table class="bordered finalTechnic">
+  <table class="bordered table plus finalTechnic">
     <thead>
       <tr>
         <th rowspan=2>Num</th>
@@ -117,9 +117,9 @@
       </tr>
     </thead>
     <tbody>
-      {{#each entries}}
+      {{#each e in entries}}
       <tr id="final{{this}}">
-        <td>{{this}}</td>
+        <td>{{e.Entry}}</td>
         <td>{{e.scores.TS.A}}</td>
         <td>{{e.scores.TS.B}}</td>
         <td>{{e.scores.TS.C}}</td>
@@ -130,7 +130,7 @@
         <td>{{e.scores.TS.H}}</td>
         <td>{{e.scores.TS.I}}</td>
 
-        <td class='TSR'>{{e.scores.TS.RES}}</td>
+        <td class='TSR'>{{e.scores.RES.TS}}</td>
 
         <td>{{e.scores.CP.A}}</td>
         <td>{{e.scores.CP.B}}</td>
